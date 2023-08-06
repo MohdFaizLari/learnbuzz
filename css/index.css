@@ -2,3 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
+.primaryButton {
+    padding: 8px 24px;
+    font-size: 14px;
+    /* color: aliceblue; */
+    /* background-color: antiquewhite; */
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+}
+
+.secondaryButton {
+    padding: 8px 24px;
+    font-size: 14px;
+    /* color: aliceblue; */
+    background-color: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
