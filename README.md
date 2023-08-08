@@ -61,3 +61,27 @@ margin-bottom: 5px;
 
 8 - Padding classes -
 a) pd-5
+
+
+Git Commands----
+
+git clone repoURL // First time for cloning the repository.
+
+git branch branchname // creating branch
+
+git checkout branchname // for moving into that particular branch on which you have to work
+
+git add -A // files edited will move to staging area
+
+git commit -m "commit mesasage" // this will update in the branch , depends now if you want to push the changes or not , messgae contains information regarding the changes done.
+
+git remote add E-learning remoteURL // for configuring the remote URL with a name(e-learning)
+
+git remote -v // for checking if we have set remote URL.
+
+git remote rm E-learning // for removing remoteURL
+
+git push E-leraning(remoteURL Name) branch_name to be pushed // for pushing the files 
+
+git pull E-learning(remoteURL Name) master // for pulling master branch
+
