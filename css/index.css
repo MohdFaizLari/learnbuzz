@@ -1,7 +1,41 @@
+.body {
+    font-family: sans-serif;
+}
+
 .clearFix {
     margin: 0;
     padding: 0;
 }
+
+/* Font weight styling starts here */
+
+.fw-lightest {
+    font-weight: 200;
+}
+
+.fw-lighter {
+    font-weight: 300;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-se-bold {
+    font-weight: 500;
+}
+
+.fw-bold {
+    font-weight: 600;
+}
+
+.fw-bolder {
+    font-weight: 800;
+}
+
+/* Font weight styling ends here */
+
+/* Buttons styling starts here */
 
 .primaryButton {
     padding: 8px 24px;
@@ -34,3 +68,5 @@
     box-sizing: border-box;
     border: none;
 }
+
+/* Buttons styling ends here */
