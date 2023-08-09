@@ -25,38 +25,40 @@ c) Header Color
 d) Footer Color
 e) Sidebar
 
-4 - Font family -----> Done
+4 - Font family ---> Done
 a) It should be simple (Not in cursive) - (sens-serif) -----> Done
 
-5 - Font weight ----------> All Done
-a) Lightest - 200
-b) Lighter - 300
-c) Normal - 400
-d) Semi-Bold - 500
-e) Bold - 600
-f) Bolder - 800/900
+5 - Font weight ---> Done
+a) Lightest - 200 (.fw-lightest)
+b) Lighter - 300 (.fw-lighter)
+c) Normal - 400 (.fw-normal)
+d) Semi-Bold - 500 (.fw-se-bold)
+e) Bold - 600 (.fw-bold)
+f) Bolder - 800/900 (.fw-bolder)
 
 6 - Color classes - Pending
 a)
 
 7 - Margin classes - 5 t0 20 px; ---> Done
+a) All side margin classes (.mr-5 - 20) 
+b) Margin top classes (.mr-t-5 - 20) 
+c) Margin right classes (.mr-r-5 - 20) 
+d) Margin bottom classes (.mr-b-5 - 20) 
+e) Margin left classes (.mr-l-5 - 20)
 
-a) All side margin classes (.mr-5 - 20) ----> Done
-b) Margin top classes (.mr-t-5 - 20) ----> Done
-c) Margin right classes (.mr-r-5 - 20) ----> Done
-d) Margin bottom classes (.mr-b-5 - 20) ----> Done
-e) Margin left classes (.mr-l-5 - 20) ----> Done
+8 - Padding classes ---> Done
+a) All side padding classes (.pd-5 - 20) 
+b) Padding top classes (.pd-t-5 - 20) 
+c) Padding right classes (.pd-r-5 - 20)
+d) Padding bottom classes (.pd-b-5 - 20) 
+e) Padding left classes (.pd-l-5 - 20)
 
-8 - Padding classes - Done
-a) All side padding classes (.pd-5 - 20) ----> Done
-b) Padding top classes (.pd-t-5 - 20) ----> Done
-c) Padding right classes (.pd-r-5 - 20) ----> Done
-d) Padding bottom classes (.pd-b-5 - 20) ----> Done
-e) Padding left classes (.pd-l-5 - 20) ----> Done
+9 - Button classe ---> Done
+a) Primary button (.primaryButton)
+b) Secondary button (.secondaryButton)
+c) Tertiary button (.tertiaryButton)
 
-
-
-Git  useful Commands----
+Git useful Commands----
 
 git clone repoURL // First time for cloning the repository.
 
