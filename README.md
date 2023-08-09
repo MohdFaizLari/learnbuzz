@@ -9,7 +9,7 @@ b) Class name - Camel case & Snake bar both.
 c) Id name - Camel case & Snake bar both.
 d) Variable name - Camel case
 
-2 - Font size - Pending
+2 - Font size - In Progress
 a) Main headings
 b) Heading
 c) Sub headings
@@ -26,13 +26,13 @@ d) Footer Color
 e) Sidebar
 
 4 - Font family ---> Done
-a) It should be simple (Not in cursive) - (sans-serif) -----> Done
+a) It should be simple (Not in cursive) - ( font-family: 'Poppins', sans-serif;) -----> Done
 
 5 - Font weight ---> Done
 a) Lightest - 200 (.fw-lightest)
 b) Lighter - 300 (.fw-lighter)
 c) Normal - 400 (.fw-normal)
-d) Semi-Bold - 500 (.fw-se-bold)
+d) Semi-Bold - 500 (.fw-semi-bold)
 e) Bold - 600 (.fw-bold)
 f) Bolder - 800/900 (.fw-bolder)
 
