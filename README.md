@@ -39,32 +39,24 @@ f) Bolder - 800/900
 6 - Color classes - Pending
 a)
 
-7 - Margin classes - 5 t0 20 px; ---> Pending
-a) .mr-5{
-margin: 5px;
-}
+7 - Margin classes - 5 t0 20 px; ---> Done
 
-b) .mr-l-5{
-margin-left: 5px;
-}
+a) All side margin classes (.mr-5 - 20) ----> Done
+b) Margin top classes (.mr-t-5 - 20) ----> Done
+c) Margin right classes (.mr-r-5 - 20) ----> Done
+d) Margin bottom classes (.mr-b-5 - 20) ----> Done
+e) Margin left classes (.mr-l-5 - 20) ----> Done
 
-c) .mr-r-5{
-margin-right: 5px;
-}
-
-d) .mr-t-5{
-margin-top: 5px;
-}
-
-e) .mr-b-5{
-margin-bottom: 5px;
-}
-
-8 - Padding classes - Pending
-a) pd-5
+8 - Padding classes - Done
+a) All side padding classes (.pd-5 - 20) ----> Done
+b) Padding top classes (.pd-t-5 - 20) ----> Done
+c) Padding right classes (.pd-r-5 - 20) ----> Done
+d) Padding bottom classes (.pd-b-5 - 20) ----> Done
+e) Padding left classes (.pd-l-5 - 20) ----> Done
 
 
-Git Commands----
+
+Git  useful Commands----
 
 git clone repoURL // First time for cloning the repository.
 
@@ -82,7 +74,6 @@ git remote -v // for checking if we have set remote URL.
 
 git remote rm E-learning // for removing remoteURL
 
-git push E-leraning(remoteURL Name) branch_name to be pushed // for pushing the files 
+git push E-leraning(remoteURL Name) branch_name to be pushed // for pushing the files
 
 git pull E-learning(remoteURL Name) master // for pulling master branch
-

@@ -35,6 +35,7 @@
 
 /* Font weight styling ends here */
 
+
 /* Buttons styling starts here */
 
 .primaryButton {
@@ -70,3 +71,173 @@
 }
 
 /* Buttons styling ends here */
+
+/* Margin styling starts here */
+
+.mr-5 {
+    margin: 5px;
+}
+
+.mr-10 {
+    margin: 10px;
+}
+
+.mr-15 {
+    margin: 15px;
+}
+
+.mr-20 {
+    margin: 20px;
+}
+
+
+.mr-t-5 {
+    margin: 5px;
+}
+
+.mr-t-10 {
+    margin: 10px;
+}
+
+.mr-t-15 {
+    margin: 15px;
+}
+
+.mr-t-20 {
+    margin: 20px;
+}
+
+.mr-r-5 {
+    margin: 5px;
+}
+
+.mr-r-10 {
+    margin: 10px;
+}
+
+.mr-r-15 {
+    margin: 15px;
+}
+
+.mr-r-20 {
+    margin: 20px;
+}
+
+.mr-b-5 {
+    margin: 5px;
+}
+
+.mr-b-10 {
+    margin: 10px;
+}
+
+.mr-b-15 {
+    margin: 15px;
+}
+
+.mr-b-20 {
+    margin: 20px;
+}
+
+.mr-l-5 {
+    margin: 5px;
+}
+
+.mr-l-10 {
+    margin: 10px;
+}
+
+.mr-l-15 {
+    margin: 15px;
+}
+
+.mr-l-20 {
+    margin: 20px;
+}
+
+/* Margin styling starts here */
+
+/* Padding styling starts here */
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+
+.pd-t-5 {
+    padding: 5px;
+}
+
+.pd-t-10 {
+    padding: 10px;
+}
+
+.pd-t-15 {
+    padding: 15px;
+}
+
+.pd-t-20 {
+    padding: 20px;
+}
+
+.pd-r-5 {
+    padding: 5px;
+}
+
+.pd-r-10 {
+    padding: 10px;
+}
+
+.pd-r-15 {
+    padding: 15px;
+}
+
+.pd-r-20 {
+    padding: 20px;
+}
+
+.pd-b-5 {
+    padding: 5px;
+}
+
+.pd-b-10 {
+    padding: 10px;
+}
+
+.pd-b-15 {
+    padding: 15px;
+}
+
+.pd-b-20 {
+    padding: 20px;
+}
+
+.pd-l-5 {
+    padding: 5px;
+}
+
+.pd-l-10 {
+    padding: 10px;
+}
+
+.pd-l-15 {
+    padding: 15px;
+}
+
+.pd-l-20 {
+    padding: 20px;
+}
+
+/* Padding styling starts here */
