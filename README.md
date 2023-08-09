@@ -26,7 +26,7 @@ d) Footer Color
 e) Sidebar
 
 4 - Font family ---> Done
-a) It should be simple (Not in cursive) - (sens-serif) -----> Done
+a) It should be simple (Not in cursive) - (sans-serif) -----> Done
 
 5 - Font weight ---> Done
 a) Lightest - 200 (.fw-lightest)
