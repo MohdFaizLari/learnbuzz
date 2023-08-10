@@ -5,7 +5,126 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* background-color: Light Gray (#f9f9f9); */
 }
+.checkColor1{
+    width:100%;
+    height: 125px;
+    background-color:#c9e1e5; 
+}
+.checkColor2{
+    width:100%;
+    height: 125px;
+    background-color: #f5fffa;
+}
+.checkColor3{
+    width:100%;
+    height: 125px;
+    background-color: #ffffe0;
+}
+.checkColor4{
+    width:100%;
+    height: 125px;
+    background-color: #e6e6fa;
+}
+
+.checkColor5{
+    width:100%;
+    height: 125px;
+    background-color:#e1f5fe; 
+}
+.checkColor6{
+    width:100%;
+    height: 125px;
+    background-color: #e0f2f1;
+}
+.checkColor7{
+    width:100%;
+    height: 125px;
+    background-color:#f3e5f5;
+}
+.checkColor8{
+    width:100%;
+    height: 125px;
+    background-color:#ffe0b2;
+}
+.checkColor9{
+    width:100%;
+    height: 125px;
+    background-color:#f9f9f9; 
+}
+.checkColor10{
+    width:100%;
+    height: 125px;
+    background-color:#f5f5f5;
+    /* color:white; */
+}
+.checkColor11{
+    width:100%;
+    height: 125px;
+    background-color:#fefefe;
+}
+.checkColor12{
+    width:100%;
+    height: 125px;
+    background-color:#f5f5dc;
+}
+.checkColor13{
+    width:100%;
+    height: 125px;
+    background-color:#f3e5ab; 
+}
+.checkColor14{
+    width:100%;
+    height: 125px;
+    background-color: #dcedc1;
+}
+.checkColor15{
+    width:100%;
+    height: 125px;
+    background-color:#c7ecee;
+}
+.checkColor16{
+    width:100%;
+    height: 125px;
+    background-color:#f9cbbe;
+}
+/* Background Colours-
+
+1. **Light Neutral Colors:**
+   - Light Gray (#f9f9f9)
+   - Off-White (#f5f5f5)
+   - Pale Cream (#fefefe)
+   - Light Beige (#f5f5dc)
+
+2. **Soft Pastel Colors:**
+   - Pale Blue (#e1f5fe)
+   - Mint Green (#e0f2f1)
+   - Lavender (#f3e5f5)
+   - Peach (#ffe0b2)
+
+3. **Subtle Nature Tones:**
+   - Sandy Beige (#f3e5ab)
+   - Soft Green (#dcedc1)
+   - Sky Blue (#c7ecee)
+   - Pale Rose (#f9cbbe) */
+/* 
+4. **Calm and Relaxing Colors:**
+   - Light Sky Blue (#c9e1e5)
+   - Mint Cream (#f5fffa)
+   - Pale Yellow (#ffffe0)
+   - Lavender Mist (#e6e6fa)
+
+5. **Light Gradient Colors:**
+   - Light Gradient Blue (#d1e9f5)
+   - Light Gradient Green (#d2eada)
+   - Light Gradient Pink (#fddde6)
+   - Light Gradient Orange (#fbe5d5)
+
+6. **White Background with Accents:**
+   - White (#ffffff) with colorful accents for buttons and highlights. */
+
+
 
 /* Font weight styling starts here */
 
@@ -242,15 +361,49 @@ body {
 }
 
 /* Padding styling ends here */
-
+.colorGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
 .parentContainer {
-    position: absolute;
+    /* position: absolute; */
     border: 2px solid black;
-    background-color: bisque;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
+    /* background-color: bisque; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 500px;
+}
+.parentContainer2{
+    /* position: absolute; */
+    border: 2px solid black;
+    /* background-color: bisque; */
+    /* top: 120%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 500px;
+}
+.parentContainer3{
+    /* position: absolute; */
+    border: 2px solid black;
+    /* background-color: bisque; */
+    /* top: 190%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 500px;
+}
+.parentContainer4{
+    /* position: absolute; */
+    border: 2px solid black;
+    /* background-color: bisque; */
+    /* top: 260%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
     height: 500px;
 }
 

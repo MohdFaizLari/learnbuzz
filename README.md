@@ -20,9 +20,9 @@ g) Font
 
 3 - Color Code - Pending
 a) Font Color
-b) Background Color
-c) Header Color
-d) Footer Color
+b) Background Color - #f5f5f5 or #fefefe;
+c) Header Color - #f5f5f5 or #fefefe
+d) Footer Color - #1c1d1f;
 e) Sidebar
 
 4 - Font family ---> Done
