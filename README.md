@@ -24,6 +24,7 @@ b) Background Color - #f5f5f5 or #fefefe;
 c) Header Color - #f5f5f5 or #fefefe
 d) Footer Color - #1c1d1f;
 e) Sidebar
+rgb(3, 49, 98); 
 
 4 - Font family ---> Done
 a) It should be simple (Not in cursive) - ( font-family: 'Poppins', sans-serif;) -----> Done
@@ -79,3 +80,19 @@ git remote rm E-learning // for removing remoteURL
 git push E-leraning(remoteURL Name) branch_name to be pushed // for pushing the files
 
 git pull E-learning(remoteURL Name) master // for pulling master branch
+
+
+landing page header footer
+sign Up
+name
+username
+email
+password
+
+landing page header footer
+log in
+username
+pwd
+
+landing page content & footer
+home page header ,side nav bar(height vh) - no footer
