@@ -659,7 +659,8 @@ p{
     padding:50px;
     margin-top:120px;
     display: grid;
-    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 110px  150px;
+    column-gap: 600px;
  }
  .hoveringStyle:hover{
     text-decoration: underline;
