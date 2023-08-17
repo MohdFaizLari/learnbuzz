@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-.landingPageMainWrapper{
+.landingPageWrapper{
     display: flex;
     width:100%;
     flex-wrap: wrap;
@@ -129,8 +129,6 @@ body {
 
 6. **White Background with Accents:**
    - White (#ffffff) with colorful accents for buttons and highlights. */
-
-
 
 /* Font weight styling starts here */
 
@@ -445,7 +443,7 @@ h1,h2,h3,h4,h5,h6 {
    box-shadow: 1px 1px 3px 0.15px gray;
    padding: 10px;
 }
-.btnContainer{
+.hdrBtnContainer{
     display: flex;
     flex-shrink: 1;
 }
