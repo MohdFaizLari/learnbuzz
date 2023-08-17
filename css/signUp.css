@@ -1,0 +1,59 @@
+.clearFix {
+    margin: 0;
+    padding: 0;
+}
+ * {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+}
+.backgroundImg{
+    width: 134%;
+    height: 950px;
+}
+.positionReference{
+    position: relative;
+    margin-top: 103px;
+}
+.footerStylingSignUp{
+    background-color:#2E5090;
+    color:white;
+    padding:50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 907px  907px;
+    /* display: grid;
+    grid-template-columns: 110px  150px;
+    column-gap: 600px; */
+ }
+ .hoveringStyleSignUp:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+ .positionPlaced{
+    position: absolute;
+    top:350px;
+    left:250px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0.15px gray;
+    width:500px;
+    height:415px;
+    background:#B9D9EB ;
+ }
+ .formStyling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .formPlacing{
+    display: grid;
+    grid-template-rows: 2fr 70px;
+ }
+ 
