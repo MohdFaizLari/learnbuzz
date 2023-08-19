@@ -572,9 +572,8 @@ p {
 /*footer Styling*/
 
 footer {
-    width: 100vw;
-    position: absolute;
-    bottom: 0px;
+    min-width: 10vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
