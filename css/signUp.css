@@ -9,22 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-}
-
-.wrapper {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.backgroundImg {
-  width: 134%;
-  height: 950px;
-}
-
-.positionReference {
-  position: relative;
-  margin-top: 103px;
+  background: #B9D9EB;
 }
 
 footer {
@@ -35,41 +20,33 @@ footer {
   background-color: #2E5090;
 }
 
-.footerStylingSignUp {
+.signUpPageWrapper {
   display: flex;
-  flex-direction: column;
-  color: white;
   width: 100%;
-  /* justify-content: center; */
-  align-items: center;
-  /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-  /* display: grid;
-    grid-template-columns: 110px  150px;
-    column-gap: 600px; */
+  flex-wrap: wrap;
 }
-.aboutUs {
+
+.signUpPageMainHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 55%;
-  font-size: 0.85rem;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 
+  0 4px 12px rgba(0, 0, 0, .08);
 }
 
-.hoveringStyleSignUp:hover {
-  /* text-decoration: underline; */
-  cursor: pointer;
-}
-
-.positionPlaced {
+.formContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   box-shadow: 1px 1px 3px 0.15px gray;
   width: 100%;
-  height: 415px;
-  background: #B9D9EB;
+  height: 60vh;
+  /* background: #B9D9EB; */
 }
 
 .formStyling {
@@ -78,9 +55,21 @@ footer {
   justify-content: center;
 }
 
-.formPlacing {
-  display: grid;
-  grid-template-rows: 2fr 70px;
+.formAlignment{
+ display: flex;
+ flex-direction: column;
+ width: 20%;
+ height: 42vh;
+ background-color: white;
+ border-radius: 4px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  font-size: 0.85rem;
 }
 
 .footerCopyRight {
@@ -89,6 +78,18 @@ footer {
   text-align: center;
   justify-content: center;
 
+}
+
+.hoveringStyleSignUp:hover {
+  cursor: pointer;
+}
+
+.footerStylingSignUp {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  align-items: center;
 }
 
 .wrapper .icon {
