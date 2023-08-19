@@ -1,0 +1,219 @@
+.landingPageWrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* FIRST SECTION STYLING  STARTS*/
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.firstSectionMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    background-color: #E1EBEE;
+}
+
+.sectionDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.imgOne {
+    width: 1000px;
+    height: 500px;
+    border-radius: 4px;
+    border: none;
+}
+
+.positioningCards {
+    position: relative;
+}
+
+.cardOne {
+    width: 30%;
+    height: 10%;
+    background-color: #f5f5f5;
+    border-color: gray;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 0.15px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 68%;
+    z-index: 1;
+}
+
+/* FIRST SECTION STYLING  ENDS*/
+
+/*Second Section styling starts */
+.secondSectionMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:1px solid black; */
+    margin-top: 100px;
+}
+
+/*Third section styling starts*/
+.courseOverview {
+    /* font-size: 40px; */
+    padding-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.courseCard {
+    border: none;
+    width: 350px;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 1px 3px 0.15px gray;
+}
+
+.cssLogo {
+    width: 78%;
+}
+
+.jsLogo {
+    width: 110%;
+
+}
+
+.authorName {
+    color: gray;
+}
+
+.courseCardCollection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.thirdSectionMain {
+
+    margin-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f5f5f5;
+}
+
+/* Third Section Styling Ends Here */
+
+/* Fourth Section Styling Starts here */
+.imgTwo {
+    width: 900px;
+    height: 600px;
+    border-radius: 4px;
+}
+
+.cardTwo {
+
+    width: 40%;
+    height: 10%;
+    background-color: #f5f5f5;
+    border-color: gray;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 0.15px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 54%;
+    /* z-index:1; */
+
+}
+
+.backgroundEffectsForSection {
+    width: 970px;
+    height: 680px;
+    /* border:1px solid black; */
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#C6E6FB, #6CB4EE);
+}
+
+.whyLearnBuzz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.fourthSectionMain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+    /* padding-bottom:120px; */
+    /* background-color: #E1EBEE ; */
+}
+
+.fontStyle {
+    font-size: 40px;
+}
+
+/* Review Styling starts*/
+
+.reviewHeading {
+    font-size: 40px;
+    display: flex;
+    margin-left: 6.5%;
+}
+
+.reviewCard {
+    border: none;
+    width: 370px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 1px 0.15px gray; */
+}
+
+.profilePicture {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 25px;
+}
+
+.reviewerDetails {
+    display: flex;
+    align-items: center;
+}
+
+.reviewCollection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.review {
+    margin-top: 120px;
+    padding: 50px;
+    background-color: #E1EBEE;
+}
+
+/* Review Styling Ends*/
