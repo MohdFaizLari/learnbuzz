@@ -30,6 +30,14 @@ body {
   0 4px 12px rgba(0, 0, 0, .08);
 }
 
+.formIntro{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
 .formContainer {
   display: flex;
   justify-content: center;
@@ -177,12 +185,4 @@ body {
 .copyRightSec {
   font-size: 0.85rem;
 
-}
-
-.formIntro{
-  width:100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: none;
 }
