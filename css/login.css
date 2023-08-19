@@ -9,13 +9,17 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: aliceblue;
+    min-width: 60rem;
 }
 
 .loginPageWrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
 .loginPageMainHeader {
@@ -30,6 +34,19 @@ body {
         0 4px 12px rgba(0, 0, 0, .08);
 }
 
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin: 0%;
+    min-height: 83.3vh;
+    max-height: fit-content;
+}
+
 .formContainer {
     display: flex;
     flex-direction: column;
@@ -39,21 +56,20 @@ body {
     width: 100%;
 }
 
+.formAlignment {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    background-color: white;
+    border-radius: 10px;
+}
+
 .formStyling {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.formAlignment {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    /* border: 0.2px solid black; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
-    /* height: 42vh; */
-    background-color: white;
-    border-radius: 10px;
 }
 
 .forgotPassword {
@@ -61,7 +77,7 @@ body {
 }
 
 .noAccountDiv {
-    text-align: center; 
+    text-align: center;
 }
 
 .separator {
