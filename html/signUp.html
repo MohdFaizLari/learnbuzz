@@ -27,42 +27,47 @@
         </div>
       </header>
 
-      <div class="formIntro pd-15">
+      <div class="formIntro pd-15 mr-t-20">
         <h1 class="fw-semi-bold">Sign up</h1>
         <p>Your Learning Journey, Your Pace.</p>
       </div>
 
-      <div class="formContainer pd-15">
+      <div class="formContainer">
         <form class="formAlignment pd-10">
-          <legend>Full Name</legend>
-            <div class="formStyling">
-              <input
-                type="text"
-                placeholder="Enter Your Full Name"
-                class="pd-15 mr-b-15 mr-t-15"
-              />
-              <legend>USERNAME</legend>
-              <input
-                type="text"
-                placeholder="Username"
-                class="pd-15 mr-b-15 mr-t-15"
-              />
-              <legend>EMAIL</legend>
-              <input
-                type="text"
-                placeholder="name@email.com"
-                class="pd-15 mr-b-15 mr-t-15"
-              />
-              <legend>PASSWORD</legend>
-              <input
-                type="password"
-                placeholder="Create Password"
-                class="pd-15 mr-b-15 mr-t-15"
-              />
-            </div>
-            <div class="formStyling">
-              <button class="primaryButton" type="submit">Sign Up</button>
-            </div>
+          <div class="formStyling">
+            <label for="fullName">Full Name</label>
+
+            <input
+              id="fullName"
+              type="text"
+              placeholder="Enter Your Full Name"
+              class="pd-15 mr-b-15 mr-t-15"
+            />
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="text"
+              placeholder="Username"
+              class="pd-15 mr-b-15 mr-t-15"
+            />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="name@email.com"
+              class="pd-15 mr-b-15 mr-t-15"
+            />
+            <label for="pwd">Password</label>
+            <input
+              id="pwd"
+              type="password"
+              placeholder="Create Password"
+              class="pd-15 mr-b-15 mr-t-15"
+            />
+          </div>
+          <div class="formStyling">
+            <button class="primaryButton" type="submit">Sign Up</button>
+          </div>
         </form>
       </div>
 
