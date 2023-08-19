@@ -1,0 +1,69 @@
+.clearFix {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #B9D9EB;
+}
+
+.signUpPageWrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.signUpPageMainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+        0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0.15px gray;
+    width: 100%;
+    height: 65.65vh;
+}
+
+.formStyling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formAlignment {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 42vh;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.forgotPassword {
+    text-align: center;
+}
+
+.noAccountDiv {
+    text-align: center; 
+}
+
+.separator {
+    border-top: 1px solid #d1d7dc;
+}

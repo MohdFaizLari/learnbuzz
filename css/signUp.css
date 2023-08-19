@@ -12,14 +12,6 @@ body {
   background: #B9D9EB;
 }
 
-footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2E5090;
-}
-
 .signUpPageWrapper {
   display: flex;
   width: 100%;
@@ -46,7 +38,6 @@ footer {
   box-shadow: 1px 1px 3px 0.15px gray;
   width: 100%;
   height: 60vh;
-  /* background: #B9D9EB; */
 }
 
 .formStyling {
