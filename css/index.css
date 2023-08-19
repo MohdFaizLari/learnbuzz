@@ -573,33 +573,35 @@ p {
 
 footer {
     width: 100vw;
+    position: absolute;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2E5090;
-  }
-  
-  .aboutUs {
+}
+
+.aboutUs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 55%;
+    width: 40%;
     font-size: 0.85rem;
-  }
-    
-  .footerHoveringStyle:hover {
+}
+
+.footerHoveringStyle:hover {
     cursor: pointer;
-  }
-  
-  .footerStyling {
+}
+
+.footerStyling {
     display: flex;
     flex-direction: column;
     color: white;
     width: 100%;
     align-items: center;
-  }
-  
-  .footerIconsWrapper .icon {
+}
+
+.footerIconsWrapper .icon {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -618,9 +620,9 @@ footer {
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     color: #333;
     text-decoration: none;
-  }
-  
-  .footerIconsWrapper .tooltip {
+}
+
+.footerIconsWrapper .tooltip {
     position: absolute;
     top: 0;
     line-height: 1.5;
@@ -633,9 +635,9 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .footerIconsWrapper .tooltip::before {
+}
+
+.footerIconsWrapper .tooltip::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -645,56 +647,56 @@ footer {
     left: 50%;
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .footerIconsWrapper .icon:hover .tooltip {
+}
+
+.footerIconsWrapper .icon:hover .tooltip {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
-  
-  .footerIconsWrapper .icon:hover span,
-  .footerIconsWrapper .icon:hover .tooltip {
+}
+
+.footerIconsWrapper .icon:hover span,
+.footerIconsWrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .footerIconsWrapper .facebook:hover,
-  .footerIconsWrapper .facebook:hover .tooltip,
-  .footerIconsWrapper .facebook:hover .tooltip::before {
+}
+
+.footerIconsWrapper .facebook:hover,
+.footerIconsWrapper .facebook:hover .tooltip,
+.footerIconsWrapper .facebook:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
-  }
-  
-  .footerIconsWrapper .twitter:hover,
-  .footerIconsWrapper .twitter:hover .tooltip,
-  .footerIconsWrapper .twitter:hover .tooltip::before {
+}
+
+.footerIconsWrapper .twitter:hover,
+.footerIconsWrapper .twitter:hover .tooltip,
+.footerIconsWrapper .twitter:hover .tooltip::before {
     background-color: #46c1f6;
     color: #ffffff;
-  }
-  
-  .footerIconsWrapper .instagram:hover,
-  .footerIconsWrapper .instagram:hover .tooltip,
-  .footerIconsWrapper .instagram:hover .tooltip::before {
+}
+
+.footerIconsWrapper .instagram:hover,
+.footerIconsWrapper .instagram:hover .tooltip,
+.footerIconsWrapper .instagram:hover .tooltip::before {
     background-color: #e1306c;
     color: #ffffff;
-  }
-  
-  .footerIconsWrapper .github:hover,
-  .footerIconsWrapper .github:hover .tooltip,
-  .footerIconsWrapper .github:hover .tooltip::before {
+}
+
+.footerIconsWrapper .github:hover,
+.footerIconsWrapper .github:hover .tooltip,
+.footerIconsWrapper .github:hover .tooltip::before {
     background-color: #333333;
     color: #ffffff;
-  }
-  
-  .footerIconsWrapper .youtube:hover,
-  .footerIconsWrapper .youtube:hover .tooltip,
-  .footerIconsWrapper .youtube:hover .tooltip::before {
+}
+
+.footerIconsWrapper .youtube:hover,
+.footerIconsWrapper .youtube:hover .tooltip,
+.footerIconsWrapper .youtube:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
-  }
-  
-  .copyRightSec {
+}
+
+.copyRightSec {
     font-size: 0.85rem;
-  
-  }
+
+}
