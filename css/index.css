@@ -622,8 +622,8 @@ p{
     height:300px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: white;
-    box-shadow: 1px 1px 3px 0.15px gray;
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 1px 0.15px gray; */
 }
 .profilePicture{
     width:50px;
@@ -664,3 +664,4 @@ p{
     text-decoration: underline;
     cursor: pointer;
  }
+ 
