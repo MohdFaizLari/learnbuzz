@@ -11,6 +11,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.separator {
+    border-top: 1px solid #d1d7dc;
+}
+
 .landingPageWrapper {
     display: flex;
     width: 100%;
