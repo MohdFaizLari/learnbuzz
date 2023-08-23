@@ -96,3 +96,19 @@ pwd
 
 landing page content & footer
 home page header ,side nav bar(height vh) - no footer
+
+home page layout ------
+header ke neeche ek intro video
+uske neeche cards skilled instructors
+course categories
+webd 
+python
+php
+networking
+c language
+aws 
+cloud computing
+ai
+
+netflix ka trnd of sci-fi wgairah ke 
+expert instructors img hover  intro video of 30 to 45 sec.
