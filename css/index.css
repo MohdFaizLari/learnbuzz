@@ -12,6 +12,15 @@ body {
     min-width: 60rem;
 }
 
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fontStyle {
+    font-size: 40px;
+}
+
 .separator {
     border-top: 1px solid #d1d7dc;
 }
