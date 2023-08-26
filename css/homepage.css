@@ -13,3 +13,139 @@ body {
     flex-shrink: 0;
     flex-basis: auto;
 }
+.headerWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerMiddleSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:31.25rem;
+}
+.navStyling{
+    width:18.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:#1338BE;
+}
+.videoWrapper{
+    display: flex;
+}
+.videoContainer{
+    display: flex;
+    justify-content: center;
+    width: 79rem;
+    height: 500px;
+    margin-top:60px;
+    overflow: hidden;
+    position: relative;
+}
+.videoContainer video{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cardholder{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.instructorCard{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color:white;
+    width:16rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+    0 4px 12px rgba(0, 0, 0, .08);
+    transition: background-color 0.5s,color 0.5s,transform 0.5s ease;/* Add a transition for smooth movement */
+    cursor: pointer;
+}
+.instructorCard:hover{
+    background-color: #5F9EA0;
+    color:white;
+    transform: translate(0px,-5px);/* Move the card slightly up on hover */
+}
+.cardImg{
+    width:80px;
+}
+.instructorCard p{
+    text-align: center;
+}
+.courseCategories{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:30px;
+    background-color: white;
+    transition: background-color 0.5s,color 0.5s,transform 0.5s ease;
+}
+.courseCategories:hover{
+    background-color: #5F9EA0;
+    color:white;
+    transform: translate(0px,-5px);
+}
+.courseImg{
+    width:100px;
+}
+.webDevWraper{
+    display: flex;
+    flex-direction: column;
+}
+.webDevHeading{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    transition: background-color 0.5s,color 0.5s,transform 0.5s ease;
+}
+.webDevHeading:hover{
+    background-color: #5F9EA0;
+    color:white;
+    transform: translate(0px,-5px);
+}
+.webDevHeadingImg{
+    border-radius: 40px;
+}
+.webDevCardCollection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.webDevCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+    0 4px 12px rgba(0, 0, 0, .08);
+    width:17.5rem ;
+}
+.webDevImgOne{
+   width:220px;
+}
+.webDevImg2{
+    width:220px;
+   height:220px;
+}
+.authorName{
+    color: gray;
+    text-align:justify;
+}
+
