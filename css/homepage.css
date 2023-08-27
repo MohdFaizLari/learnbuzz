@@ -21,14 +21,10 @@ body {
 .websiteLogoButton {
     border: none;
     padding: 0%;
-    width: 180px;
-    height: 65px;
-}
-
-.websiteLogo{
     width: 100%;
     height: 100%;
 }
+
 
 .headerMiddleSection{
     display: flex;
