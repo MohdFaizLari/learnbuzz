@@ -1,174 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="./../css/index.css" />
     <link rel="stylesheet" href="./../css/homepage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-  />
-</head>
-<body class="clearFix">
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body class="clearFix">
     <div class="homePageWrapper">
       <div class="headerWrapper">
-        <header class="mainHeader pd-15">
-            <h1 class="main-heading mr-r-15">LearnBuzz</h1>
-            <div class="headerMiddleSection">
-              <div class="navStyling pd-r-15">
+        <header class="mainHeader pd-10">
+          <!-- <h1 class="main-heading mr-r-15">LearnBuzz</h1> -->
+          <div class="websiteLogoDiv">
+            <button class="websiteLogoButton" onclick="homepageRedirect()">
+              <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+            </button>
+          </div>
+          <div class="headerMiddleSection">
+            <div class="navStyling pd-r-15">
               <a href="./homepage.html" class="fw-semi-bold">Home</a>
               <a class="fw-semi-bold">About</a>
-               <!-- add a new page -->
+
               <a class="fw-semi-bold">Courses</a>
-               <!-- add a new page -->
+
               <a class="fw-semi-bold">Contact</a>
-               <!-- add a new page -->
-              </div>
+            </div>
             <div class="hdrBtnContainer">
-              <button class="tertiaryButton" id="loginButton" onclick="loginButtonFunction()">Log In</button>
-              <button class="primaryButton" id="signUpButton" onclick="signUpButtonFunction()">Sign Up</button>
+              <button
+                class="tertiaryButton"
+                id="loginButton"
+                onclick="loginButtonFunction()"
+              >
+                Log In
+              </button>
+              <button
+                class="primaryButton"
+                id="signUpButton"
+                onclick="signUpButtonFunction()"
+              >
+                Sign Up
+              </button>
             </div>
-            </div>
-          </header>
-        </div> 
-       
-        <div class="videoWrapper">
-        <div class="videoContainer">
-          <video  controls>
-            <source src="../Media/production_id_4498849 (2160p).mp4" type="video/mp4">
-          </video>
-        </div>
+          </div>
+        </header>
       </div>
-          
-          <div class="cardWrapper">
-          <div class="cardholder mr-b-20">
-            <div class="instructorCard pd-15 mr-15">
-               <img src="../Media/graduation cap 2.png" class="cardImg">
-               <h3 class="fw-normal mr-t-10 mr-b-10">Your Learning Allies</h3>
-               <p class="pd-10">Our instructors are your allies in your educational journey,
-                dedicated to helping you unlock your full potential.</p>
-            </div>
 
-            <div class="instructorCard pd-15 mr-15">
-              <img src="../Media/web.png" class="cardImg">
-              <h3 class="fw-normal mr-t-10 mr-b-10">Online Classes</h3>
-              <p class="pd-10">Our platform offers a spectrum of courses that cater to varied interests,
-                making learning engaging, enjoyable, and tailored to your passions.</p>
-           </div>
+      <div class="videoContainer">
+        <video controls>
+          <source
+            src="../Media/production_id_4498849 (2160p).mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
-           <div class="instructorCard pd-15 mr-15">
-            <img src="../Media/home2.png" class="cardImg">
-            <h3 class="fw-normal mr-t-10 mr-b-10">Home Projects</h3>
-            <p class="pd-10">Master your skills by taking on practical home 
-              projects that mirror the challenges you'll encounter in the real world.</p>
+      <div class="cardWrapper">
+        <div class="cardholder mr-b-20">
+          <div class="instructorCard pd-15 mr-15">
+            <img src="../Media/graduation cap 2.png" class="cardImg" />
+            <h3 class="fw-normal mr-t-10 mr-b-10">Your Learning Allies</h3>
+            <p class="pd-10">
+              Our instructors are your allies in your educational journey,
+              dedicated to helping you unlock your full potential.
+            </p>
           </div>
 
           <div class="instructorCard pd-15 mr-15">
-          <img src="../Media/book.png" class="cardImg">
-          <h3 class="fw-normal mr-t-10 mr-b-10">Book Library</h3>
-          <p class="pd-10">Knowledge knows no bounds,
-           and our digital bookshelf is a testament to that.
-           Embark on an intellectual journey through our extensive collection.</p>
-         </div>
-         </div>
+            <img src="../Media/web.png" class="cardImg" />
+            <h3 class="fw-normal mr-t-10 mr-b-10">Online Classes</h3>
+            <p class="pd-10">
+              Our platform offers a spectrum of courses that cater to varied
+              interests, making learning engaging, enjoyable, and tailored to
+              your passions.
+            </p>
+          </div>
+
+          <div class="instructorCard pd-15 mr-15">
+            <img src="../Media/home2.png" class="cardImg" />
+            <h3 class="fw-normal mr-t-10 mr-b-10">Home Projects</h3>
+            <p class="pd-10">
+              Master your skills by taking on practical home projects that
+              mirror the challenges you'll encounter in the real world.
+            </p>
+          </div>
+
+          <div class="instructorCard pd-15 mr-15">
+            <img src="../Media/book.png" class="cardImg" />
+            <h3 class="fw-normal mr-t-10 mr-b-10">Book Library</h3>
+            <p class="pd-10">
+              Knowledge knows no bounds, and our digital bookshelf is a
+              testament to that. Embark on an intellectual journey through our
+              extensive collection.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="sectionWrapper mr-15">
         <div class="courseCategories pd-15 mr-t-10">
-          <img src="../Media/elearning.png" class="courseImg mr-r-20">
-          <h2 class="fw-semi-bold">Trending Courses</h2>   
+          <img src="../Media/elearning.png" class="courseImg mr-r-20" />
+          <h2 class="fw-semi-bold">Trending Courses</h2>
         </div>
 
-        <div class="webDevWrapper" >
+        <div class="webDevWrapper">
           <div class="webDevHeading">
-          <img src="../Media/Web Dveloper image.jpg" class="cardImg webDevHeadingImg ">
-          <h3 class="fw-semi-bold pd-15">Web Development</h3>
+            <img
+              src="../Media/Web Dveloper image.jpg"
+              class="cardImg webDevHeadingImg"
+            />
+            <h3 class="fw-semi-bold pd-15">Web Development</h3>
           </div>
           <div class="webDevCardCollection">
-          <div class="pd-15 webDevCard">
-            <img src="../Media/intro-to-html.jpg" class="webDevImgOne mr-b-5">
-            <h4 class="fw-normal">Introduction to HTML & CSS</h4>
-            <p class="authorName mr-b-5">Max Paxton</p>
-            <button class="primaryButton">View Details</button>
+            <div class="pd-15 webDevCard">
+              <img
+                src="../Media/intro-to-html.jpg"
+                class="webDevImgOne mr-b-5"
+              />
+              <h4 class="fw-normal">Introduction to HTML & CSS</h4>
+              <p class="authorName mr-b-5">Max Paxton</p>
+              <button class="primaryButton">View Details</button>
+            </div>
+
+            <div class="pd-15 webDevCard">
+              <img
+                src="../Media/learn-javascript-fundamentals.jpg"
+                class="webDevImgOne mr-b-5"
+              />
+              <h4 class="fw-normal">Javascript Fundamentals</h4>
+              <p class="authorName mr-b-5">Jill Parker</p>
+              <button class="primaryButton">View Details</button>
+            </div>
+
+            <div class="pd-15 webDevCard">
+              <img
+                src="../Media/full-stack-web-developer.png"
+                class="webDevImg2 mr-b-5"
+              />
+              <h4 class="fw-normal">Full Stack Web Development</h4>
+              <p class="authorName mr-b-5">Phillip Mathew</p>
+              <button class="primaryButton">View Details</button>
+            </div>
+
+            <div class="pd-15 webDevCard">
+              <img
+                src="../Media/Responsive-Web-Design-1-1170x700.jpg"
+                class="webDevImg2 mr-b-5"
+              />
+              <h4 class="fw-normal">Responsive Web Design</h4>
+              <p class="authorName mr-b-5">Harry Wilson</p>
+              <button class="primaryButton">View Details</button>
+            </div>
           </div>
 
-          <div class="pd-15 webDevCard">
-            <img src="../Media/learn-javascript-fundamentals.jpg" class="webDevImgOne mr-b-5">
-            <h4 class="fw-normal">Javascript Fundamentals</h4>
-            <p class="authorName mr-b-5">Jill Parker</p>
-            <button class="primaryButton">View Details</button>
+          <div class="webDevWrapper">
+            <div class="webDevHeading">
+              <img src="../Media/digital-campaign.png" class="cardImg" />
+              <h3 class="fw-semi-bold pd-15">Digital Marketing</h3>
+            </div>
+            <div class="webDevCardCollection">
+              <div class="pd-15 webDevCard">
+                <img
+                  src="../Media/4-24-23socialmedia.jpg"
+                  class="webDevImg2 mr-b-5"
+                />
+                <h4 class="fw-normal">Social Media Marketing</h4>
+                <p class="authorName mr-b-5">Max Paxton</p>
+                <button class="primaryButton">View Details</button>
+              </div>
+
+              <div class="pd-15 webDevCard">
+                <img
+                  src="../Media/3.27.23-SEO_jargon.png"
+                  class="webDevImg2 mr-b-5"
+                />
+                <h4 class="fw-normal">Search Engine Optimization</h4>
+                <p class="authorName mr-b-5">Jill Parker</p>
+                <button class="primaryButton">View Details</button>
+              </div>
+
+              <div class="pd-15 webDevCard">
+                <img
+                  src="../Media/content-marketing-plan.jpg"
+                  class="webDevImg2 mr-b-5"
+                />
+                <h4 class="fw-normal">Content Marketing Strategy</h4>
+                <p class="authorName mr-b-5">Phillip Mathew</p>
+                <button class="primaryButton">View Details</button>
+              </div>
+
+              <div class="pd-15 webDevCard">
+                <img
+                  src="../Media/email marketing 2.jpeg"
+                  class="webDevImg2 mr-b-5"
+                />
+                <h4 class="fw-normal">Email Marketing Essentials</h4>
+                <p class="authorName mr-b-5">Harry Wilson</p>
+                <button class="primaryButton">View Details</button>
+              </div>
+            </div>
           </div>
-
-          <div class="pd-15 webDevCard">
-            <img src="../Media/full-stack-web-developer.png" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Full Stack Web Development</h4>
-            <p class="authorName mr-b-5">Phillip Mathew</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-
-          <div class="pd-15 webDevCard">
-            <img src="../Media/Responsive-Web-Design-1-1170x700.jpg" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Responsive Web Design</h4>
-            <p class="authorName mr-b-5">Harry Wilson</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-        </div>
-
-
-        <div class="webDevWrapper" >
-          <div class="webDevHeading ">
-          <img src="../Media/digital-campaign.png" class="cardImg">
-          <h3 class="fw-semi-bold pd-15">Digital Marketing</h3>
-          </div>
-          <div class="webDevCardCollection">
-          <div class="pd-15 webDevCard">
-            <img src="../Media/4-24-23socialmedia.jpg" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Social Media Marketing</h4>
-            <p class="authorName mr-b-5">Max Paxton</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-
-          <div class="pd-15 webDevCard">
-            <img src="../Media/3.27.23-SEO_jargon.png" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Search Engine Optimization</h4>
-            <p class="authorName mr-b-5">Jill Parker</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-
-          <div class="pd-15 webDevCard">
-            <img src="../Media/content-marketing-plan.jpg" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Content Marketing Strategy</h4>
-            <p class="authorName mr-b-5">Phillip Mathew</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-
-          <div class="pd-15 webDevCard">
-            <img src="../Media/email marketing 2.jpeg" class="webDevImg2 mr-b-5">
-            <h4 class="fw-normal">Email Marketing Essentials</h4>
-            <p class="authorName mr-b-5">Harry Wilson</p>
-            <button class="primaryButton">View Details</button>
-          </div>
-        </div>
-      
-
-
-
         </div>
       </div>
-        
     </div>
     <script src="./../javaScript/index.js"></script>
-</body>
+    <script src="./../javaScript/homepage.js"></script>
+  </body>
 </html>
