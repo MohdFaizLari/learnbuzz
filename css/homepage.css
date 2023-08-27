@@ -62,7 +62,6 @@ a:hover{
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
-    margin-bottom: 60px;
 }
 .instructorCard{
     display: flex;
@@ -82,43 +81,38 @@ a:hover{
     transform: translate(0px,-5px);/* Move the card slightly up on hover */
 }
 .cardImg{
-    width:80px;
+    width:30px;
 }
 .instructorCard p{
     text-align: center;
 }
+.sectionWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
 .courseCategories{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding:30px;
-    background-color: white;
-    transition: background-color 0.5s,color 0.5s,transform 0.5s ease;
+    /* background-color: white; */
 }
-.courseCategories:hover{
-    background-color: #5F9EA0;
-    color:white;
-    transform: translate(0px,-5px);
-}
+
 .courseImg{
-    width:100px;
+    width:50px;
 }
 .webDevWraper{
     display: flex;
     flex-direction: column;
+
 }
 .webDevHeading{
     display: flex;
+    /* justify-content: center; */
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: white;
-    transition: background-color 0.5s,color 0.5s,transform 0.5s ease;
-}
-.webDevHeading:hover{
-    background-color: #5F9EA0;
-    color:white;
-    transform: translate(0px,-5px);
+    padding-left: 30px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+    0 4px 12px rgba(0, 0, 0, .08); */
 }
 .webDevHeadingImg{
     border-radius: 40px;
@@ -126,7 +120,7 @@ a:hover{
 .webDevCardCollection{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .webDevCard{
     display: flex;
@@ -135,7 +129,6 @@ a:hover{
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
     0 4px 12px rgba(0, 0, 0, .08);
-    width:17.5rem ;
 }
 .webDevImgOne{
    width:220px;
