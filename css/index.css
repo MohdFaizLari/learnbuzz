@@ -320,6 +320,16 @@ h6 {
         0 4px 12px rgba(0, 0, 0, .08);
 }
 
+.websiteLogoDiv {
+    width: 180px;
+    height: 65px;
+}
+
+.websiteLogo{
+    width: 100%;
+    height: 100%;
+}
+
 .searchForm {
     display: flex;
     justify-content: center;
