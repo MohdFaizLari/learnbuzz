@@ -32,11 +32,35 @@ body {
     align-items: center;
     width:31.25rem;
 }
+
 .navStyling{
     width:18.75rem;
     display: flex;
     justify-content: space-around;
 }
+
+.hdrBtnContainer {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    
+}
+
+.profilePicture {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 25px;
+}
+.shoppingCartImage {
+    border: none; 
+    background-color: white;
+}
+
 a{
     text-decoration: none;
     color:black;
