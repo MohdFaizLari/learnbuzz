@@ -8,38 +8,28 @@
 }
 
 body {
-  background: aliceblue;
+  background-image: url("./../Media/workspace-1280538_1280.jpg");
+  position: relative;
+}
+
+.textStyling {
+  color: white;
+}
+
+.loginTextStyling {
+  color: #1338BE;
 }
 
 .signUpPageWrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-}
-
-.formIntro {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: none;
-}
-
-.formFooterWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
-  margin: 0%;
-  min-height: 83.3vh;
-  max-height: fit-content;
+  position: relative;
 }
 
 .formContainer {
@@ -47,146 +37,52 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  width: 100%;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.formAlignment {
+.formSection {
   display: flex;
   flex-direction: column;
   width: 18rem;
   max-width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
-  background-color: white;
-  border-radius: 10px;
+}
+
+.formIntro {
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+}
+
+/* input {
+  background: #333;
+} */
+
+.websiteLogoDiv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.websiteLogo1 {
+  width: 200px;
+  height: 75px;
 }
 
 .formStyling {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.aboutUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 55%;
-  font-size: 0.85rem;
-}
-
-.footerCopyRight {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-
-}
-
-.hoveringStyleSignUp:hover {
-  cursor: pointer;
-}
-
-.footerStylingSignUp {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  width: 100%;
-  align-items: center;
-}
-
-.wrapper .icon {
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 10px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
-  text-decoration: none;
-}
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background-color: #de463b;
-  color: #ffffff;
-}
-
-.copyRightSec {
-  font-size: 0.85rem;
-
 }
