@@ -62,9 +62,10 @@ body {
   font-size: x-large;
 }
 
-/* input {
-  background: #333;
-} */
+input {
+  /* background: #333; */
+  outline: none;
+}
 
 .websiteLogoDiv1 {
   display: flex;
