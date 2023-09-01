@@ -3,5 +3,8 @@ let loginButtonFunction = (e) => {
 };
 
 let signUpButtonFunction = (e) => {
-    window.location = "./../html/signUp.html";
-  };
+  window.location = "./../html/signUp.html";
+};
+
+// let homepageRedirect = (e) => {};
+

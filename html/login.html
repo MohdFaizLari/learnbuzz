@@ -24,13 +24,7 @@
           <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
         </div>
         <div class="hdrBtnContainer">
-          <button
-            class="tertiaryButton"
-            id="loginButton"
-            onclick="loginButtonFunction()"
-          >
-            Log In
-          </button>
+          <button class="tertiaryButton" id="loginButton">Log In</button>
           <button
             class="primaryButton"
             id="signUpButton"
@@ -43,7 +37,7 @@
       <div class="formFooterWrapper">
         <div class="formContainer pd-15 mr-t-10">
           <div class="fw-bold mr-b-10 formHeading">Log in</div>
-          <form class="formAlignment pd-15">
+          <form class="formAlignment pd-15" id="loginForm">
             <div class="formStyling">
               <label for="email"> Email</label>
               <input
@@ -62,14 +56,26 @@
               />
             </div>
             <div class="formLoginButton formStyling">
-              <button class="primaryButton" type="submit">Login</button>
+              <button
+                class="primaryButton"
+                type="submit"
+                onclick="homepageRedirect()"
+              >
+                Login
+              </button>
+              <!-- <button
+                class="primaryButton"
+                id="signUpButton"
+                onclick="signUpButtonFunction()"
+              >
+                Sign Up
+              </button> -->
             </div>
             <div class="forgotPassword mr-t-20">
               or
               <a href="./../html/user-forgot-password.html">Forgot Password</a>
             </div>
           </form>
-
           <div class="mr-t-5">
             Don't have an account? <a href="./../html/signup.html">Signup</a>
           </div>
@@ -120,6 +126,7 @@
         </footer>
       </div>
     </div>
+    <script src="./../javaScript/login.js"></script>
     <script src="./../javaScript/index.js"></script>
   </body>
 </html>
