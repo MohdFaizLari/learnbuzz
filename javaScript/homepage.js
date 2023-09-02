@@ -15,13 +15,14 @@ let homepageRedirect = () => {
 
 let profilePictureButton = () => {
   console.log("hi");
-  let profilePictureDiv = document.getElementById("test1");
-  let pPictureDropdown = document.createElement("div");
+  // let profilePictureDiv = document.getElementById("test1");
+  // let pPictureDropdown = document.createElement("div");
   // pPictureDropdown.classList.add("test2");
-  pPictureDropdown.style.width = "300px";
-  pPictureDropdown.style.height = "150px";
-  pPictureDropdown.style.border = "1px solid black";
+  // pPictureDropdown.style.width = "300px";
+  // pPictureDropdown.style.height = "150px";
+  // pPictureDropdown.style.border = "1px solid black";
   // pPictureDropdown.innerText("Hi");
-  profilePictureDiv.appendChild(pPictureDropdown);
+  // profilePictureDiv.appendChild(pPictureDropdown);
   // let testInput = document.createElement("input");
+  window.location = "./../html/user-profile.html";
 };
