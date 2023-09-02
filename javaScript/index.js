@@ -6,5 +6,7 @@ let signUpButtonFunction = (e) => {
   window.location = "./../html/signUp.html";
 };
 
-// let homepageRedirect = (e) => {};
+let landingPageRedirect = (e) => {
+  window.location = "./../html/landing.html";
+};
 

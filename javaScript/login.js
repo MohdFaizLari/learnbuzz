@@ -1,12 +1,8 @@
-if (document.getElementById("loginForm")) {
-  let loginForm = document.getElementById("loginForm");
+if (document.getElementById("signupForm")) {
+  let signUp = document.getElementById("signupForm");
   // Attach a submit event listener to the login form
-  loginForm.addEventListener("submit", function (event) {
+  signUp.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
-    homepageRedirect(); // Call the login function
+    window.location = "./../html/homepage.html";
   });
-}
-
-function homepageRedirect(e) {
-  window.location = "./../html/homepage.html";
 }
