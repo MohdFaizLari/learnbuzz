@@ -39,7 +39,13 @@ body {
     
 }
 
+.shoppingCartImage {
+    border: none; 
+    background-color: white;
+}
+
 .profilePicture {
+    position: relative;
     width: 35px;
     height: 35px;
     display: flex;
@@ -48,10 +54,23 @@ body {
     background-color: beige;
     border-radius: 25px;
 }
-.shoppingCartImage {
-    border: none; 
-    background-color: white;
+
+/* #test1 {
+    display: inline-block;
+} */
+
+.test2 {
+    position: absolute;
+    right: 50px;
+    top: 150px;
 }
+.profileButton {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
 
 a{
     text-decoration: none;
@@ -68,6 +87,7 @@ a:hover{
     height: 500px;
     overflow: hidden;
     position: relative;
+    z-index: 10;
 }
 .videoContainer video{
     width:100%;

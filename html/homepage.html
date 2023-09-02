@@ -40,17 +40,31 @@
               <a class="fw-semi-bold">Contact</a>
             </div>
             <div class="shoppingCart">
-              <button class="shoppingCartImage" > 
-                <img src="./../Media/cart-icon.webp" alt="" width="35px" height="35px"></button>
+              <button class="shoppingCartImage">
+                <img
+                  src="./../Media/cart-icon.webp"
+                  alt=""
+                  width="35px"
+                  height="35px"
+                />
+              </button>
             </div>
             <div class="hdrBtnContainer pd-5">
-              <div class="profilePicture">U</div>
+              <div class="profilePicture">
+                <button
+                  class="profileButton"
+                  id="profilePictureButton"
+                  onclick="profilePictureButton()"
+                >
+                  U
+                </button>
+              </div>
             </div>
           </div>
         </header>
       </div>
 
-      <div class="videoContainer">
+      <div class="videoContainer" id="test1">
         <video controls autoplay muted>
           <source
             src="../Media/production_id_4498849 (2160p).mp4"
