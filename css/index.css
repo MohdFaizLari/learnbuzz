@@ -315,7 +315,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* background-color: rgba(0, 0, 0, .75); */
+    background-color:white;
 }
 
 .loginSignupHeader {
@@ -324,7 +324,6 @@ h6 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
 }
