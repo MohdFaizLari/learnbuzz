@@ -2,6 +2,14 @@ let homepageRedirect = () => {
   window.location = "./../html/homepage.html";
 };
 
+let test = null;
+let pageLoadSetup = (() => {
+  // function body
+  test = JSON.parse(localStorage.getItem("signUpValue"));
+})();
+
+console.log(test);
+
 // if ( window.history.replaceState ) {
 //   window.history.replaceState( null, null, window.location.href );
 // }

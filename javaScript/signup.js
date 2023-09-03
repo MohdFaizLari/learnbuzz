@@ -1,25 +1,21 @@
-function test() {
-  let testName = document.getElementById("fullName");
-  console.log(testName);
-}
-// let userDataStore = () => {
-//   if (document.getElementById("fullName")) {
-//     let fullName = document.getElementById("fullName");
-
-//     let innerText = fullName.innerText;
-//     console.log(e);
+// function test(e) {
+//   let signUp = document.forms.signupForm.fullName.value;
+//   console.log(signUp);
+//   if (!fullName.length) {
+//     return false;
 //   }
-// let userName = document.getElementById("username").innerText;
-// let userEmail = document.getElementById("email").innerText;
-// let userPassword = document.getElementById("pwd").innerText;
-// };
-// userDataStore();
+//   window.location.replace("./../html/homepage.html");
+//   // return true;
+// }
 
 if (document.getElementById("signupForm")) {
   let signUp = document.getElementById("signupForm");
   // Attach a submit event listener to the login form
   signUp.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
+    let signUp = document.forms.signupForm.fullName.value;
+    console.log(signUp);
+    localStorage.setItem("signUpValue", JSON.stringify(signUp));
     window.location = "./../html/homepage.html";
   });
 }
