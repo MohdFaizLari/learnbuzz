@@ -9,4 +9,3 @@ let signUpButtonFunction = (e) => {
 let landingPageRedirect = (e) => {
   window.location = "./../html/landing.html";
 };
-
