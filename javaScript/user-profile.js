@@ -20,9 +20,16 @@ let profilePageLoadSetup = (() => {
     userNameDiv.innerText = userData.username;
     userNameDiv.style.fontSize = "large";
 
+    let userGreeting = document.getElementById("userGreeting");
+    userGreeting.innerText =
+      "Hey " + fullNameDiv.innerText + "," + " Have a nice Day!";
+
+    let userDescription = document.getElementById("userDescription");
+    userDescription.innerText = fullNameDiv.innerText;
+    
     fullName.appendChild(fullNameDiv);
     userName.appendChild(userNameDiv);
-    emailAddress.appendChild(userEmailDiv)
+    emailAddress.appendChild(userEmailDiv);
 
     // console.log(userFullName.innerText);
   }
