@@ -1,5 +1,5 @@
 body {
-    background-color: #E9EAED;
+    background-color: white;
 }
 
 .contentWrapper {
@@ -13,7 +13,9 @@ body {
 }
 
 .navBar {
-    background-color: #011722;
+    background-color: #898b90(243, 238, 238, 0.75);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+        0 4px 12px rgba(0, 0, 0, .08);
     width: 20%;
     height: 87.5vh;
 }
@@ -39,19 +41,38 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: rgb(192, 135, 135);
+    box-shadow: 0 2px 4px rgba(129, 126, 126, 0.08);
     border-radius: 10px;
     margin-top: 40px;
 }
 
 .userDetailsSection {
     width: 100%;
-    border: 1px solid black;
     display: flex;
-    /* justify-content: space-around; */
+}
+
+.firstSection {
+    width: 50%;
+    font-size: smaller;
+}
+
+.profilePicture {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 50%;
 }
 
 .secondSection {
-    display: inline-block;
     width: 50%;
+    font-size: smaller;
+}
+
+.thirdSection {
+    width: 50%;
+    font-size: smaller;
 }

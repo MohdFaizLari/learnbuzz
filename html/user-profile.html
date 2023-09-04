@@ -32,39 +32,33 @@
             />
           </button>
         </div>
-        <!-- <div class="hdrBtnContainer">
-          <button
-            class="tertiaryButton"
-            id="loginButton"
-            onclick="loginButtonFunction()"
-          >
-            Log In
+        <div class="hdrBtnContainer">
+          <button class="primaryButton" onclick="loginButtonFunction()">
+            Signout
           </button>
-          <button
-            class="primaryButton"
-            id="signUpButton"
-            onclick="signUpButtonFunction()"
-          >
-            Sign Up
-          </button>
-        </div> -->
+        </div>
       </header>
       <div class="contentWrapper">
         <div class="navBar"></div>
         <div class="mainContentWrapper">
           <div class="headerSummary"><h2 class="fw-normal">Profile</h2></div>
-          <div class="mainContent pd-15">
-            <div class="userDetailsSection mr-5" id="userDetailsFirstRow">
-              <div class="firstSection"></div>
-              <div class="firstSection"></div>
-              <div class="firstSection"></div>
+          <div class="mainContent pd-20">
+            <div class="userDetailsSection mr-5 pd-10" id="userDetailsFirstRow">
+              <div class="firstSection" id="imageDiv">
+                <p class="profilePicture">User</p>
+                <p class="mr-t-10">Hello User!</p>
+              </div>
+              <div class="firstSection" id="usernameDiv"></div>
             </div>
-            <div class="userDetailsSection mr-5 pd-5" id="userDetailsSecondRow">
+            <div
+              class="userDetailsSection mr-5 pd-10"
+              id="userDetailsSecondRow"
+            >
               <div class="secondSection" id="fullname">Full Name</div>
               <div class="secondSection" id="username">User Name</div>
             </div>
-            <div class="userDetailsSection mr-5" id="userDetailsThirdRow">
-              <div class="thirdSection"></div>
+            <div class="userDetailsSection mr-5 pd-10" id="userDetailsThirdRow">
+              <div class="thirdSection" id="email">Email</div>
               <div class="thirdSection"></div>
             </div>
             <div class="userDetailsSection mr-5" id="userDetailsFourthRow">
