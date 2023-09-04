@@ -31,17 +31,21 @@ body {
     justify-content: space-around;
 }
 
+.navTextStyling {
+    color: white;
+}
+
 .hdrBtnContainer {
     display: flex;
-    justify-content: flex-end;
-    border: 1px solid black;
+    justify-content: space-between;
+    /* border: 1px solid black; */
     border-radius: 5px;
     
 }
 
 .shoppingCartImage {
     border: none; 
-    background-color: white;
+    background-color: transparent;
 }
 
 .profilePicture {
