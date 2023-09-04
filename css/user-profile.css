@@ -46,6 +46,12 @@ body {
 
 .userDetailsSection {
     width: 100%;
-    height: 50px;
     border: 1px solid black;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.secondSection {
+    display: inline-block;
+    width: 50%;
 }
