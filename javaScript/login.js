@@ -21,19 +21,33 @@ if (document.getElementById("loginform")) {
       let formData = test5[i];
       let usersEmail = formData.email;
       let usersPassword = formData.password;
-      if (usersEmail === userLoginEmail && usersPassword === userLoginPassword) {
+      if (
+        usersEmail === userLoginEmail &&
+        usersPassword === userLoginPassword
+      ) {
         window.location = "./../html/homepage.html";
       }
-      if (usersEmail !== userLoginEmail || usersPassword !== userLoginPassword) {
-        let errorMessage = document.createElement('div');
+      if (
+        usersEmail !== userLoginEmail ||
+        usersPassword !== userLoginPassword
+      ) {
+        let errorMessage = document.createElement("div");
+        errorMessage.setAttribute("id", "errorMessageDiv");
         errorMessage.innerText = "Please check your email and password";
         errorMessage.style.width = "100%";
         errorMessage.style.color = "Black";
         errorMessage.style.backgroundColor = "#fcbca0";
         errorMessage.style.marginTop = "10px";
         errorMessage.style.padding = "5px";
-        let formContainer1 = document.getElementById('loginform');
-        formContainer1.appendChild(errorMessage);
+
+        if (!document.getElementById("errorMessageDiv")) {
+          let formContainer1 = document.getElementById("loginform");
+          formContainer1.appendChild(errorMessage);
+        }
+
+        if (document.getElementById("errorMessageDiv")) {
+          return;
+        }
       }
     }
     // localStorage.setItem("userLoginData", JSON.stringify(email));
