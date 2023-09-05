@@ -3,7 +3,10 @@ let inputData = [
     id: 1,
     courseCategory: "Web Development",
     course1: "Introduction to HTML and CSS",
+    course1Link:
+    "./../Media/./video/Css/CSS_Tutorial__Inline%2C_Internal___External_CSS_ #2.mp4",
     course2: "JavaScript Fundamentals",
+    course2Link: "../Media/production_id_4498849 (2160p).mp4",
     course3: "Full-Stack Web Development",
     course4: "Responsive Web Design",
     price: 499,
@@ -42,11 +45,20 @@ let inputData = [
 
 let coursesPageLoadSetup = (() => {
   let sideBarInnerContent = document.getElementById("sideBarContent");
-  for (let i = 0; i < inputData.length; i++) 
-  {
+  for (let i = 0; i < inputData.length; i++) {
     let inputDataObject = inputData[i];
     let sideBarCategories = document.createElement("div");
     sideBarCategories.innerText = inputDataObject.courseCategory;
     sideBarInnerContent.appendChild(sideBarCategories);
   }
+
+  let mainContentContainer = document.getElementById("mainContentContainer");
+  let videosContainer = document.createElement("video");
+  videosContainer.setAttribute(
+    "src",
+    // "../Media/production_id_4498849 (2160p).mp4"
+    inputData[0].course2Link
+  );
+  videosContainer.setAttribute("type", "video/mp4");
+  mainContentContainer.appendChild(videosContainer);
 })();
