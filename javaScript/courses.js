@@ -48,6 +48,5 @@ let coursesPageLoadSetup = (() => {
     let sideBarCategories = document.createElement("div");
     sideBarCategories.innerText = inputDataObject.courseCategory;
     sideBarInnerContent.appendChild(sideBarCategories);
-
   }
 })();
