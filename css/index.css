@@ -89,8 +89,8 @@ p {
 .tertiaryButton {
     padding: 4px 0px;
     font-size: 14px;
-    /* color: #1338BE; */
-    color: white;
+    color: #1338BE;
+    /* color: white; */
     background-color: inherit;
     cursor: pointer;
     box-sizing: border-box;
@@ -323,10 +323,11 @@ h6 {
     align-items: center;
     width: 100%;
     background-color: white;
-    /* background-color: rgba(243, 238, 238, 0.75); */
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
+    position: fixed;
+    top:0px;
+    z-index:20;
 }
 
 .loginSignupHeader {

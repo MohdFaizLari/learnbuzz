@@ -14,3 +14,6 @@ let profilePictureButton = () => {
   window.location = "./../html/user-profile.html";
 };
 
+let coursesPageRedirect = () => {
+  window.location = "./../html/courses.html";
+};
