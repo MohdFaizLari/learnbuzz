@@ -57,5 +57,9 @@ a:hover{
     width: 20%;
     min-height: 50vh;
     background-color: #eeeff3;
-    color: aliceblue; 
+    color: black; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
