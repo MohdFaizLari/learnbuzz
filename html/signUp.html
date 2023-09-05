@@ -19,8 +19,8 @@
   </head>
   <body class="clearFix">
     <div class="signUpPageWrapper">
-      <header class="loginSignupHeader pd-15">
-        <div class="headerLogo">
+      <header class="loginSignupHeader pd-10">
+        <div class="websiteLogoDiv">
           <button class="websiteLogoButton" onclick="landingPageRedirect()">
             <img
               src="./../Media/Learn__1_-removebg-preview.png"
@@ -30,13 +30,18 @@
         </div>
       </header>
       <div class="formContainer">
-        <form method="post" class="formSection pd-10" id="signupForm">
+        <form
+          method="post"
+          class="formSection pd-10"
+          id="signupForm"
+          name="signupForm"
+        >
           <div class="formIntro fw-normal mr-b-10 textStyling">Sign up</div>
           <div class="formStyling textStyling">
-            <label for="fullName">Full Name</label>
+            <label for="fullname">Full Name</label>
             <input
-              id="fullName"
-              name="fullName"
+              id="fullname"
+              name="fullname"
               type="text"
               placeholder="Enter Your Full Name"
               class="pd-5 mr-b-15 mr-t-5"
@@ -73,14 +78,18 @@
               autocomplete="off"
               required
             />
-          </div>
-          <div class="formStyling">
-            <button class="primaryButton" type="submit">Sign Up</button>
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Signup"
+              class="secondaryButton"
+            />
           </div>
         </form>
         <div class="textStyling mr-t-5">
           Already an account?
-          <a href="./../html/login.html" class="loginTextStyling">Login</a>
+          <a href="./../html/login.html" class="signupTextStyling">Login</a>
         </div>
       </div>
     </div>
