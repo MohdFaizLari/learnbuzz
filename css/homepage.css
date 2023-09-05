@@ -82,7 +82,8 @@ a:hover{
 .videoContainer{
     display: flex;
     justify-content: center;
-    width: 79rem;
+    width: 100%;
+    min-width: 78rem;
     height: 500px;
     overflow: hidden;
     position: relative;

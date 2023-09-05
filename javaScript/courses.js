@@ -3,8 +3,7 @@ let inputData = [
     id: 1,
     courseCategory: "Web Development",
     course1: "Introduction to HTML and CSS",
-    course1Link:
-    "./../video/./Css/Tutorial__Introduction.mp4",
+    course1Link: "./../video/./Css/Tutorial__Introduction.mp4",
     course2: "JavaScript Fundamentals",
     course2Link: "../Media/production_id_4498849 (2160p).mp4",
     course3: "Full-Stack Web Development",
@@ -53,12 +52,19 @@ let coursesPageLoadSetup = (() => {
   }
 
   let mainContentContainer = document.getElementById("mainContentContainer");
+  let videoscontainerDiv = document.createElement("div");
+  videoscontainerDiv.classList.add("videoscontainerDiv");
+
   let videosContainer = document.createElement("video");
+  videosContainer.style.width = "100%";
+  videosContainer.style.height = "100%";
   videosContainer.setAttribute(
     "src",
     // "../Media/production_id_4498849 (2160p).mp4"
     inputData[0].course1Link
   );
   videosContainer.setAttribute("type", "video/mp4");
-  mainContentContainer.appendChild(videosContainer);
+
+  videoscontainerDiv.appendChild(videosContainer);
+  mainContentContainer.appendChild(videoscontainerDiv);
 })();

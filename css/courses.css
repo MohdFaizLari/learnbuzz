@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -8,15 +8,16 @@ body{
     flex-shrink: 0;
     flex-basis: auto;
 }
-.headerMiddleSection{
+
+.headerMiddleSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:31.25rem;
+    width: 31.25rem;
 }
 
-.navStyling{
-    width:18.75rem;
+.navStyling {
+    width: 18.75rem;
     display: flex;
     justify-content: space-around;
 }
@@ -25,27 +26,29 @@ body{
     display: flex;
     justify-content: space-evenly;
     border-radius: 5px;
-    
+
 }
 
 .shoppingCartImage {
-    border: none; 
+    border: none;
     background-color: transparent;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-a:hover{
-    color:#1338BE;
-    cursor:pointer;
+
+a:hover {
+    color: #1338BE;
+    cursor: pointer;
 }
 
 .mainContentWrapper {
     margin-top: 76px;
     display: flex;
-    flex-direction: column;
-    min-height: 45  vh;
+    flex-direction: row;
+    min-height: 45 vh;
     width: 100%;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -57,9 +60,23 @@ a:hover{
     width: 20%;
     min-height: 50vh;
     background-color: #eeeff3;
-    color: black; 
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    width: 80%;
+}
+
+.videoscontainerDiv {
+    width: 250px;
+    height: 250px;
 }
