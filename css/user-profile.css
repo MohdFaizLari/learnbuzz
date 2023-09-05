@@ -70,12 +70,15 @@ body {
 .profilePicture {
     width: 70px;
     height: 70px;
-    display: flex;
+    background-color: beige;
+    display: inline-flex;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
     justify-content: center;
     align-items: center;
-    background-color: beige;
-    color: black;
-    border-radius: 50%;
 }
 #userDescription {
     text-align: center;

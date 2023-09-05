@@ -31,14 +31,9 @@ body {
     justify-content: space-around;
 }
 
-.navTextStyling {
-    /* color: white; */
-}
-
 .hdrBtnContainer {
     display: flex;
-    justify-content: space-between;
-    /* border: 1px solid black; */
+    justify-content: space-evenly;
     border-radius: 5px;
     
 }
@@ -49,19 +44,18 @@ body {
 }
 
 .profilePicture {
-    position: relative;
-    width: 35px;
+    display: inline-flex;
     height: 35px;
-    display: flex;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #9E9E9E;
+    float: right;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
     justify-content: center;
     align-items: center;
-    background-color: beige;
-    border-radius: 25px;
 }
-
-/* #test1 {
-    display: inline-block;
-} */
 
 .test2 {
     position: absolute;

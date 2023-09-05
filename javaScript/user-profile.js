@@ -29,11 +29,8 @@ let profilePageLoadSetup = (() => {
         "Hey " + userFullNameDiv.innerText + "," + " Good afternoon!";
     } else if (hoursTime >= 17 && hoursTime < 23.59) {
       userGreeting.innerText =
-        "Hey " + userFullNameDiv.innerText + "," + " Good eveining!";
+        "Hey " + userFullNameDiv.innerText + "," + " Good evening!";
     }
-
-    let userDescription = document.getElementById("userDescription");
-    userDescription.innerText = userFullNameDiv.innerText;
 
     fullName.appendChild(userFullNameDiv);
     userName.appendChild(userGivenNameDiv);
