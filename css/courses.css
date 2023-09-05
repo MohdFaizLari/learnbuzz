@@ -40,3 +40,22 @@ a:hover{
     color:#1338BE;
     cursor:pointer;
 }
+
+.mainContentWrapper {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    min-height: 45  vh;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.sideBar {
+    width: 20%;
+    min-height: 50vh;
+    background-color: #eeeff3;
+    color: aliceblue; 
+}
