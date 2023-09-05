@@ -18,6 +18,11 @@ let profilePageLoadSetup = (() => {
     userEmailDiv.innerText = userData.email;
     userEmailDiv.style.fontSize = "large";
 
+    let mobileNumber = document.getElementById("mobileNumber");
+    let mobileNumberDiv = document.createElement("div");
+    mobileNumberDiv.innerText = "Not provided yet.";
+    mobileNumberDiv.style.fontSize = "large";
+
     let date = new Date();
     let hoursTime = date.getHours();
     let userGreeting = document.getElementById("userGreeting");
@@ -35,6 +40,7 @@ let profilePageLoadSetup = (() => {
     fullName.appendChild(userFullNameDiv);
     userName.appendChild(userGivenNameDiv);
     emailAddress.appendChild(userEmailDiv);
+    mobileNumber.appendChild(mobileNumberDiv);
   }
 })();
 
