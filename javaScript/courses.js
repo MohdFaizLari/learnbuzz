@@ -4,7 +4,7 @@ let inputData = [
     courseCategory: "Web Development",
     course1: "Introduction to HTML and CSS",
     course1Link:
-    "./../Media/./video/Css/CSS_Tutorial__Inline%2C_Internal___External_CSS_ #2.mp4",
+    "./../video/./Css/Tutorial__Introduction.mp4",
     course2: "JavaScript Fundamentals",
     course2Link: "../Media/production_id_4498849 (2160p).mp4",
     course3: "Full-Stack Web Development",
@@ -57,7 +57,7 @@ let coursesPageLoadSetup = (() => {
   videosContainer.setAttribute(
     "src",
     // "../Media/production_id_4498849 (2160p).mp4"
-    inputData[0].course2Link
+    inputData[0].course1Link
   );
   videosContainer.setAttribute("type", "video/mp4");
   mainContentContainer.appendChild(videosContainer);
