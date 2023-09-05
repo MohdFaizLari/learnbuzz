@@ -15,6 +15,8 @@ body {
 .navBar {
     width: 20%;
     height: 87.5vh;
+    background-color: #011722;
+    color: aliceblue;
 }
 
 .navBarContent {
@@ -24,15 +26,14 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(250, 249, 249, 0.75);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
-        0 4px 12px rgba(0, 0, 0, .08);
 }
 
 .mainContentWrapper {
     position: relative;
     width: 80%;
 }
+
+
 
 .headerSummary {
     position: absolute;
@@ -45,9 +46,9 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
-    height: 90%;
+    height: 80%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -73,6 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: beige;
+    color: black;
     border-radius: 50%;
 }
 #userDescription {
@@ -80,13 +82,14 @@ body {
     width: fit-content;
 }
 
-.profilePicture1 {
+.navBarProfilePicture {
     width: 70px;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: beige;
+    color: black;
     border-radius: 50%;
 }
 
