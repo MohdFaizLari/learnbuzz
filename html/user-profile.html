@@ -37,14 +37,25 @@
       </header>
       <div class="contentWrapper">
         <div class="navBar">
-          <div class="navBarContent pd-10">
+          <div class="navBarContent pd-10" id="navBarContents">
             <div class="profilePicture mr-t-20">
-              <img
-                src="./../Media/itachiPassportSizeImg1.png"
-                width="100%"
-                height="100%"
-              />
+              <a href="#"
+                ><img
+                  id="defaultUserImage"
+                  src="./../Media/itachiPassportSizeImg1.png"
+                  width="100%"
+                  height="100%"
+                />
+              </a>
+              <div class="editPhoto" onclick="uploadImage()">
+                <img
+                  src="./../Media/Edit_icon-icons.com_71853.png"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
             </div>
+            <div id="editMessage"></div>
             <div><p class="mr-t-10" id="userGreeting">Hello User!</p></div>
           </div>
         </div>

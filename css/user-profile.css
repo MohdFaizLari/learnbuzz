@@ -68,6 +68,7 @@ body {
 }
 
 .profilePicture {
+    position: relative;
     width: 70px;
     height: 70px;
     background-color: beige;
@@ -80,6 +81,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.editPhoto {
+    position: absolute;
+    right: 0px;
+    bottom: 6px;
+    width: 30px;
+    height: 30px;
+}
+
 #userDescription {
     text-align: center;
     width: fit-content;

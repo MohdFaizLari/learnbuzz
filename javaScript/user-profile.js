@@ -37,3 +37,39 @@ let profilePageLoadSetup = (() => {
     emailAddress.appendChild(userEmailDiv);
   }
 })();
+
+let uploadImage = () => {
+  let imageSelection = document.createElement("input");
+  imageSelection.id = "storedImage";
+  imageSelection.type = "file";
+  imageSelection.name = "storedImage";
+  imageSelection.style.width = "100%";
+  imageSelection.style.marginTop = "10px";
+  imageSelection.style.marginLeft = "30px";
+  imageSelection.addEventListener("change", changeImage);
+  let editMessage = document.getElementById("editMessage");
+
+  if (!document.getElementById("storedImage")) {
+    editMessage.appendChild(imageSelection);
+  }
+};
+
+let changeImage = () => {
+  if (document.getElementById("storedImage")) {
+    let preview = document.getElementById("defaultUserImage");
+    var file = document.querySelector("input[type=file]").files[0];
+    var reader = new FileReader();
+    reader.onloadend = function () {
+      preview.src = reader.result;
+      console.log(preview.src);
+    };
+    if (file) {
+      reader.readAsDataURL(file); //reads the data as a URL
+      let chooseFileOption = document.getElementById("storedImage");
+      chooseFileOption.parentNode.removeChild(chooseFileOption);
+      //   console.log(reader);
+    } else {
+      preview.src = "";
+    }
+  }
+};
