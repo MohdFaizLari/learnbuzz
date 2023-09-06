@@ -60,10 +60,13 @@ let coursesPageLoadSetup = (() => {
   let videosContainer = document.createElement("video");
   videosContainer.style.width = "100%";
   videosContainer.style.height = "100%";
+  videosContainer.autoplay = 'disabled';
+  videosContainer.controls = 'true';
   videosContainer.setAttribute(
     "src",
     // "../Media/production_id_4498849 (2160p).mp4"
-    inputData[0].courses[1].course1Link
+    // inputData[0].courses[1].course1Link
+    "./../video/./Css/1._Introduction_to_HTML_(Hindi)(720p).mp4"
   );
   videosContainer.setAttribute("type", "video/mp4");
 
