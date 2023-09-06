@@ -1,24 +1,26 @@
 let inputData = [
   {
     id: 1,
+    coursePrice: 499,
     courseCategory: "Web Development",
-    course1: "Introduction to HTML and CSS",
-    course1Link: "./../video/./Css/Tutorial__Introduction.mp4",
-    course2: "JavaScript Fundamentals",
-    course2Link: "../Media/production_id_4498849 (2160p).mp4",
-    course3: "Full-Stack Web Development",
-    course4: "Responsive Web Design",
-    price: 499,
+    courses: [
+      { course1: "Introduction to HTML and CSS" },
+      { course1Link: "./../video/./Css/Tutorial__Introduction.mp4" },
+      { course2: "JavaScript Fundamentals" },
+      { course2Link: "../Media/production_id_4498849 (2160p).mp4" },
+      { course3: "Full-Stack Web Development" },
+      { course4: "Responsive Web Design" },
+    ],
   },
 
   {
     id: 2,
     courseCategory: "Digital Marketing",
+    coursePrice: 999,
     course1: "Social Media Marketing",
     course2: "Search Engine Optimization (SEO)",
     course3: "Content Marketing Strategy",
     course4: "Email Marketing Essentials",
-    price: 999,
   },
 
   {
