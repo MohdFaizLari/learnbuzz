@@ -63,7 +63,7 @@ let coursesPageLoadSetup = (() => {
   videosContainer.setAttribute(
     "src",
     // "../Media/production_id_4498849 (2160p).mp4"
-    inputData[0].course1Link
+    inputData[0].courses[1].course1Link
   );
   videosContainer.setAttribute("type", "video/mp4");
 
