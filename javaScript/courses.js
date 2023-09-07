@@ -1,16 +1,28 @@
 let inputData = [
   {
-    "id": 1,
-    "coursePrice": 499,
-    "courseCategory":
-    {
-        "Web-Development":
-        [
-          {"course1":"Introduction to HTML & CSS",  "courseVideo1":"./../video/./html/_Introduction_to_HTML_(Hindi)(480p).mp4"},
-          {"course2":"JavaScript Fundamentals",  "courseVideo2":"video\html\_Tags_and_Element_in_HTML_(Hindi)(480p).mp4"},
-          {"course3":"Full Stack Web Development",  "courseVideo3":"video\html\_HTML_Tag_in_HTML_(Hindi)(480p).mp4"},
-          {"course4":"Responsive We Design",  "courseVideo3":"video\html\_Head_Tag_in_HTML_(Hindi)(480p).mp4"}
-        ]    
+    id: 1,
+    coursePrice: 499,
+    courseCategory: "Web-Development",
+    courses: {
+      html: [
+        {
+          courseDescription: "Introduction to HTML & CSS",
+          videoLink:
+            "./../video/./html/1._Introduction_to_HTML_(Hindi)(480p).mp4",
+        },
+        {
+          courseDescription: "JavaScript Fundamentals",
+          videoLink: "videohtml_Tags_and_Element_in_HTML_(Hindi)(480p).mp4",
+        },
+        {
+          courseDescription: "Full Stack Web Development",
+          videoLink: "videohtml_HTML_Tag_in_HTML_(Hindi)(480p).mp4",
+        },
+        {
+          courseDescription: "Responsive We Design",
+          videoLink: "videohtml_Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        },
+      ],
     },
   },
 
@@ -61,14 +73,11 @@ let coursesPageLoadSetup = (() => {
   let videosContainer = document.createElement("video");
   videosContainer.style.width = "100%";
   videosContainer.style.height = "100%";
-  videosContainer.autoplay = 'disabled';
-  videosContainer.controls = 'true';
-  videosContainer.setAttribute(
-    "src",
-    // "../Media/production_id_4498849 (2160p).mp4"
-    // inputData[0].courses[1].course1Link
-    "./../video/./Css/1._Introduction_to_HTML_(Hindi)(720p).mp4"
-  );
+  videosContainer.autoplay = "disabled";
+  videosContainer.controls = "true";
+  let test = inputData[0].courses.html[0].videoLink;
+  console.log(test);
+  videosContainer.setAttribute("src",test );
   videosContainer.setAttribute("type", "video/mp4");
 
   videoscontainerDiv.appendChild(videosContainer);
