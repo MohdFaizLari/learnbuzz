@@ -75,3 +75,9 @@ a:hover {
     width: 250px;
     height: 250px;
 }
+
+.coursesContainerStyling {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
