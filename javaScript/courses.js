@@ -231,42 +231,6 @@ let test550 = () => {
         test551(coursesData, jsCourse, courseCat);
       }
     }
-
-    // let test1 = inputData[i].courses.css;
-    // // console.log(test1);
-    // for (let j = 0; j < test1.length; j++) {
-    //   let videoscontainerDiv = document.createElement("div");
-    //   videoscontainerDiv.classList.add("videoscontainerDiv");
-    //   let videosContainer = document.createElement("video");
-    //   videosContainer.style.width = "100%";
-    //   videosContainer.style.height = "100%";
-    //   // videosContainer.autoplay = "disabled";
-    //   videosContainer.controls = "true";
-    //   videosContainer.muted = "true";
-    //   let cssCourseLink = test1[j].videoLink;
-    //   videosContainer.setAttribute("src", cssCourseLink);
-    //   videosContainer.setAttribute("type", "video/mp4");
-    //   videoscontainerDiv.appendChild(videosContainer);
-    //   mainContentContainer.appendChild(videoscontainerDiv);
-    // }
-
-    // let test2 = inputData[i].courses.javascript;
-    // // console.log(test2);
-    // for (let j = 0; j < test2.length; j++) {
-    //   let videoscontainerDiv = document.createElement("div");
-    //   videoscontainerDiv.classList.add("videoscontainerDiv");
-    //   let videosContainer = document.createElement("video");
-    //   videosContainer.style.width = "100%";
-    //   videosContainer.style.height = "100%";
-    //   // videosContainer.autoplay = "disabled";
-    //   videosContainer.controls = "true";
-    //   videosContainer.muted = "true";
-    //   let jsCourseLink = test2[j].videoLink;
-    //   videosContainer.setAttribute("src", jsCourseLink);
-    //   videosContainer.setAttribute("type", "video/mp4");
-    //   videoscontainerDiv.appendChild(videosContainer);
-    //   mainContentContainer.appendChild(videoscontainerDiv);
-    // }
   }
 };
 
