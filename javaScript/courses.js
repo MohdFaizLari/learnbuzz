@@ -215,8 +215,7 @@ let inputData = [
 let coursesDataSorting = (e) => {
   for (let i = 0; i < inputData.length; i++) {
     let coursesData = inputData[i].courses;
-    let courseCat = e.target.innerText;
-
+  
     if ((e.target.innerText = "Web-Developement")) {
       let htmlCourse = coursesData.html;
       let cssCourse = coursesData.css;
@@ -285,11 +284,12 @@ let coursesPageLoadSetup = (() => {
   for (let i = 0; i < inputData.length; i++) {
     let inputDataObject = inputData[i];
     let courseCategories = inputDataObject.courseCategory;
-    let sideBarCategories = document.createElement("div");
+    var sideBarCategories = document.createElement("div");
     sideBarCategories.setAttribute("id", courseCategories);
     sideBarCategories.addEventListener("click", coursesDataSorting);
     sideBarCategories.innerText = inputDataObject.courseCategory;
     sideBarInnerContent.appendChild(sideBarCategories);
     console.log(courseCategories);
   }
+
 })();
