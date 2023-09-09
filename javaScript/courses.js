@@ -268,10 +268,10 @@ let fetchContent = (courses,id) => {
     videoscontainerDiv.classList.add("videoscontainerDiv");
     let videosContainer = document.createElement("video");
     videosContainer.style.width = "100%";
-    videosContainer.style.height = "100%";
+    videosContainer.style.height = "70%";
     // videosContainer.autoplay = "disabled";
-    videosContainer.controls = "true";
-    videosContainer.muted = "true";
+    videosContainer.controls = true;
+    videosContainer.muted = true;
     videosContainer.setAttribute("src", courseVideos);
     videosContainer.setAttribute("type", "video/mp4");
     videoscontainerDiv.appendChild(videosContainer);
