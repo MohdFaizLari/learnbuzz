@@ -1,6 +1,6 @@
 let inputData = [
   {
-    id: 1,
+    id: "webDevelopment",
     coursePrice: 499,
     courseCategory: "Web-Development",
     courses: {
@@ -56,7 +56,7 @@ let inputData = [
   },
 
   {
-    id: 2,
+    id: "digitalMarketing",
     coursePrice: 999,
     courseCategory: "Digital Marketing",
     courses: {
@@ -71,10 +71,10 @@ let inputData = [
           videoLink:
             "./../video/./html/2._Tags_and_Element_in_HTML_(Hindi)(480p).mp4",
         },
-        {
-          courseDescription: "Head Tag in HTML",
-          videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
-        },
+        // {
+        //   courseDescription: "Head Tag in HTML",
+        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        // },
       ],
       searchEngineOptimisation: [
         {
@@ -85,10 +85,10 @@ let inputData = [
           courseDescription: "Element Selector",
           videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
         },
-        {
-          courseDescription: "Way of Inserting CSS",
-          videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
-        },
+        // {
+        //   courseDescription: "Way of Inserting CSS",
+        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        // },
       ],
       contentMarketingStrategy: [
         {
@@ -108,7 +108,7 @@ let inputData = [
   },
 
   {
-    id: 3,
+    id: "dataScience",
     coursePrice: 1299,
     courseCategory: "Data Science",
     courses: {
@@ -160,7 +160,7 @@ let inputData = [
   },
 
   {
-    id: 4,
+    id: "graphicDesign",
     coursePrice: 1499,
     courseCategory: "Graphic Design",
     courses: {
@@ -212,55 +212,12 @@ let inputData = [
   },
 ];
 
-let coursesDataSorting = (e) => {
-  for (let i = 0; i < inputData.length; i++) {
-    let coursesData = inputData[i].courses;
-  
-    if ((e.target.innerText = "Web-Developement")) {
-      let htmlCourse = coursesData.html;
-      let cssCourse = coursesData.css;
-      let jsCourse = coursesData.javascript;
-      if (!document.getElementById("webDev")) {
-        if (htmlCourse !== null || "undefined") {
-          fetchContent(htmlCourse,"webDev");
-        }
-        if (cssCourse !== null || "undefined") {
-          fetchContent(cssCourse, "webDev");
-        }
-        if (jsCourse !== null || "undefined") {
-          fetchContent(jsCourse,"webDev");
-        }
-      }
-    } else if ((e.target.innerText = "Digital Marketing")) {
-      let socialMediaMarketingCourse = coursesData.socialMediaMarketing;
-      let searchEngineOptimisationCourse = coursesData.searchEngineOptimisation;
-      let contentMarketingStrategyCourse = coursesData.contentMarketingStrategy;
-      if (!document.getElementById("digitalMark")) {
-        if (socialMediaMarketingCourse !== null || "undefined") {
-          fetchContent(socialMediaMarketingCourse,"digitalMark");
-        }
-        if (searchEngineOptimisationCourse !== null || "undefined") {
-          fetchContent(searchEngineOptimisationCourse,"digitalMark");
-        }
-        if (contentMarketingStrategyCourse !== null || "undefined") {
-          fetchContent(contentMarketingStrategyCourse,"digitalMark");
-        }
-      }
-    }
-    // else if ((e.target.innerText = "Data Science")) {
-    //   courseVideosContainer.setAttribute("id", "dataScience");
-    // } else if ((e.target.innerText = "Graphic Design")) {
-    //   courseVideosContainer.setAttribute("id", "graphicDesign");
-    // }
-  }
-};
-
-let fetchContent = (courses,id) => {
+let fetchContent = (courses, id) => {
   let mainContentContainer = document.getElementById("mainContentContainer");
   let courseVideosContainer = document.createElement("div");
   courseVideosContainer.setAttribute("id", id);
   courseVideosContainer.classList.add("coursesContainerStyling");
-
+  console.log(courses);
   for (let j = 0; j < courses.length; j++) {
     var videoscontainerDiv = document.createElement("div");
     let courseVideos = courses[j].videoLink;
@@ -279,17 +236,72 @@ let fetchContent = (courses,id) => {
   mainContentContainer.appendChild(courseVideosContainer);
 };
 
+let filterBasedOnCategorySelection = (e) => {
+  let selectedCategoryID = e.target.id;
+  console.log(selectedCategoryID);
+  let selectedCategoryData = {};
+  for (let i = 0; i < inputData.length; i++) {
+    let coursesData = inputData[i];
+    if (coursesData.id === selectedCategoryID) {
+      selectedCategoryData = coursesData;
+    }
+  }
+
+  if (selectedCategoryID === "webDevelopment") {
+    let htmlCourse = selectedCategoryData.courses.html;
+    let cssCourse = selectedCategoryData.courses.css;
+    let jsCourse = selectedCategoryData.courses.javascript;
+    if (!document.getElementById("webDev")) {
+      if (htmlCourse !== null || "undefined") {
+        fetchContent(htmlCourse, "webDev");
+      }
+      if (cssCourse !== null || "undefined") {
+        fetchContent(cssCourse, "webDev");
+      }
+      if (jsCourse !== null || "undefined") {
+        fetchContent(jsCourse, "webDev");
+      }
+    }
+  } else if (selectedCategoryID === "digitalMarketing") {
+    // console.log(selectedCategoryData);
+    let socialMediaMarketingCourse =
+      selectedCategoryData.courses.socialMediaMarketing;
+
+    let searchEngineOptimisationCourse =
+      selectedCategoryData.courses.searchEngineOptimisation;
+    let contentMarketingStrategyCourse =
+      selectedCategoryData.courses.contentMarketingStrategy;
+
+    if (!document.getElementById("digitalMark")) {
+      if (socialMediaMarketingCourse !== null || "undefined") {
+        fetchContent(socialMediaMarketingCourse, "digitalMark");
+      }
+      if (searchEngineOptimisationCourse !== null || "undefined") {
+        fetchContent(searchEngineOptimisationCourse, "digitalMark");
+      }
+      if (contentMarketingStrategyCourse !== null || "undefined") {
+        fetchContent(contentMarketingStrategyCourse, "digitalMark");
+      }
+    }
+  }
+
+  // else if ((e.target.innerText = "Data Science")) {
+  //   courseVideosContainer.setAttribute("id", "dataScience");
+  // } else if ((e.target.innerText = "Graphic Design")) {
+  //   courseVideosContainer.setAttribute("id", "graphicDesign");
+  // }
+  // }
+};
+
 let coursesPageLoadSetup = (() => {
   let sideBarInnerContent = document.getElementById("sideBarContent");
   for (let i = 0; i < inputData.length; i++) {
     let inputDataObject = inputData[i];
-    let courseCategories = inputDataObject.courseCategory;
+    let courseCategoryID = inputDataObject.id;
     var sideBarCategories = document.createElement("div");
-    sideBarCategories.setAttribute("id", courseCategories);
-    sideBarCategories.addEventListener("click", coursesDataSorting);
+    sideBarCategories.setAttribute("id", courseCategoryID);
+    sideBarCategories.addEventListener("click", filterBasedOnCategorySelection);
     sideBarCategories.innerText = inputDataObject.courseCategory;
     sideBarInnerContent.appendChild(sideBarCategories);
-    console.log(courseCategories);
   }
-
 })();
