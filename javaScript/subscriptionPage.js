@@ -1,7 +1,8 @@
 let selectedPlan = (e) => {
-  let arr;
+  let arr = {};
   let userPlan = e.target.innerText.split("\n");
-  arr = userPlan;
+  arr.selectedPlan = userPlan[0];
+  arr.planDuration = userPlan[1];
   console.log(arr);
 };
 
