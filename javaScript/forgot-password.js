@@ -1,47 +1,59 @@
-let usersData = null;
+let usersData = [];
 let userCredentialsPageLoadSetup = (() => {
-  usersData = JSON.parse(localStorage.getItem("userDataSet"));
+  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  console.log(usersData);
 })();
 
-if (document.getElementById("loginform")) {
-  let login = document.getElementById("loginform");
+if (document.getElementById("userCredentialsForm")) {
+  let userCredentials = document.getElementById("userCredentialsForm");
   // Attach a submit event listener to the login form
-  login.addEventListener("submit", function (event) {
+  userCredentials.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
-    // let userLoginData = {};
-
-    let loginForm = document.forms.loginform;
-    let userLoginEmail = loginForm.email.value;
-    let userLoginPassword = loginForm.pwd.value;
-
-    // let usersEmail = null;
-    // let usersPassword = null;
+    if (document.getElementById("formInnerSection")) {
+      var userCredentialsForm = document.forms.userCredentialsForm;
+      var userLoginEmail = userCredentialsForm.email.value;
+    }
     for (let i = 0; i < usersData.length; i++) {
       let formData = usersData[i];
       let usersEmail = formData.email;
-      let usersPassword = formData.password;
-      if (
-        usersEmail === userLoginEmail &&
-        usersPassword === userLoginPassword
-      ) {
-        window.location = "./../html/homepage.html";
+
+      if (usersEmail === userLoginEmail) {
+        let formInnerSection = document.getElementById("formInnerSection");
+        formInnerSection.parentNode.removeChild(formInnerSection);
+
+        let form = document.createElement("div");
+        form.classList.add("formStyling");
+        form.classList.add("textStyling");
+        form.setAttribute("id", "formAlign");
+
+        let userOtpInput = document.createElement("input");
+        userOtpInput.setAttribute("id", "userOTP");
+        userOtpInput.placeholder = "Enter your OTP";
+        userOtpInput.style.padding = "5px";
+        userOtpInput.style.marginBottom = "15px";
+        userOtpInput.addEventListener("change", passwordReset);
+        // userOtpInput.setAttribute('type','number');
+        form.appendChild(userOtpInput);
+
+        let formContainer1 = document.getElementById("userCredentialsForm");
+        formContainer1.appendChild(form);
       }
-      if (
-        usersEmail !== userLoginEmail ||
-        usersPassword !== userLoginPassword
-      ) {
+      if (usersEmail !== userLoginEmail) {
         let errorMessage = document.createElement("div");
         errorMessage.setAttribute("id", "errorMessageDiv");
-        errorMessage.innerText = "Please check your email and password";
+        errorMessage.innerText = "In-correct email address";
         errorMessage.style.width = "100%";
         errorMessage.style.color = "Black";
+        errorMessage.style.textAlign = "center";
         errorMessage.style.backgroundColor = "#fcbca0";
         errorMessage.style.marginTop = "10px";
         errorMessage.style.padding = "5px";
-
+        
         if (!document.getElementById("errorMessageDiv")) {
-          let formContainer1 = document.getElementById("loginform");
-          formContainer1.appendChild(errorMessage);
+          let formContainer1 = document.getElementById("formInnerSection");
+          if (document.getElementById("formInnerSection")) {
+            formContainer1.appendChild(errorMessage);
+          }
         }
 
         if (document.getElementById("errorMessageDiv")) {
@@ -53,3 +65,42 @@ if (document.getElementById("loginform")) {
     // window.location = "./../html/homepage.html";
   });
 }
+
+let passwordStore = () => {
+  let userInputPassword = document.getElementById("userInputPassword");
+  userData.password = userInputPassword.value;
+  console.log(userData.password);
+  localStorage.setItem(
+    "userUpdatedPassword",
+    JSON.stringify(userData.password)
+  );
+  passwordUpdate();
+  window.location = "./../html/login.html";
+};
+
+let passwordReset = () => {
+  let userPrevPassword = usersData.password;
+
+  let passwordLabel = document.createElement("label");
+  passwordLabel.setAttribute("for", "userInputPassword");
+  passwordLabel.innerText = "Enter Password";
+
+  let passwordInput = document.createElement("input");
+  passwordInput.setAttribute("id", "userInputPassword");
+  passwordInput.style.padding = "5px";
+  passwordInput.style.marginBottom = "15px";
+  passwordInput.placeholder = "Enter new password";
+  passwordInput.addEventListener("change", passwordStore);
+
+  let submitButton = document.createElement("input");
+  submitButton.setAttribute("type", "submit");
+  submitButton.classList.add("secondaryButton");
+  //   submitButton.addEventListener("click", homePageRedirecting);
+
+  let formContainer1 = document.getElementById("formAlign");
+  formContainer1.appendChild(passwordLabel);
+  formContainer1.appendChild(passwordInput);
+  formContainer1.appendChild(submitButton);
+  //   let userCredentialsForm = document.forms.userCredentialsForm;
+  //   let userLoginEmail = userCredentialsForm.email.value;
+};

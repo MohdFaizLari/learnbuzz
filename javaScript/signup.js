@@ -15,7 +15,7 @@ if (document.getElementById("signupForm")) {
     let password = signupForm.pwd.value;
     userData.password = password;
 
-    localStorage.setItem("userData", JSON.stringify(userData));
+    localStorage.setItem("userDataSignUp", JSON.stringify(userData));
     window.location = "./../html/homepage.html";
   });
 }
