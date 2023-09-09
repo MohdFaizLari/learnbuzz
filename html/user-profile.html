@@ -25,14 +25,40 @@
     <div class="profilePageWrapper">
       <header class="mainHeader pd-10">
         <div class="websiteLogoDiv">
-          <button class="websiteLogoButton" onclick="homePageRedirect()">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
             <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
           </button>
         </div>
-        <div class="hdrBtnContainer">
-          <button class="primaryButton" onclick="loginButtonFunction()">
-            Signout
-          </button>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a
+              href="./../html/homepage.html"
+              class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()"
+              >Courses</a
+            >
+
+            <a class="fw-semi-bold">Contact</a>
+          </div>
+          <div
+            class="profilePicture mr-r-10"
+            onclick="profilePictureButton()"
+          >
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
         </div>
       </header>
       <div class="contentWrapper">

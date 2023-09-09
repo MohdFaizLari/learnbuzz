@@ -20,7 +20,7 @@ body {
 
 .headerMiddleSection{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     width:31.25rem;
 }

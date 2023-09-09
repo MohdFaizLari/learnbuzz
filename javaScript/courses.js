@@ -212,10 +212,10 @@ let inputData = [
   },
 ];
 
-let fetchContent = (courses, id) => {
-  let mainContentContainer = document.getElementById("mainContentContainer");
+let fetchContent = (courses, courseId,courseCategoryID) => {
+  let courseWrapper = document.getElementById(courseCategoryID);
   let courseVideosContainer = document.createElement("div");
-  courseVideosContainer.setAttribute("id", id);
+  courseVideosContainer.setAttribute("id", courseId);
   courseVideosContainer.classList.add("coursesContainerStyling");
   console.log(courses);
   for (let j = 0; j < courses.length; j++) {
@@ -233,7 +233,7 @@ let fetchContent = (courses, id) => {
     videoscontainerDiv.appendChild(videosContainer);
     courseVideosContainer.appendChild(videoscontainerDiv);
   }
-  mainContentContainer.appendChild(courseVideosContainer);
+  courseWrapper.appendChild(courseVideosContainer);
 };
 
 let filterBasedOnCategorySelection = (e) => {
@@ -252,18 +252,24 @@ let filterBasedOnCategorySelection = (e) => {
     let cssCourse = selectedCategoryData.courses.css;
     let jsCourse = selectedCategoryData.courses.javascript;
     if (!document.getElementById("webDev")) {
+      let courseWrapper = document.createElement("div");
+      courseWrapper.setAttribute("id", "webDev");
+      let mainContentContainer = document.getElementById(
+        "mainContentContainer"
+      );
+      mainContentContainer.appendChild(courseWrapper);
       if (htmlCourse !== null || "undefined") {
-        fetchContent(htmlCourse, "webDev");
+        fetchContent(htmlCourse, "htmlContainer","webDev");
       }
       if (cssCourse !== null || "undefined") {
-        fetchContent(cssCourse, "webDev");
+        fetchContent(cssCourse, "cssContainer","webDev");
       }
       if (jsCourse !== null || "undefined") {
-        fetchContent(jsCourse, "webDev");
+        fetchContent(jsCourse, "jsContainer","webDev");
       }
     }
   } else if (selectedCategoryID === "digitalMarketing") {
-    // console.log(selectedCategoryData);
+    let courseWrapper = document.createElement("div");
     let socialMediaMarketingCourse =
       selectedCategoryData.courses.socialMediaMarketing;
 
