@@ -212,7 +212,7 @@ let inputData = [
   },
 ];
 
-let fetchContent = (courses, courseId,courseCategoryID) => {
+let fetchContent = (courses, courseId, courseCategoryID) => {
   let courseWrapper = document.getElementById(courseCategoryID);
   let courseVideosContainer = document.createElement("div");
   courseVideosContainer.setAttribute("id", courseId);
@@ -252,6 +252,10 @@ let filterBasedOnCategorySelection = (e) => {
     let cssCourse = selectedCategoryData.courses.css;
     let jsCourse = selectedCategoryData.courses.javascript;
     if (!document.getElementById("webDev")) {
+      if (document.getElementById("digitalMark")) {
+        let digitalMark = document.getElementById("digitalMark");
+        digitalMark.parentNode.removeChild(digitalMark);
+      }
       let courseWrapper = document.createElement("div");
       courseWrapper.setAttribute("id", "webDev");
       let mainContentContainer = document.getElementById(
@@ -259,44 +263,61 @@ let filterBasedOnCategorySelection = (e) => {
       );
       mainContentContainer.appendChild(courseWrapper);
       if (htmlCourse !== null || "undefined") {
-        fetchContent(htmlCourse, "htmlContainer","webDev");
+        fetchContent(htmlCourse, "htmlContainer", "webDev");
       }
       if (cssCourse !== null || "undefined") {
-        fetchContent(cssCourse, "cssContainer","webDev");
+        fetchContent(cssCourse, "cssContainer", "webDev");
       }
       if (jsCourse !== null || "undefined") {
-        fetchContent(jsCourse, "jsContainer","webDev");
+        fetchContent(jsCourse, "jsContainer", "webDev");
       }
     }
   } else if (selectedCategoryID === "digitalMarketing") {
-    let courseWrapper = document.createElement("div");
     let socialMediaMarketingCourse =
       selectedCategoryData.courses.socialMediaMarketing;
-
     let searchEngineOptimisationCourse =
       selectedCategoryData.courses.searchEngineOptimisation;
     let contentMarketingStrategyCourse =
       selectedCategoryData.courses.contentMarketingStrategy;
 
     if (!document.getElementById("digitalMark")) {
+      if (document.getElementById("webDev")) {
+        let webDev = document.getElementById("webDev");
+        webDev.parentNode.removeChild(webDev);
+      }
+      let courseWrapper = document.createElement("div");
+      courseWrapper.setAttribute("id", "digitalMark");
+      let mainContentContainer = document.getElementById(
+        "mainContentContainer"
+      );
+      mainContentContainer.appendChild(courseWrapper);
       if (socialMediaMarketingCourse !== null || "undefined") {
-        fetchContent(socialMediaMarketingCourse, "digitalMark");
+        fetchContent(
+          socialMediaMarketingCourse,
+          "socialMediaMarketing",
+          "digitalMark"
+        );
       }
       if (searchEngineOptimisationCourse !== null || "undefined") {
-        fetchContent(searchEngineOptimisationCourse, "digitalMark");
+        fetchContent(
+          searchEngineOptimisationCourse,
+          "searchEngineOptimisation",
+          "digitalMark"
+        );
       }
       if (contentMarketingStrategyCourse !== null || "undefined") {
-        fetchContent(contentMarketingStrategyCourse, "digitalMark");
+        fetchContent(
+          contentMarketingStrategyCourse,
+          "contentMarketingStrategy",
+          "digitalMark"
+        );
       }
     }
+  } else if ((e.target.innerText = "Data Science")) {
+    courseVideosContainer.setAttribute("id", "dataScience");
+  } else if ((e.target.innerText = "Graphic Design")) {
+    courseVideosContainer.setAttribute("id", "graphicDesign");
   }
-
-  // else if ((e.target.innerText = "Data Science")) {
-  //   courseVideosContainer.setAttribute("id", "dataScience");
-  // } else if ((e.target.innerText = "Graphic Design")) {
-  //   courseVideosContainer.setAttribute("id", "graphicDesign");
-  // }
-  // }
 };
 
 let coursesPageLoadSetup = (() => {
