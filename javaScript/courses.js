@@ -263,6 +263,56 @@ let test551 = (coursesData, htmlCourse, courseCat) => {
   }
 };
 
+let selectDigitalMarketing = () => {
+  for (let i = 0; i < inputData.length; i++) {
+    let coursesData = inputData[i].courses;
+    let courseCat = inputData[i].courseCategory;
+
+    let socialMediaMarketingCourse = coursesData.socialMediaMarketing;
+    let searchEngineOptimisationCourse = coursesData.searchEngineOptimisation;
+    let contentMarketingStrategyCourse = coursesData.contentMarketingStrategy;
+    if (!document.getElementById("digitalMarkContainer")) {
+      if (socialMediaMarketingCourse !== null || "undefined") {
+        digitalMarketingPageLoad(coursesData, socialMediaMarketingCourse, courseCat);
+      }
+      if (searchEngineOptimisationCourse !== null || "undefined") {
+        digitalMarketingPageLoad(coursesData, searchEngineOptimisationCourse, courseCat);
+      }
+      if (contentMarketingStrategyCourse !== null || "undefined") {
+        digitalMarketingPageLoad(coursesData,contentMarketingStrategyCourse , courseCat);
+      }
+    }
+  }
+};
+let digitalMarketingPageLoad = (coursesData,socialMediaMarketingCourse, courseCat) => {
+  let mainContentContainer = document.getElementById("mainContentContainer");
+  let courseVideosContainer = document.createElement("div");
+  courseVideosContainer.classList.add("coursesContainerStyling");
+
+  if ((courseCat = "Digital Marketing")) {
+    courseVideosContainer.setAttribute("id", "digitalMarkContainer");
+    if (!document.getElementById("digitalMarkContainer")) {
+      mainContentContainer.appendChild(courseVideosContainer);
+    }
+  }
+  for (let j = 0; j < socialMediaMarketingCourse.length; j++) {
+    let videoscontainerDiv = document.createElement("div");
+    let courseVideos = socialMediaMarketingCourse[j].videoLink;
+    videoscontainerDiv.classList.add("videoscontainerDiv");
+    let videosContainer = document.createElement("video");
+    videosContainer.style.width = "100%";
+    videosContainer.style.height = "100%";
+    // videosContainer.autoplay = "disabled";
+    videosContainer.controls = "true";
+    videosContainer.muted = "true";
+    videosContainer.setAttribute("src", courseVideos);
+    videosContainer.setAttribute("type", "video/mp4");
+    videoscontainerDiv.appendChild(videosContainer);
+
+    courseVideosContainer.appendChild(videoscontainerDiv);
+  }
+};
+
 let coursesPageLoadSetup = (() => {
   let sideBarInnerContent = document.getElementById("sideBarContent");
   for (let i = 0; i < inputData.length; i++) {
@@ -280,11 +330,63 @@ let coursesPageLoadSetup = (() => {
     courseCategories.addEventListener("click", test550);
   }
 
-  // if (courseCategories.innerText === "Digital Marketing") {
-  //   let digitalMarkContainer = document.createElement("div");
-  // } else if (courseCategories.innerText === "Data Science") {
+  if (courseCategories.innerText === "Digital Marketing") {
+    let digitalMarkContainer = document.createElement("div");
+    courseCategories.addEventListener("click",selectDigitalMarketing);
+  }
+  //  else if (courseCategories.innerText === "Data Science") {
   //   let dataScContainer = document.createElement("div");
   // } else if (courseCategories.innerText === "Graphic Design") {
   //   let graphicDesignContainer = document.createElement("div");
   // }
 })();
+
+// let selectDigitalMarketing = () => {
+//   for (let i = 0; i < inputData.length; i++) {
+//     let coursesData = inputData[i].courses;
+//     let courseCat = inputData[i].courseCategory;
+
+//     let socialMediaMarketingCourse = coursesData.socialMediaMarketing;
+//     let searchEngineOptimisationCourse = coursesData.searchEngineOptimisation;
+//     let contentMarketingStrategyCourse = coursesData.contentMarketingStrategy;
+//     if (!document.getElementById("digitalMarkContainer")) {
+//       if (socialMediaMarketingCourse !== null || "undefined") {
+//         digitalMarketingPageLoad(coursesData, socialMediaMarketingCourse, courseCat);
+//       }
+//       if (searchEngineOptimisationCourse !== null || "undefined") {
+//         digitalMarketingPageLoad(coursesData, searchEngineOptimisationCourse, courseCat);
+//       }
+//       if (contentMarketingStrategyCourse !== null || "undefined") {
+//         digitalMarketingPageLoad(coursesData,contentMarketingStrategyCourse , courseCat);
+//       }
+//     }
+//   }
+// };
+// let digitalMarketingPageLoad = (coursesData,socialMediaMarketingCourse, courseCat) => {
+//   let mainContentContainer = document.getElementById("mainContentContainer");
+//   let courseVideosContainer = document.createElement("div");
+//   courseVideosContainer.classList.add("coursesContainerStyling");
+
+//   if ((courseCat = "Digital Marketing")) {
+//     courseVideosContainer.setAttribute("id", "digitalMarkContainer");
+//     if (!document.getElementById("digitalMarkContainer")) {
+//       mainContentContainer.appendChild(courseVideosContainer);
+//     }
+//   }
+//   for (let j = 0; j < socialMediaMarketingCourse.length; j++) {
+//     let videoscontainerDiv = document.createElement("div");
+//     let courseVideos = socialMediaMarketingCourse[j].videoLink;
+//     videoscontainerDiv.classList.add("videoscontainerDiv");
+//     let videosContainer = document.createElement("video");
+//     videosContainer.style.width = "100%";
+//     videosContainer.style.height = "100%";
+//     // videosContainer.autoplay = "disabled";
+//     videosContainer.controls = "true";
+//     videosContainer.muted = "true";
+//     videosContainer.setAttribute("src", courseVideos);
+//     videosContainer.setAttribute("type", "video/mp4");
+//     videoscontainerDiv.appendChild(videosContainer);
+
+//     courseVideosContainer.appendChild(videoscontainerDiv);
+//   }
+// };
