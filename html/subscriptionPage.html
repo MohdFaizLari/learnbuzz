@@ -28,33 +28,116 @@
 
     <div class="contentWrapper pd-15">
       <div class="mainContent pd-10">
+        <!-- <div class="planDiv">
         <div class="subcriptionOption">
+          <h3 class="fw-normal">Choose Your Plan</h3>
+         
           <div class="subscriptionPlans" id="firstPlan">
-            <p id="firstPlanValue">149
+           
+            <p id="firstPlanValue">Rs 149
                 <br>
-                1 Month
+               for 1 Month
             </p>
           </div>
           <div class="subscriptionPlans" id="secondPlan">
-            <p id="secondPlanValue">250
+            <p id="secondPlanValue"> Rs 250
               <br>
-              6 Month
+              for 6 Month
             </p>
             
           </div>
           <div class="subscriptionPlans" id="thirdPlan">
-            <p id="thirdPlanValue">400
+            <p id="thirdPlanValue"> Rs 400
               <br>
-              1 Year
+              for 1 Year
             </p>
           </div>
-        </div>
-        <div class="paymentSection">
+        </div> -->
+
+        <!-- <div class="paymentSection">
         <div class="paymentOptions">Credit Card</div>
         <div class="paymentOptions">Debit Card</div>
         <div class="paymentOptions">UPI</div>
+      </div> -->
+        <div  class="subscriptionOption pd-15" >
+          <h3 class="fw-normal">Choose Your Plan</h3>
+         
+          <div class="subscriptionPlans mr-t-10 mr-b-10" id="firstPlan">
+           
+            <p id="firstPlanValue">Rs 149
+                <br>
+               for 1 Month
+            </p>
+          </div>
+          <div class="subscriptionPlans mr-t-10 mr-b-10" id="secondPlan">
+            <p id="secondPlanValue"> Rs 250
+              <br>
+              for 6 Month
+            </p>
+            
+          </div>
+          <div class="subscriptionPlans mr-t-10 mr-b-10" id="thirdPlan">
+            <p id="thirdPlanValue"> Rs 400
+              <br>
+              for 1 Year
+            </p>
+        </div>
+      </div>
+
+      <div class="paymentSection pd-15 mr-l-20">
+        <div class="mr-b-20">
+        <h3 class="fw-normal">Make Payment</h3>
+        </div>
+        <div class="dropdown">
+        <button onclick="dropdownClick()" class="paymentOptions mr-b-15">Debit Card</button>
+        <div class="dropdownContent firstDropdown" id="paymentDropdown">
+          <form id="paymentFormDebit" class="pd-15">
+              <label for="name">Name on Card:</label>
+              <input type="text" id="name" placeholder="John Doe" required><br><br>
+      
+              <label for="cardNumber">Card Number:</label>
+              <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required><br><br>
+      
+              <label for="expiry">Expiry Date:</label>
+              <input type="text" id="expiry" placeholder="MM/YY" required><br><br>
+      
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" placeholder="123" required><br><br>
+      
+              <button type="button" id="payButton" class="primaryButton">Pay Now</button>
+          </form>
+        </div>
+        <button onclick="creditDropdownClick()"  class="paymentOptions mr-b-15">Credit Card</button>
+        <div class="dropdownContent secondDropdown" id="paymentDropdown">
+        <form id="paymentFormCredit" class="pd-15">
+          <label for="name">Name on Card:</label>
+          <input type="text" id="name" placeholder="John Doe" required><br><br>
+  
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required><br><br>
+  
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" placeholder="MM/YY" required><br><br>
+  
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" placeholder="123" required><br><br>
+  
+          <button type="button" id="payButton" class="primaryButton">Pay Now</button>
+      </form>
+    </div>
+
+        <button onclick="upiDropdownClick()" class="paymentOptions mr-b-15">UPI</button>
+        <div class="dropdownContent thirdDropdown" id="paymentDropdownUpi">
+        <form id="paymentFormUpi" class="pd-15">
+        <label for="upiId">UPI ID:</label>
+        <input type="text" id="upiId" placeholder="youremail@upi" required><br><br>
+
+        <button class="primaryButton" type="button" id="payButton">Pay Now</button>
+      </form>
       </div>
       </div>
+    </div>
+      <div id="paymentStatus"></div>
     </div>
 
     <footer>

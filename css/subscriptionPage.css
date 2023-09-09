@@ -22,44 +22,94 @@ body {
 }
 
 .mainContent {
+    width:100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.subscriptionOption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 400px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
-    width: 70%;
-    height: 90%;
 }
 
-.subcriptionOption {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 20%;
-}
 
 .subscriptionPlans {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #088F8F;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
     color: aliceblue;
     border-radius: 10px;
-    width: 30%;
-    height: 100%;
+    width: 325px;
+    height: 150px;
     padding: 10px;
 }
 
 .paymentSection {
     display: flex;
-    width: 100%;
-    height: 80%;
-    border: 1px solid black;
-}
-
-.paymentOptions {
-    background-color: rgba(0, 0, 0, 0.75);
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
-    color: aliceblue;
-    width: 15%;
-    height: 10%;
+}
+
+.paymentSection h3{
+    margin: 0px;
+    padding: 0px;
+}
+.paymentOptions{
     border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.paymentOptions:hover{
+  background-color:#088F8F;
+  color:white;
+  cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+  }
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#paymentFormDebit label{
+    display: block;
+}
+.show{
+    display: block;
+}
+.firstDropdown{
+    top:90px;
+}
+.secondDropdown{
+  top:200px;
+}
+.thirdDropdown{
+    top:275px;
 }
