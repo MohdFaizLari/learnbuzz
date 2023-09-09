@@ -384,7 +384,7 @@ h6 {
 
 .hdrBtnContainer {
     display: flex;
-    width: 150px;
+    /* width: 150px; */
     justify-content: space-between;
 }
 
@@ -393,6 +393,39 @@ h6 {
     color: #1338BE;
 }
 
+.headerMiddleSection{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:31.25rem;
+}
+
+.navStyling{
+    width:18.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hdrBtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    
+}
+
+.profilePicture {
+    display: inline-flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #9E9E9E;
+    float: right;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Header Styling Ends Here */
 
