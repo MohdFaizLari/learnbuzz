@@ -1,5 +1,5 @@
 let usersData = null;
-let loginPageLoadSetup = (() => {
+let userCredentialsPageLoadSetup = (() => {
   usersData = JSON.parse(localStorage.getItem("userDataSet"));
 })();
 
