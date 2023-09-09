@@ -212,7 +212,7 @@ let inputData = [
   },
 ];
 
-let test550 = (e) => {
+let coursesDataSorting = (e) => {
   for (let i = 0; i < inputData.length; i++) {
     let coursesData = inputData[i].courses;
     let courseCat = e.target.innerText;
@@ -223,13 +223,13 @@ let test550 = (e) => {
       let jsCourse = coursesData.javascript;
       if (!document.getElementById("webDev")) {
         if (htmlCourse !== null || "undefined") {
-          test551(coursesData, htmlCourse, courseCat, "webDev");
+          fetchContent(htmlCourse,"webDev");
         }
         if (cssCourse !== null || "undefined") {
-          test551(coursesData, cssCourse, courseCat, "webDev");
+          fetchContent(cssCourse, "webDev");
         }
         if (jsCourse !== null || "undefined") {
-          test551(coursesData, jsCourse, courseCat, "webDev");
+          fetchContent(jsCourse,"webDev");
         }
       }
     } else if ((e.target.innerText = "Digital Marketing")) {
@@ -238,13 +238,13 @@ let test550 = (e) => {
       let contentMarketingStrategyCourse = coursesData.contentMarketingStrategy;
       if (!document.getElementById("digitalMark")) {
         if (socialMediaMarketingCourse !== null || "undefined") {
-          test551(coursesData, socialMediaMarketingCourse, courseCat, "digitalMark");
+          fetchContent(socialMediaMarketingCourse,"digitalMark");
         }
         if (searchEngineOptimisationCourse !== null || "undefined") {
-          test551(coursesData, searchEngineOptimisationCourse, courseCat,"digitalMark");
+          fetchContent(searchEngineOptimisationCourse,"digitalMark");
         }
         if (contentMarketingStrategyCourse !== null || "undefined") {
-          test551(coursesData, contentMarketingStrategyCourse, courseCat,"digitalMark");
+          fetchContent(contentMarketingStrategyCourse,"digitalMark");
         }
       }
     }
@@ -256,15 +256,15 @@ let test550 = (e) => {
   }
 };
 
-let test551 = (coursesData, htmlCourse, courseCat, test) => {
+let fetchContent = (courses,id) => {
   let mainContentContainer = document.getElementById("mainContentContainer");
   let courseVideosContainer = document.createElement("div");
-  courseVideosContainer.setAttribute("id", test);
+  courseVideosContainer.setAttribute("id", id);
   courseVideosContainer.classList.add("coursesContainerStyling");
 
-  for (let j = 0; j < htmlCourse.length; j++) {
+  for (let j = 0; j < courses.length; j++) {
     var videoscontainerDiv = document.createElement("div");
-    let courseVideos = htmlCourse[j].videoLink;
+    let courseVideos = courses[j].videoLink;
     videoscontainerDiv.classList.add("videoscontainerDiv");
     let videosContainer = document.createElement("video");
     videosContainer.style.width = "100%";
@@ -287,7 +287,7 @@ let coursesPageLoadSetup = (() => {
     let courseCategories = inputDataObject.courseCategory;
     let sideBarCategories = document.createElement("div");
     sideBarCategories.setAttribute("id", courseCategories);
-    sideBarCategories.addEventListener("click", test550);
+    sideBarCategories.addEventListener("click", coursesDataSorting);
     sideBarCategories.innerText = inputDataObject.courseCategory;
     sideBarInnerContent.appendChild(sideBarCategories);
     console.log(courseCategories);
