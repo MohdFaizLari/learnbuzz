@@ -3,6 +3,7 @@ body {
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     width: 100%;
 }
@@ -14,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
     flex-grow: 1;
     flex-shrink: 0;
@@ -22,29 +23,32 @@ body {
 }
 
 .mainContent {
-    width:100%;
+    width: 100%;
     height: 90%;
     display: flex;
-    justify-content: space-evenly;
-    background-color: white; 
-    box-shadow:0 2px 4px rgba(0, 0, 0, .08),
-            0 4px 12px rgba(0, 0, 0, .08);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+        0 4px 12px rgba(0, 0, 0, .08);
 }
-.leftWrapper{
+
+.leftWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width:40%;
+    /* justify-content: space-between; */
+    width: 50%;
 }
-.planWrapper{
+
+.planWrapper {
     display: flex;
     flex-direction: column;
 }
-.planSelection{
+
+.planSelection {
     display: flex;
     justify-content: space-between;
 }
-.subscriptionOption{
+
+.subscriptionOption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,42 +59,49 @@ body {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
-    color:black;
+    color: black;
     border-radius: 10px;
-    width:325px;
-    padding: 10px;
+    width: 33%;
 }
-.subscriptionPlans:hover{
+
+/* .subscriptionPlans:hover {
     background-color: #088F8F;
-    color:white;
+    color: white;
     cursor: pointer;
-}
+} */
 
 .paymentSection {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
 }
 
-.paymentSection h3{
+.paymentSection h3 {
     margin: 0px;
     padding: 0px;
 }
-.paymentOptions{
+
+.paymentOptionsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.paymentOptions {
     border: 1px solid black;
     padding: 10px;
-    width: 100%;
-    height: auto;
+    width: 25%;
     background-color: white;
     border-radius: 4px;
 }
 
-.paymentOptions:hover{
-  background-color:#088F8F;
-  color:white;
-  cursor: pointer;
+.paymentOptions:hover {
+    background-color: #088F8F;
+    color: white;
+    cursor: pointer;
 }
+
 .dropdown {
     position: relative;
     display: flex;
@@ -98,44 +109,46 @@ body {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-  }
+}
 
 .dropdownContent {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-#paymentFormDebit label{
+
+#paymentFormDebit label {
     display: block;
 }
-.show{
+
+.show {
     display: block;
 }
-.firstDropdown{
-    top:90px;
+
+.firstDropdown {
+    top: 90px;
 }
-.secondDropdown{
-  top:200px;
+
+.secondDropdown {
+    top: 200px;
 }
-.thirdDropdown{
-    top:275px;
+
+.thirdDropdown {
+    top: 275px;
 }
-.paymentFormContainer{
+
+.paymentFormWrapper {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    width:50%;
-    /* border: 1px solid black; */
+    width: 50%;
+    border: 1px solid black;
 }
-.paymentFormStyling{
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
-    0 4px 12px rgba(0, 0, 0, .08);
-    width:500px;
-    height:300px; */
-    width:500px;
+
+.paymentFormStyling {
+    width: 500px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -143,7 +156,7 @@ body {
     align-items: center;
     width: fit-content;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
-    background-color:aliceblue;
+    background-color: aliceblue;
     border-radius: 8px;
     padding: 30px;
     margin-top: 40px;
