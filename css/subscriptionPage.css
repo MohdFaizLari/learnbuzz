@@ -8,6 +8,17 @@ body {
     width: 100%;
 }
 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #1338BE;
+    cursor: pointer;
+}
+
 .contentWrapper {
     margin-top: 76px;
     display: flex;
@@ -23,8 +34,8 @@ body {
 }
 
 .mainContent {
-    width: 100%;
-    height: 90%;
+    width: 70%;
+    height: 85%;
     display: flex;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
@@ -34,8 +45,7 @@ body {
 .leftWrapper {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    width: 50%;
+    width: 70%;
 }
 
 .planWrapper {
@@ -144,19 +154,27 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    /* border: 1px solid black; */
 }
 
 .paymentFormStyling {
-    width: 90%;
+    /* width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    padding: 30px;
+    padding: 30px; */
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    border-radius: 8px;
+    padding: 30px;
 
 }
 
@@ -170,6 +188,6 @@ form {
     /* background-color: aliceblue; */
 }
 
-input {
+/* input {
 width: 50%;
-}
+} */
