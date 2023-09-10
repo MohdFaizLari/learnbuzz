@@ -15,7 +15,7 @@ let debitCardFormLoad = (e) => {
   if (document.getElementById("debitCardPaymentForm")) {
     let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
     debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
-  } else if (document.getElementById("debitCardPaymentForm")) {
+  } else if (document.getElementById("creditCardPaymentForm")) {
     let creditCardPaymentForm = document.getElementById(
       "creditCardPaymentForm"
     );
