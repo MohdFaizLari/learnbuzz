@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Toggle the dropdown content when the button is clicked
   dropdownButton.addEventListener('click', function () {
     dropdownContent.classList.toggle('show');
-    console.log(dropdownContent);
   });
 
   // Hide the dropdown content when a click occurs outside the dropdown or form
