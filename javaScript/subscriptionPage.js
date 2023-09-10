@@ -90,24 +90,42 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Code for letting write in the form but not working please check
+// document.addEventListener('DOMContentLoaded', function () {
+//   const dropdownButton = document.getElementById('paymentOptions');
+//   const dropdownContent = document.getElementById('dropdownContent');
+//   const form = document.getElementById('paymentFormDebit');
+
+//   // Toggle the dropdown content when the button is clicked
+//   dropdownButton.addEventListener('click', function () {
+//       if (dropdownContent.style.display === 'block') {
+//           dropdownContent.style.display = 'none';
+//       } else {
+//           dropdownContent.style.display = 'block';
+//       }
+//   });
+
+//   // Hide the dropdown content when a click occurs outside the dropdown
+//   document.addEventListener('click', function (event) {
+//       if (event.target !== paymentOptions && event.target !== form) {
+//           dropdownContent.style.display = 'none';
+//       }
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', function () {
-  const dropdownButton = document.getElementById('paymentOptions');
-  const dropdownContent = document.getElementById('dropdownContent');
+  const dropdownButton = document.getElementById('paymentDropdown');
+  const dropdownContent = document.getElementsByClassName('dropdownContent');
   const form = document.getElementById('paymentFormDebit');
 
   // Toggle the dropdown content when the button is clicked
   dropdownButton.addEventListener('click', function () {
-      if (dropdownContent.style.display === 'block') {
-          dropdownContent.style.display = 'none';
-      } else {
-          dropdownContent.style.display = 'block';
-      }
+    dropdownContent.classList.toggle('show');
   });
 
-  // Hide the dropdown content when a click occurs outside the dropdown
+  // Hide the dropdown content when a click occurs outside the dropdown or form
   document.addEventListener('click', function (event) {
-      if (event.target !== paymentOptions && event.target !== form) {
-          dropdownContent.style.display = 'none';
-      }
+    if (!dropdownButton.contains(event.target) && !form.contains(event.target)) {
+      dropdownContent.classList.remove('show');
+    }
   });
 });

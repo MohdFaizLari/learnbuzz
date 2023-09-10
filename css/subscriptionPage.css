@@ -23,44 +23,54 @@ body {
 
 .mainContent {
     width:100%;
-    height: 100%;
-    margin-bottom: 30px;
+    height: 90%;
     display: flex;
     justify-content: space-evenly;
+    background-color: white; 
+    box-shadow:0 2px 4px rgba(0, 0, 0, .08),
+            0 4px 12px rgba(0, 0, 0, .08);
+}
+.leftWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:40%;
+}
+.planWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.planSelection{
+    display: flex;
+    justify-content: space-between;
 }
 .subscriptionOption{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 350px;
-    height: 400px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.subscriptionPlans {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
         0 4px 12px rgba(0, 0, 0, .08);
-}
-
-
-.subscriptionPlans {
-    background-color: #088F8F;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
-        0 4px 12px rgba(0, 0, 0, .08);
-    color: aliceblue;
+    color:black;
     border-radius: 10px;
-    width: 325px;
-    height: 150px;
+    width:325px;
     padding: 10px;
+}
+.subscriptionPlans:hover{
+    background-color: #088F8F;
+    color:white;
+    cursor: pointer;
 }
 
 .paymentSection {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 350px;
-    height: 400px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
-        0 4px 12px rgba(0, 0, 0, .08);
+    /* justify-content: center; */
+    align-items: flex-start;
 }
 
 .paymentSection h3{
@@ -112,4 +122,30 @@ body {
 }
 .thirdDropdown{
     top:275px;
+}
+.paymentFormContainer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width:50%;
+    /* border: 1px solid black; */
+}
+.paymentFormStyling{
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+    0 4px 12px rgba(0, 0, 0, .08);
+    width:500px;
+    height:300px; */
+    width:500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color:aliceblue;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 40px;
+
 }
