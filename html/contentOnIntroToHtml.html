@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp-page</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/contentOnIntroToHtml.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="clearFix">
+    <header class="mainHeader pd-10">
+        <div class="websiteLogoDiv">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
+            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+          </button>
+        </div>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a
+              href="./../html/homepage.html"
+              class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()"
+              >Courses</a
+            >
+
+            <a class="fw-semi-bold">Contact</a>
+          </div>
+          <div
+            class="profilePicture mr-r-10"
+            onclick="profilePictureButton()"
+          >
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="mainContent pd-15">
+            <div>
+            <h1>Introduction To HTML & CSS</h1>
+            </div>
+            <div>
+              <p>
+                HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) 
+                are fundamental technologies for creating and designing websites. 
+                HTML is used to structure the content on a web page, while CSS is 
+                used to style and format that content. In this introduction, we'll
+                explore the basics of HTML and CSS.
+              </p>
+              <h3 class="mr-t-20 mr-b-20 fw-semi-bold">
+                HTML (Hypertext Markup Language):
+              </h3>
+              <p>
+                HTML is the backbone of web content. It provides a way to 
+                structure and organize the various elements on a web page.
+                HTML elements are represented by tags enclosed in angle brackets.
+                Here are some key HTML concepts:
+              </p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 "> 1. HTML Document Structure:</h4>
+              <p>An HTML document is structured with a set of fundamental elements.</p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">2. HTML Elements:</h4>
+              <p>HTML elements are used to define the structure and content of a webpage.
+                Common HTML elements include headings, paragraphs, lists, links, images, and more.</p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">3. Attributes:</h4>
+              <p>
+                HTML elements can have attributes that provide additional information or settings.
+                For instance, the `href` attribute in an anchor (`<a>`) tag specifies the URL of the link.
+              </p>
+              <h3 class="mr-t-20 mr-b-20 fw-semi-bold">CSS (Cascading Style Sheets):</h3>
+              <p>
+              CSS is used to control the presentation and layout of HTML elements.
+              It separates the content (HTML) from its styling. Here are some key CSS concepts:
+              </p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">1. CSS Syntax</h4>
+              <p>CSS rules consist of a selector and a declaration block. 
+                The selector targets HTML elements, and the declaration 
+                block specifies the styling rules.</p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">2: CSS Properties:</h4>
+              <p> CSS offers numerous properties to style elements, including color,
+                 font-size, margin, padding, border, and more.
+              </p>
+              <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">3: CSS Classes and IDs:</h4>
+              <p> You can apply CSS rules to specific elements using classes and IDs. 
+                Classes are denoted with a period (`.`), while IDs use a hash (`#`).
+             </p>
+             <h4 class="fw-semi-bold mr-t-20 mr-b-20 ">4: External CSS:</h4>
+             <p>
+                You can also link an external CSS file to your HTML document to keep your styles 
+                separate from your HTML content.This promotes maintainability and reusability.
+             </p>
+             <p>
+                In summary, HTML provides the structure and content of a web page, while CSS is used
+                to style and format that content. As you dive deeper into web development, you'll
+                discover more advanced features and techniques for creating dynamic and visually
+                appealing websites.
+             </p>
+            </div>
+        </div>
+      </div>
+
+       <footer>
+        <div class="footerStyling pd-5 mr-t-5">
+          <div class="aboutUs pd-t-10">
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle">Courses</p>
+              <p class="mr-b-10 footerHoveringStyle">Blog</p>
+              <p class="mr-b-10 footerHoveringStyle">FAQS</p>
+            </div>
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
+              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
+              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+            </div>
+          </div>
+
+          <div class="footerIconsWrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+  </body>
