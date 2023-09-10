@@ -164,9 +164,9 @@ let inputData = [
     coursePrice: 1499,
     courseCategory: "Graphic Design",
     courses: {
-      html: [
+      visualIdentity: [
         {
-          courseDescription: "Introduction to HTML",
+          courseDescription: "Introduction to Graphic Designing",
           videoLink:
             "./../video/./html/1._Introduction_to_HTML_(Hindi)(480p).mp4",
         },
@@ -175,12 +175,12 @@ let inputData = [
           videoLink:
             "./../video/./html/2._Tags_and_Element_in_HTML_(Hindi)(480p).mp4",
         },
-        {
-          courseDescription: "Head Tag in HTML",
-          videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
-        },
+        // {
+        //   courseDescription: "Head Tag in HTML",
+        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        // },
       ],
-      css: [
+      userInterface: [
         {
           courseDescription: "CSS Syntax",
           videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
@@ -189,20 +189,20 @@ let inputData = [
           courseDescription: "Element Selector",
           videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
         },
+        // {
+        //   courseDescription: "Way of Inserting CSS",
+        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        // },
+      ],
+      motionGraphics: [
         {
-          courseDescription: "Way of Inserting CSS",
+          courseDescription: "Alert Function in JS",
           videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
         },
-      ],
-      javascript: [
-        // {
-        //   courseDescription: "Alert Function in JS",
-        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
-        // },
-        // {
-        //   courseDescription: "Function",
-        //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
-        // },
+        {
+          courseDescription: "Function",
+          videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
+        },
         // {
         //   courseDescription: "DOM in JS",
         //   videoLink: "./../video/./html/5._Head_Tag_in_HTML_(Hindi)(480p).mp4",
@@ -252,6 +252,7 @@ let filterBasedOnCategorySelection = (e) => {
       selectedCategoryData = coursesData;
     }
   }
+  console.log(selectedCategoryData);
 
   if (selectedCategoryID === "webDevelopment") {
     let htmlCourse = selectedCategoryData.courses.html;
@@ -264,6 +265,9 @@ let filterBasedOnCategorySelection = (e) => {
       } else if (document.getElementById("dataSc")) {
         let dataSc = document.getElementById("dataSc");
         dataSc.parentNode.removeChild(dataSc);
+      } else if (document.getElementById("grpDsgn")) {
+        let grpDsgn = document.getElementById("grpDsgn");
+        grpDsgn.parentNode.removeChild(grpDsgn);
       }
       let courseWrapper = document.createElement("div");
       courseWrapper.setAttribute("id", "webDev");
@@ -297,6 +301,9 @@ let filterBasedOnCategorySelection = (e) => {
       } else if (document.getElementById("dataSc")) {
         let dataSc = document.getElementById("dataSc");
         dataSc.parentNode.removeChild(dataSc);
+      } else if (document.getElementById("grpDsgn")) {
+        let grpDsgn = document.getElementById("grpDsgn");
+        grpDsgn.parentNode.removeChild(grpDsgn);
       }
       let courseWrapper = document.createElement("div");
       courseWrapper.setAttribute("id", "digitalMark");
@@ -334,13 +341,15 @@ let filterBasedOnCategorySelection = (e) => {
     console.log(pythonCourse, tableauCourse, matlabCourse, selectedCategoryID);
 
     if (!document.getElementById("dataSc")) {
-      // console.log("hello");
       if (document.getElementById("webDev")) {
         let webDev = document.getElementById("webDev");
         webDev.parentNode.removeChild(webDev);
       } else if (document.getElementById("digitalMark")) {
         let digitalMark = document.getElementById("digitalMark");
         digitalMark.parentNode.removeChild(digitalMark);
+      } else if (document.getElementById("grpDsgn")) {
+        let grpDsgn = document.getElementById("grpDsgn");
+        grpDsgn.parentNode.removeChild(grpDsgn);
       }
 
       let courseWrapper = document.createElement("div");
@@ -360,10 +369,41 @@ let filterBasedOnCategorySelection = (e) => {
         fetchContent(matlabCourse, "matlab", "dataSc");
       }
     }
+  } else if (selectedCategoryID === "graphicDesign") {
+    let visualIdentityCourse = selectedCategoryData.courses.visualIdentity;
+    let userInterfaceCourse = selectedCategoryData.courses.userInterface;
+    let motionGraphicsCourse = selectedCategoryData.courses.motionGraphics;
+
+    if (!document.getElementById("grpDsgn")) {
+      if (document.getElementById("webDev")) {
+        let webDev = document.getElementById("webDev");
+        webDev.parentNode.removeChild(webDev);
+      } else if (document.getElementById("digitalMark")) {
+        let digitalMark = document.getElementById("digitalMark");
+        digitalMark.parentNode.removeChild(digitalMark);
+      } else if (document.getElementById("dataSc")) {
+        let dataSc = document.getElementById("dataSc");
+        dataSc.parentNode.removeChild(dataSc);
+      }
+
+      let courseWrapper = document.createElement("div");
+      courseWrapper.setAttribute("id", "grpDsgn");
+      courseWrapper.classList.add("courseCategoryContainer");
+      let mainContentContainer = document.getElementById(
+        "mainContentContainer"
+      );
+      mainContentContainer.appendChild(courseWrapper);
+      if (visualIdentityCourse !== null || "undefined") {
+        fetchContent(visualIdentityCourse, "visualIdentity", "grpDsgn");
+      }
+      if (userInterfaceCourse !== null || "undefined") {
+        fetchContent(userInterfaceCourse, "userInterface", "grpDsgn");
+      }
+      if (motionGraphicsCourse !== null || "undefined") {
+        fetchContent(motionGraphicsCourse, "motionGraphics", "grpDsgn");
+      }
+    }
   }
-  // else if ((e.target.innerText = "Graphic Design")) {
-  //   courseVideosContainer.setAttribute("id", "graphicDesign");
-  // }
 };
 
 let coursesPageLoadSetup = (() => {
