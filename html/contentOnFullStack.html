@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp-page</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/contentOnFullStack.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="clearFix">
+    <header class="mainHeader pd-10">
+        <div class="websiteLogoDiv">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
+            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+          </button>
+        </div>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+  
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
+  
+            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+          </div>
+          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
+        </div>
+      </header>
+     <div class="contentWrapper">
+        <div class="mainContent pd-15">
+            <div class="contentHeading">
+                <h1 class="mainHeading">Full Stack Web Development</h1>
+            </div>
+            <div>
+                <p>
+                    Full stack development refers to the practice of 
+                    working on both the front-end (client-side) and back-end
+                    (server-side) parts of a web application. Full stack developers
+                    have a broad range of skills that allow them to handle everything 
+                    from the user interface to the server infrastructure.
+                    Here's an overview of full stack development:
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">Front End Development</h3>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">1. HTML,CSS & JavaScript</h4>
+                <p>
+                    Full stack developers need a strong understanding of 
+                    these fundamental technologies. HTML is used for structuring
+                    web content, CSS for styling, and JavaScript for interactivity.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">2. Front-End Frameworks</h4>
+                <p>
+                    Familiarity with front-end frameworks like React,
+                    Angular, or Vue.js is essential for building modern,
+                    responsive user interfaces. These libraries make it
+                    easier to manage complex UI components.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">3. Responsive Design</h4>
+                <p>
+                    Ensuring that web applications work well on various devices 
+                    and screen sizes is crucial. Knowledge of responsive design
+                     principles and CSS frameworks like Bootstrap is important.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">4. AJAX and REST</h4>
+                <p>
+                    Understanding how to make asynchronous requests to the server
+                    using technologies like AJAX and work with RESTful APIs is 
+                    a key part of front-end development.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">5. Browswer Developer Tools</h4>
+                <p>
+                    Proficiency in using browser developer tools
+                    for debugging and optimizing front-end code is essential.
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">Back-End Development</h3>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">1. Server Side Programming Languages</h4>
+                <p>
+                    Full stack developers often work with languages like 
+                    Node.js (JavaScript), Python, Ruby, Java, PHP,
+                    or C# for server-side development.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">2. Web Frameworks</h4>
+                <p>
+                    Knowledge of server-side frameworks like Express.js (Node.js),
+                    Django (Python), Ruby on Rails (Ruby), Spring Boot (Java), 
+                    and Laravel (PHP) helps streamline back-end development.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">3. Databases</h4>
+                <p>
+                    Understanding database systems like MySQL, 
+                    PostgreSQL, MongoDB, or NoSQL databases is
+                    important for data storage and retrieval.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">4. API Design</h4>
+                <p>
+                    Creating well-structured and efficient APIs is a key 
+                    responsibility of back-end developers. REST and GraphQL 
+                    are popular API design patterns.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">5. Authentication and Authorisation</h4>
+                <p>
+                    Implementing user authentication and authorization
+                    systems to secure web applications is critical.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">6. Serever Management</h4>
+                <p>
+                    Full stack developers should have knowledge of server 
+                    setup and maintenance. Cloud platforms like AWS, Azure,
+                    or Google Cloud are often used for hosting.
+                </p>
+                <p class="mr-t-20">
+                    Full stack developers can specialize in various areas,
+                    such as front-end development, back-end development, DevOps,
+                    or even focus on specific technologies like blockchain or
+                    artificial intelligence, depending on their interests and career goals.
+                </p>
+                <p  class="mr-t-20">
+                    In summary, full stack development involves expertise in both front-end
+                    and back-end technologies, as well as proficiency in various tools,
+                    frameworks, and best practices. It offers a holistic view of web application
+                    development, enabling developers to work on all aspects of a project 
+                    from conception to deployment.
+                </p>
+            </div>
+
+
+        </div>
+     </div>
+      <footer>
+        <div class="footerStyling pd-5 mr-t-5">
+          <div class="aboutUs pd-t-10">
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle">Courses</p>
+              <p class="mr-b-10 footerHoveringStyle">Blog</p>
+              <p class="mr-b-10 footerHoveringStyle">FAQS</p>
+            </div>
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
+              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
+              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+            </div>
+          </div>
+  
+          <div class="footerIconsWrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script src="./../javaScript/index.js"></script>
+
+  </body>
