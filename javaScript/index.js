@@ -14,19 +14,6 @@ let homePageRedirect = (e) => {
   window.location = "./../html/homepage.html";
 };
 
-// let userDataSet = [];
-// let userData = null;
-// console.log(userDataSet);
-// let pageLoadSetup = (() => {
-//   userData = JSON.parse(localStorage.getItem("userDataSignUp"));
-//   // if (userData !== null) {
-//   //   localStorage.setItem("userModifiedData", JSON.stringify(userData));
-//   // }
-//   // console.log(userDataSet);
-// })();
-
-// function passwordUpdate() {
-//   usersUpdatedPassword = JSON.parse(localStorage.getItem("userUpdatedPassword"));
-//   userData.password = usersUpdatedPassword;
-// }
-
+let contactPageRedirect = (e) => {
+  window.location = "./../html/contact.html";
+};
