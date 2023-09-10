@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp-page</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/contentOnIntroToHtml.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="clearFix">
+    <header class="mainHeader pd-10">
+        <div class="websiteLogoDiv">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
+            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+          </button>
+        </div>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+  
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
+  
+            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+          </div>
+          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
+        </div>
+      </header>
+     <div class="contentWrapper">
+        <div  class="mainContent pd-15">
+            <div class="contentHeading">
+                <h1 class="mainHeading">Responsive Web Design</h1>
+              </div>
+              <div>
+                  <p>
+                    Creating a responsive web design is essential
+                    to ensure that your website looks and functions
+                    well on various devices and screen sizes, 
+                    from desktop computers to smartphones and tablets.
+                    Responsive design adapts the layout and content of a 
+                    webpage to provide an optimal user experience regardless 
+                    of the user's device. Here are the key principles and 
+                    techniques for responsive web page design:
+                  </p>
+                  <h3 class="mr-t-20 mr-b-20 heading">1. Fluid Layouts</h3>
+                  <p>
+                    Use relative units like percentages (%) or "em" instead of
+                    fixed units like pixels (px) for defining widths and heights.
+                    This allows content to adjust proportionally to the screen size.
+                  </p>
+                  <h3 class="mr-t-20 mr-b-20 heading">2. Media queries</h3>
+                  <p>
+                    Media queries are CSS rules that apply different 
+                    styles based on the device's characteristics, such as
+                    screen width, height, or orientation. They allow you to 
+                    create breakpoints where the layout changes.
+                  </p>
+                  <h3 class="mr-t-20 mr-b-20 heading">3. Flexible Image and Media</h3>
+                  <p>
+                    To make images and media elements responsive, 
+                    set their `max-width` to 100% to ensure they 
+                    don't overflow their containing elements.
+                  </p>
+                  <h3 class="mr-t-20 mr-b-20 heading">4. Mobile-First Design</h3>
+                  <p>
+                    Start designing your web page for mobile devices 
+                    first and then gradually add styles and components 
+                    for larger screens. This ensures a better user experience 
+                    on smaller screens.
+                  </p>
+                  <h3 class="mr-t-20 mr-b-20 heading">5. Responsive Navigation</h3>
+                  <p>
+                    Consider using a responsive navigation menu, 
+                    such as a "hamburger" menu or a select dropdown, 
+                    for mobile devices. You can hide or show navigation 
+                    elements based on screen size using media queries.
+                  </p>
+                  <p class="mr-t-20">
+                    Optimize images and minimize the use of large media 
+                    files to reduce page load times on mobile devices, 
+                    where bandwidth may be limited.
+                  </p>
+                  <p class="mr-t-20">
+                    Responsive web page design is not just a design choice 
+                    but a crucial aspect of creating a user-friendly and 
+                    accessible website. By following these principles and techniques,
+                    you can provide a seamless experience for visitors across a 
+                    wide range of devices and screen sizes.
+                  </p>               
+              </div>
+
+        </div>
+     </div>
+      <footer>
+        <div class="footerStyling pd-5 mr-t-5">
+          <div class="aboutUs pd-t-10">
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle">Courses</p>
+              <p class="mr-b-10 footerHoveringStyle">Blog</p>
+              <p class="mr-b-10 footerHoveringStyle">FAQS</p>
+            </div>
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
+              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
+              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+            </div>
+          </div>
+  
+          <div class="footerIconsWrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script src="./../javaScript/index.js"></script>
+
+  </body>

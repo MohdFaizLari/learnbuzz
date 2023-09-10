@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp-page</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/contentOnJSFundamentals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="clearFix">
+    <header class="mainHeader pd-10">
+        <div class="websiteLogoDiv">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
+            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+          </button>
+        </div>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+  
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
+  
+            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+          </div>
+          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
+        </div>
+      </header>
+       <div class="contentWrapper">
+        <div class="mainContent pd-15">
+            <div class="contentHeading">
+                <h1 class="mainHeading">JavaScript Fundamentals</h1>
+            </div>
+            <div>
+                 <p>
+                    JavaScript is a versatile and widely used programming 
+                    language that powers the interactivity and behavior of websites. 
+                    It allows you to create dynamic web applications, manipulate HTML 
+                    and CSS, handle user input, and much more. Here, we'll cover some 
+                    fundamental concepts of JavaScript to get you started:
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">1. Variables and Data Types:</h3>
+                 <p>
+                    JavaScript supports various data types, including numbers,
+                     strings, booleans, arrays, objects, and more. You can declare 
+                     variables using `var`, `let`, or `const`.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">2. Operators:</h3>
+                 <p>
+                    JavaScript provides operators for performing operations on variables
+                     and values. Common operators include `+` (addition), `-` (subtraction), 
+                     `*` (multiplication), `/` (division), `==` (equality), `!=` (inequality),
+                      `>` (greater than), 	`&lt;` (less than), and many more.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">3. Functions:</h3>
+                 <p>
+                    Functions are blocks of reusable code that can take parameters and 
+                    return values. They are defined using the `function` keyword.</p>
+                <h3 class="mr-t-20 mr-b-20 heading">4. Control Structures:</h3>
+                <p>
+                 JavaScript supports control structures like `if` statements,
+                  `for` loops, `while` loops, and `switch` statements for making 
+                  decisions and repeating actions based on conditions.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">5. DOM Manipulation</h3>
+                 <p>
+                    The Document Object Model (DOM) represents the structure of an 
+                    HTML document. JavaScript can be used to access and manipulate 
+                    the DOM, allowing you to change content, add elements, or respond 
+                    to user interactions.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">6. Events</h3>
+                 <p>
+                    JavaScript can respond to events like clicks, keypresses,
+                     and form submissions. You can attach event listeners to
+                      elements to execute code when events occur.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">7. Error Handling:</h3>
+                 <p>
+                    JavaScript allows you to handle errors gracefully 
+                    using `try...catch` blocks to prevent crashes and 
+                    provide meaningful error messages to users.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">8. Scope and Closures:</h3>
+                 <p>
+                    JavaScript has function-level scope, and variables declared
+                    within functions are not accessible outside of them.Closures
+                    are functions that remember their surrounding scope 
+                    even after they have finished executing.
+                 </p>
+                 <h3 class="mr-t-20 mr-b-20 heading">9. Asynchronus programming</h3>
+                 <p>
+                    JavaScript supports asynchronous operations using
+                    callbacks, promises, and async/await. 
+                    This is crucial for handling tasks like fetching
+                    data from a server without blocking the user interface.
+                 </p>
+                 <p class="mr-t-20">
+                    These fundamentals are just the tip of the iceberg
+                     when it comes to JavaScript. As you continue to 
+                     explore this language, you'll discover more advanced
+                     concepts and libraries that can help you build powerful
+                     web applications and interactive websites.
+                 </p>
+            </div> 
+        </div>
+       </div>
+      <footer>
+        <div class="footerStyling pd-5 mr-t-5">
+          <div class="aboutUs pd-t-10">
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle">Courses</p>
+              <p class="mr-b-10 footerHoveringStyle">Blog</p>
+              <p class="mr-b-10 footerHoveringStyle">FAQS</p>
+            </div>
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
+              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
+              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+            </div>
+          </div>
+  
+          <div class="footerIconsWrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script src="./../javaScript/index.js"></script>
+
+  </body>
