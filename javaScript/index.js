@@ -15,18 +15,18 @@ let homePageRedirect = (e) => {
 };
 
 // let userDataSet = [];
-let userData = null;
+// let userData = null;
 // console.log(userDataSet);
-let pageLoadSetup = (() => {
-  userData = JSON.parse(localStorage.getItem("userDataSignUp"));
-  if (userData !== null) {
-    localStorage.setItem("userModifiedData", JSON.stringify(userData));
-  }
-  // console.log(userDataSet);
-})();
+// let pageLoadSetup = (() => {
+//   userData = JSON.parse(localStorage.getItem("userDataSignUp"));
+//   // if (userData !== null) {
+//   //   localStorage.setItem("userModifiedData", JSON.stringify(userData));
+//   // }
+//   // console.log(userDataSet);
+// })();
 
-function passwordUpdate() {
-  usersUpdatedPassword = JSON.parse(localStorage.getItem("userUpdatedPassword"));
-  userData.password = usersUpdatedPassword;
-}
+// function passwordUpdate() {
+//   usersUpdatedPassword = JSON.parse(localStorage.getItem("userUpdatedPassword"));
+//   userData.password = usersUpdatedPassword;
+// }
 
