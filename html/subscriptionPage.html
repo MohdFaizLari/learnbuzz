@@ -20,9 +20,40 @@
   <body class="clearFix">
     <header class="mainHeader pd-10">
       <div class="websiteLogoDiv">
-        <button class="websiteLogoButton" onclick="landingPageRedirect()">
+        <button class="websiteLogoButton" onclick="homepageRedirect()">
           <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
         </button>
+      </div>
+      <div class="headerMiddleSection">
+        <div class="navStyling pd-r-15">
+          <a
+            href="./../html/homepage.html"
+            class="fw-semi-bold navTextStyling"
+            >Home</a
+          >
+          <a class="fw-semi-bold">About</a>
+
+          <a class="fw-semi-bold" onclick="coursesPageRedirect()"
+            >Courses</a
+          >
+
+          <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+        </div>
+        <div
+          class="hdrProfilePicture mr-r-10"
+          onclick="profilePictureButton()"
+        >
+          <img
+            src="./../Media/itachiPassportSizeImg1.png"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="hdrBtnContainer">
+          <button class="primaryButton" onclick="loginButtonFunction()">
+            Signout
+          </button>
+        </div>
       </div>
     </header>
     
@@ -150,6 +181,6 @@
     </footer>
 
     <script src="./../javaScript/subscriptionPage.js"></script>
-    <script src="./../javaScript/signup.js"></script>
+    <!-- <script src="./../javaScript/index.js"></script> -->
   </body>
 </html>
