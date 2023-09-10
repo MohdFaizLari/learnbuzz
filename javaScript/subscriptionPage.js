@@ -10,7 +10,17 @@ let selectedPlan = (e) => {
 
 let debitCardFormLoad = (e) => {
   let paymentFormContainer = document.getElementById("paymentFormContainer");
-  console.log(e);
+  // console.log(e);
+
+  if (document.getElementById("debitCardPaymentForm")) {
+    let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
+    debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
+  } else if (document.getElementById("debitCardPaymentForm")) {
+    let creditCardPaymentForm = document.getElementById(
+      "creditCardPaymentForm"
+    );
+    creditCardPaymentForm.parentNode.removeChild(creditCardPaymentForm);
+  }
 
   let paymentForm = document.createElement("form");
   paymentForm.setAttribute("id", "debitCardPaymentForm");
