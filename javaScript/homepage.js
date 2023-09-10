@@ -1,13 +1,15 @@
-// if ( window.history.replaceState ) {
-//   window.history.replaceState( null, null, window.location.href );
-// }
+let htmlIntroPageRedirect = () => {
+  window.location = "./../html/contentOnIntroToHtml.html";
+};
 
-// var curVid = getElementById('myVideo');
-// $(document).on('click','#replayBtn',function(){
-//     curVid.pause();
-//     curVid.currentTime = '0';
-//     curVid.play();
-// });
+let jsIntroPageRedirect = () => {
+    window.location = "./../html/contentOnJSFundamentals.html"; 
+}
 
+let fullStackIntroPageRedirect = () => {
+    window.location = "./../html/contentOnFullStack.html"; 
+}
 
-
+let resWebIntroPageRedirect = () => {
+    window.location = "./../html/contentOnResponsiveDesign.html"; 
+}
