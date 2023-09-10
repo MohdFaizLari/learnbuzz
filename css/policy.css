@@ -1,0 +1,42 @@
+body {
+  background-color: #13253a;
+}
+.landingPageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-top: 76px;
+}
+
+.secondSectionMain {
+  color: #fffffff8;
+  width: 50%;
+  margin-left: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+/*  */
+/* .mr-t-5 {
+  text-align: center;
+} */
+.fw-semi-bold {
+  color: rgba(238, 239, 240, 0.607);
+}
