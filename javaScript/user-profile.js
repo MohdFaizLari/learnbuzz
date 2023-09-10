@@ -1,8 +1,8 @@
 let profilePageLoadSetup = (() => {
   let usersData;
   usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
-  userData = usersData[0];
-  console.log(userData);
+  let userData = usersData[0];
+  // console.log(userData);
 
   if (userData !== null) {
     let fullName = document.getElementById("fullname");
@@ -28,15 +28,17 @@ let profilePageLoadSetup = (() => {
     let date = new Date();
     let hoursTime = date.getHours();
     let userGreeting = document.getElementById("userGreeting");
+    console.log(userGreeting.innerText, date, hoursTime);
+    // userGreeting.innerText = "Hello";
     if (hoursTime >= 5 && hoursTime < 11.59) {
       userGreeting.innerText =
-        "Hey " + fullNameDiv.innerText + "," + " Good morning!";
+        "Hey " + userFullNameDiv.innerText + " ," + " Good morning!";
     } else if (hoursTime >= 12 && hoursTime < 16.59) {
       userGreeting.innerText =
-        "Hey " + userFullNameDiv.innerText + "," + " Good afternoon!";
-    } else if (hoursTime >= 17 && hoursTime < 23.59) {
+        "Hey " + userFullNameDiv.innerText + " ," + " Good afternoon!";
+    } else if (hoursTime < 4.59 || hoursTime >= 17) {
       userGreeting.innerText =
-        "Hey " + userFullNameDiv.innerText + "," + " Good evening!";
+        "Hey " + userFullNameDiv.innerText + " ," + " Good evening!";
     }
 
     fullName.appendChild(userFullNameDiv);
