@@ -2,6 +2,15 @@ body {
     background-color: aliceblue;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:#1338BE;
+    cursor:pointer;
+}
+
 .contentWrapper {
     display: flex;
     flex-direction: row;
