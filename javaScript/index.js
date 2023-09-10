@@ -17,3 +17,11 @@ let homePageRedirect = (e) => {
 let contactPageRedirect = (e) => {
   window.location = "./../html/contact.html";
 };
+
+let coursesPageRedirect = () => {
+  window.location = "./../html/courses.html";
+};
+
+let profilePictureButton = () => {
+  window.location = "./../html/user-profile.html";
+};
