@@ -247,34 +247,6 @@ let filterBasedOnCategorySelection = (e) => {
     }
   }
 
-  // if (inputData[0].courseCategory === "Web-Development") {
-  //   let defaultSelectedCategory
-  //   let htmlCourse = selectedCategoryData.courses.html;
-  //   let cssCourse = selectedCategoryData.courses.css;
-  //   let jsCourse = selectedCategoryData.courses.javascript;
-  //   if (!document.getElementById("webDev")) {
-  //     if (document.getElementById("digitalMark")) {
-  //       let digitalMark = document.getElementById("digitalMark");
-  //       digitalMark.parentNode.removeChild(digitalMark);
-  //     }
-  //     let courseWrapper = document.createElement("div");
-  //     courseWrapper.setAttribute("id", "webDev");
-  //     let mainContentContainer = document.getElementById(
-  //       "mainContentContainer"
-  //     );
-  //     mainContentContainer.appendChild(courseWrapper);
-  //     if (htmlCourse !== null || "undefined") {
-  //       fetchContent(htmlCourse, "htmlContainer", "webDev");
-  //     }
-  //     if (cssCourse !== null || "undefined") {
-  //       fetchContent(cssCourse, "cssContainer", "webDev");
-  //     }
-  //     if (jsCourse !== null || "undefined") {
-  //       fetchContent(jsCourse, "jsContainer", "webDev");
-  //     }
-  //   }
-  // }
-
   if (selectedCategoryID === "webDevelopment") {
     let htmlCourse = selectedCategoryData.courses.html;
     let cssCourse = selectedCategoryData.courses.css;
