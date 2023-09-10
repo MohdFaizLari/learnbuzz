@@ -48,7 +48,7 @@ if (document.getElementById("userCredentialsForm")) {
         errorMessage.style.backgroundColor = "#fcbca0";
         errorMessage.style.marginTop = "10px";
         errorMessage.style.padding = "5px";
-        
+
         if (!document.getElementById("errorMessageDiv")) {
           let formContainer1 = document.getElementById("formInnerSection");
           if (document.getElementById("formInnerSection")) {
@@ -68,18 +68,14 @@ if (document.getElementById("userCredentialsForm")) {
 
 let passwordStore = () => {
   let userInputPassword = document.getElementById("userInputPassword");
-  userData.password = userInputPassword.value;
-  console.log(userData.password);
-  localStorage.setItem(
-    "userUpdatedPassword",
-    JSON.stringify(userData.password)
-  );
-  passwordUpdate();
-  window.location = "./../html/login.html";
+  console.log(usersData);
+  usersData[0].password = userInputPassword.value;
+  localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
+  //   passwordUpdate();
+  window.location = "./../html/homepage.html";
 };
 
 let passwordReset = () => {
-  let userPrevPassword = usersData.password;
 
   let passwordLabel = document.createElement("label");
   passwordLabel.setAttribute("for", "userInputPassword");
