@@ -25,3 +25,11 @@ let coursesPageRedirect = () => {
 let profilePictureButton = () => {
   window.location = "./../html/user-profile.html";
 };
+
+let termsPageRedirect = () => {
+  window.location = "./../html/terms.html";
+};
+
+let policyPageRedirect = () => {
+  window.location = "./../html/terms.html";
+};

@@ -9,11 +9,5 @@
 //     curVid.play();
 // });
 
-let profilePictureButton = () => {
-  console.log("hi");
-  window.location = "./../html/user-profile.html";
-};
 
-let coursesPageRedirect = () => {
-  window.location = "./../html/courses.html";
-};
+
