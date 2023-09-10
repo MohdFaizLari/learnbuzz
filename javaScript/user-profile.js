@@ -1,6 +1,8 @@
 let profilePageLoadSetup = (() => {
-  let userData = {};
-  userData = JSON.parse(localStorage.getItem("userData"));
+  let usersData;
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
+  userData = usersData[0];
+  console.log(userData);
 
   if (userData !== null) {
     let fullName = document.getElementById("fullname");
