@@ -161,6 +161,88 @@ let creditCardFormLoad = (e) => {
   }
 };
 
+let upiFormLoad = (e) => {
+  let paymentFormContainer = document.getElementById("paymentFormContainer");
+  if (document.getElementById("debitCardPaymentForm")) {
+    let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
+    debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
+  } else if (document.getElementById("creditCardPaymentForm")) {
+    let creditCardPaymentForm = document.getElementById(
+      "creditCardPaymentForm"
+    );
+    creditCardPaymentForm.parentNode.removeChild(creditCardPaymentForm);
+  }
+  let paymentForm = document.createElement("form");
+  paymentForm.setAttribute("id", "upiPaymentForm");
+  paymentForm.setAttribute("name", "upiPaymentForm");
+  paymentForm.method = "post";
+
+  let formDescription = document.createElement("div");
+  formDescription.innerText = "Enter your UPI Id";
+  formDescription.style.textAlign = "center";
+  formDescription.classList.add("mr-b-20");
+  formDescription.classList.add("fw-bold");
+  paymentForm.appendChild(formDescription);
+
+  // let userNameLabel = document.createElement("label");
+  // userNameLabel.innerText = "Name on Card";
+  // userNameLabel.setAttribute("for", "userName");
+  // let userNameInput = document.createElement("input");
+  // userNameInput.setAttribute("id", "userName");
+  // userNameInput.setAttribute("type", "text");
+  // userNameInput.placeholder = "Itachi Uchiha";
+  // userNameInput.required = "true";
+  // userNameInput.classList.add("mr-b-10");
+  // paymentForm.appendChild(userNameLabel);
+  // paymentForm.appendChild(userNameInput);
+
+  // let cardNumberLabel = document.createElement("label");
+  // cardNumberLabel.innerText = "Card Number";
+  // cardNumberLabel.setAttribute("for", "cardNumber");
+  // let cardNumberInput = document.createElement("input");
+  // cardNumberInput.setAttribute("id", "cardNumber");
+  // cardNumberInput.setAttribute("type", "number");
+  // cardNumberInput.required = "true";
+  // cardNumberInput.placeholder = "1234 5678 9012 3456";
+  // cardNumberInput.classList.add("mr-b-10");
+  // paymentForm.appendChild(cardNumberLabel);
+  // paymentForm.appendChild(cardNumberInput);
+
+  // let expiryDateLabel = document.createElement("label");
+  // expiryDateLabel.innerText = "Expiry Date";
+  // expiryDateLabel.setAttribute("for", "expiryDate");
+  // let expiryDateInput = document.createElement("input");
+  // expiryDateInput.setAttribute("id", "expiryDate");
+  // expiryDateInput.setAttribute("type", "number");
+  // expiryDateInput.placeholder = "MM/YY";
+  // expiryDateInput.required = "true";
+  // expiryDateInput.classList.add("mr-b-10");
+  // paymentForm.appendChild(expiryDateLabel);
+  // paymentForm.appendChild(expiryDateInput);
+
+  // let cvvLabel = document.createElement("label");
+  // cvvLabel.innerText = "CVV";
+  // cvvLabel.setAttribute("for", "cvv");
+  // let cvvInput = document.createElement("input");
+  // cvvInput.setAttribute("id", "cvv");
+  // cvvInput.setAttribute("type", "number");
+  // cvvInput.placeholder = "123";
+  // cvvInput.classList.add("mr-b-10");
+  // cvvInput.required = "true";
+  // paymentForm.appendChild(cvvLabel);
+  // paymentForm.appendChild(cvvInput);
+
+  // let submitButton = document.createElement("input");
+  // submitButton.setAttribute("type", "submit");
+  // submitButton.setAttribute("value", "Submit");
+  // submitButton.classList.add("secondaryButton");
+  // paymentForm.appendChild(submitButton);
+
+  if (!document.getElementById("debitCardPaymentForm")) {
+    paymentFormContainer.appendChild(paymentForm);
+  }
+};
+
 let subscriptionPageLoadSetup = (() => {
   let firstPlan = document.getElementById("firstPlan");
   firstPlan.addEventListener("click", selectedPlan);
