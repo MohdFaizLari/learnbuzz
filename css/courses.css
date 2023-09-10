@@ -35,9 +35,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
-    padding-top: 25px;
-    padding-left: 25px;
+    gap: 30px;
+    padding-top: 3%;
+}
+
+.sideBarCourseCategories {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sideBarCourseCategories:hover {
+    color: #1338BE;
+    cursor: pointer;
 }
 
 .mainContent {
@@ -46,6 +55,10 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
+}
+
+.courseCategoryContainer{
+    width: 100%;
 }
 
 .videoscontainerDiv {
