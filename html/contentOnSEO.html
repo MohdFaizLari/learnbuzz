@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp-page</title>
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/contentOnIntroToHtml.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="clearFix">
+    <header class="mainHeader pd-10">
+        <div class="websiteLogoDiv">
+          <button class="websiteLogoButton" onclick="homepageRedirect()">
+            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+          </button>
+        </div>
+        <div class="headerMiddleSection">
+          <div class="navStyling pd-r-15">
+            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
+              >Home</a
+            >
+            <a class="fw-semi-bold">About</a>
+  
+            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
+  
+            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+          </div>
+          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
+            <img
+              src="./../Media/itachiPassportSizeImg1.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="hdrBtnContainer">
+            <button class="primaryButton" onclick="loginButtonFunction()">
+              Signout
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="mainContent pd-15">
+            <div class="contentHeading">
+                <h1 class="mainHeading">Search Engine Optimization</h1>
+            </div>
+            <div>
+                <p>
+                    Search Engine Optimization (SEO) is the practice of optimizing 
+                    a website or online content to improve its visibility and ranking 
+                    in search engine results pages (SERPs). SEO is crucial for driving
+                    organic (non-paid) traffic to websites and increasing their online 
+                    presence. Here's an overview of SEO:
+
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">
+                    1. Keywords Research:
+                </h3>
+                <p>
+                    Identify relevant keywords and phrases that users are likely to
+                    search for when looking for content related to your website. 
+                    Keyword research tools like Google Keyword Planner and SEMrush
+                    can help you find the right keywords.
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">
+                    2. On Page-SEO
+                </h3>
+                <p>
+                    Optimize individual web pages to make them search engine-friendly.
+                    Key on-page SEO elements include:
+
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">a. Title Tags:</h4>
+                <p>
+                    Craft unique and descriptive titles for each page, including the primary keyword.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">b. Meta Descriptions</h4>
+                <p>
+                    Write compelling meta descriptions that entice users to click on your search result.
+                </p>
+                <h4 class="fw-semi-bold mr-t-20 mr-b-20 fw-bold">c. Header Tags</h4>
+                <p>
+                    Use header tags (H1, H2, H3, etc.) to structure your content and include keywords where relevant.
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">
+                    3. Content Quality:
+                </h3>
+                <p>
+                    Create high-quality, valuable, and informative content that addresses 
+                    user intent. Google rewards content that answers questions, provides 
+                    solutions, and engages users.
+
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">
+                    4. Mobile Optimization:
+                </h3>
+                <p>
+                    Ensure that your website is responsive and mobile-friendly, 
+                    as Google prioritizes mobile-first indexing. Test your site's 
+                    mobile usability and load times.
+
+                </p>
+                <h3 class="mr-t-20 mr-b-20 heading">
+                    5. Page Speed:
+                </h3>
+                <p>
+                    Optimize page loading times to improve user experience. 
+                    Compress images, use browser caching, and minimize code to enhance website speed.
+
+                </p>
+                <p class="mr-t-20">
+                    SEO is an ongoing process that requires patience and continuous effort.
+                    By following best practices and staying informed about algorithm updates
+                    and industry trends, you can improve your website's visibility and 
+                    organic traffic over time.
+                </p>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footerStyling pd-5 mr-t-5">
+          <div class="aboutUs pd-t-10">
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle">Courses</p>
+              <p class="mr-b-10 footerHoveringStyle">Blog</p>
+              <p class="mr-b-10 footerHoveringStyle">FAQS</p>
+            </div>
+            <div>
+              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
+              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
+              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+            </div>
+          </div>
+  
+          <div class="footerIconsWrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="#" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+        </div>
+      </footer> 
+
+  </body>
