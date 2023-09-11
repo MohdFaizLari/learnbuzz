@@ -1,8 +1,7 @@
-let usersData = [];
-let loginPageLoadSetup = (() => {
-  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
-  // console.log(usersData);
-})();
+// let usersData = [];
+// let loginPageLoadSetup = (() => {
+//   usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
+// })();
 
 let htmlIntroPageRedirect = () => {
   window.location = "./../html/contentOnIntroToHtml.html";
@@ -20,18 +19,30 @@ let resWebIntroPageRedirect = () => {
   window.location = "./../html/contentOnResponsiveDesign.html";
 };
 
-let subscriptionPageRedirect = () => {
-  window.location = "./../html/subscriptionPage.html";
+let sMIntroPageRedirect = () => {
+  window.location = "./../html/contentOnSocialMediaMarketing.html";
 };
 
-if (document.getElementById("subscriptionStatus")) {
-  let subscriptionStatus = document.getElementById("subscriptionStatus");
-  subscriptionStatus.innerText = usersData[0].subscriptionStatus;
-  subscriptionStatus.style.color = "#1338BE";
-  if (
-    document.getElementById("subscriptionStatus").innerText === "Subscribed"
-  ) {
-    let subscriptionStatus = document.getElementById("subscriptionStatus");
-    subscriptionStatus.onclick = null;
-  }
-}
+let seoIntroPageRedirect = () => {
+  window.location = "./../html/contentOnSEO.html";
+};
+
+let cMIntroPageRedirect = () => {
+  window.location = "./../html/contentOnContentMarketing.html";
+};
+
+let eMIntroPageRedirect = () => {
+  window.location = "./../html/contentOnEmailMarketing.html";
+};
+
+// if (document.getElementById("subscriptionStatus")) {
+//   let subscriptionStatus = document.getElementById("subscriptionStatus");
+//   subscriptionStatus.innerText = usersData[0].subscriptionStatus;
+//   subscriptionStatus.style.color = "#1338BE";
+//   if (
+//     document.getElementById("subscriptionStatus").innerText === "Subscribed"
+//   ) {
+//     let subscriptionStatus = document.getElementById("subscriptionStatus");
+//     subscriptionStatus.onclick = null;
+//   }
+// }

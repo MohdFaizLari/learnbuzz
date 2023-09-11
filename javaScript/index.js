@@ -1,3 +1,8 @@
+let usersData = [];
+let loginPageLoadSetup = (() => {
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
+})();
+
 let loginButtonFunction = (e) => {
   window.location = "./../html/login.html";
 };
@@ -34,3 +39,18 @@ let policyPageRedirect = () => {
   window.location = "./../html/terms.html";
 };
 
+let subscriptionPageRedirect = () => {
+  window.location = "./../html/subscriptionPage.html";
+};
+
+if (document.getElementById("subscriptionStatus")) {
+  let subscriptionStatus = document.getElementById("subscriptionStatus");
+  subscriptionStatus.innerText = usersData[0].subscriptionStatus;
+  subscriptionStatus.style.color = "#1338BE";
+  if (
+    document.getElementById("subscriptionStatus").innerText === "Subscribed"
+  ) {
+    let subscriptionStatus = document.getElementById("subscriptionStatus");
+    subscriptionStatus.onclick = null;
+  }
+}

@@ -30,23 +30,24 @@
       </div>
       <div class="headerMiddleSection">
         <div class="navStyling pd-r-15">
-          <a
-            href="./../html/homepage.html"
-            class="fw-semi-bold navTextStyling"
+          <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
             >Home</a
           >
-          <a class="fw-semi-bold">About</a>
+          <!-- <a class="fw-semi-bold">About</a> -->
 
-          <a class="fw-semi-bold" onclick="coursesPageRedirect()"
-            >Courses</a
-          >
+          <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
 
           <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+
+          <a
+            class="fw-semi-bold"
+            id="subscriptionStatus"
+            onclick="subscriptionPageRedirect()"
+            >Subscribe</a
+          >
         </div>
-        <div
-          class="hdrProfilePicture mr-r-10"
-          onclick="profilePictureButton()"
-        >
+
+        <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
           <img
             src="./../Media/itachiPassportSizeImg1.png"
             width="100%"

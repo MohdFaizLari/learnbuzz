@@ -19,36 +19,44 @@
   </head>
   <body class="clearFix">
     <header class="mainHeader pd-10">
-        <div class="websiteLogoDiv">
-          <button class="websiteLogoButton" onclick="homepageRedirect()">
-            <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+      <div class="websiteLogoDiv">
+        <button class="websiteLogoButton" onclick="homepageRedirect()">
+          <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
+        </button>
+      </div>
+      <div class="headerMiddleSection">
+        <div class="navStyling pd-r-15">
+          <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
+            >Home</a
+          >
+          <!-- <a class="fw-semi-bold">About</a> -->
+
+          <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
+
+          <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+
+          <a
+            class="fw-semi-bold"
+            id="subscriptionStatus"
+            onclick="subscriptionPageRedirect()"
+            >Subscribe</a
+          >
+        </div>
+
+        <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
+          <img
+            src="./../Media/itachiPassportSizeImg1.png"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="hdrBtnContainer">
+          <button class="primaryButton" onclick="loginButtonFunction()">
+            Signout
           </button>
         </div>
-        <div class="headerMiddleSection">
-          <div class="navStyling pd-r-15">
-            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
-              >Home</a
-            >
-            <a class="fw-semi-bold">About</a>
-  
-            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
-  
-            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
-          </div>
-          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
-            <img
-              src="./../Media/itachiPassportSizeImg1.png"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="hdrBtnContainer">
-            <button class="primaryButton" onclick="loginButtonFunction()">
-              Signout
-            </button>
-          </div>
-        </div>
-      </header>
+      </div>
+    </header>
       <div class="ContentWrapper">
         <div class="mainContent pd-15">
             <div class="contentHeading">
@@ -149,9 +157,21 @@
               <p class="mr-b-10 footerHoveringStyle">FAQS</p>
             </div>
             <div>
-              <p class="mr-b-10 footerHoveringStyle">Privacy Policy</p>
-              <p class="mr-b-10 footerHoveringStyle">Terms of Use</p>
-              <p class="mr-t-20">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
+              <p
+                class="mr-b-10 footerHoveringStyle"
+                onclick="policyPageRedirect()"
+              >
+                Privacy Policy
+              </p>
+              <p
+                class="mr-b-10 footerHoveringStyle"
+                onclick="termsPageRedirect()"
+              >
+                Terms of Use
+              </p>
+              <p class="copyRightSection">
+                &#169; 2023 Learnbuzz Technologies Pvt Ltd
+              </p>
             </div>
           </div>
   
