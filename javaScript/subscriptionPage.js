@@ -142,10 +142,6 @@ let debitCardFormLoad = (e) => {
     // Attach a submit event listener to the login form
     debitCardPaymentForm.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting normally
-      console.log("Done");
-      let debitCardFormData = document.forms.loginform;
-      // let userValidated = false;
-
       for (let i = 0; i < usersData.length; i++) {
         usersData[0].subscriptionStatus = "Subscribed";
         console.log(usersData);
@@ -253,10 +249,6 @@ let creditCardFormLoad = (e) => {
     // Attach a submit event listener to the login form
     creditCardPaymentForm.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting normally
-      console.log("Done");
-      let ccPaymentFormData = document.forms.loginform;
-      // let userValidated = false;
-
       for (let i = 0; i < usersData.length; i++) {
         usersData[0].subscriptionStatus = "Subscribed";
         console.log(usersData);
@@ -328,11 +320,7 @@ let upiFormLoad = (e) => {
     let upiPaymentForm = document.getElementById("upiPaymentForm");
     // Attach a submit event listener to the login form
     upiPaymentForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-      console.log("Done");
-      let upiPaymentData = document.forms.loginform;
-      // let userValidated = false;
-
+      event.preventDefault(); // Prevent the form from submitting normall
       for (let i = 0; i < usersData.length; i++) {
         usersData[0].subscriptionStatus = "Subscribed";
         console.log(usersData);

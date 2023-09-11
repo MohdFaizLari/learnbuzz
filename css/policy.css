@@ -31,12 +31,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  
 }
-/*  */
-/* .mr-t-5 {
-  text-align: center;
-} */
+
 .fw-semi-bold {
   color: rgba(238, 239, 240, 0.607);
 }

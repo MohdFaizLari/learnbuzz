@@ -213,24 +213,20 @@ let inputData = [
 ];
 
 let fetchContent = (courses, courseId, courseCategoryID) => {
-  // console.log(courses);
   let courseWrapper = document.getElementById(courseCategoryID);
   let courseVideosContainer = document.createElement("div");
   courseVideosContainer.setAttribute("id", courseId);
   courseVideosContainer.classList.add("coursesContainerStyling");
-  // console.log(courses);
   for (let j = 0; j < courses.length; j++) {
     let courseDescription = document.createElement("p");
     let videoscontainerDiv = document.createElement("div");
     courseDescription.innerText = courses[j].courseDescription;
-    // console.log(courseDescription.innerText);
 
     let courseVideos = courses[j].videoLink;
     videoscontainerDiv.classList.add("videoscontainerDiv");
     let videosContainer = document.createElement("video");
     videosContainer.style.width = "100%";
     videosContainer.style.height = "70%";
-    // videosContainer.autoplay = "disabled";
     videosContainer.controls = true;
     videosContainer.muted = true;
     videosContainer.setAttribute("src", courseVideos);

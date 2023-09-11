@@ -29,7 +29,6 @@ if (document.getElementById("loginform")) {
         userValidated = true;
         window.location = "./../html/homepage.html";
       } else {
-        // console.log("Heuj");
         userValidated = false;
       }
     }
