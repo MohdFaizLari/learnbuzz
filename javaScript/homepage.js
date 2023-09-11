@@ -28,7 +28,9 @@ if (document.getElementById("subscriptionStatus")) {
   let subscriptionStatus = document.getElementById("subscriptionStatus");
   subscriptionStatus.innerText = usersData[0].subscriptionStatus;
   subscriptionStatus.style.color = "#1338BE";
-  if (document.getElementById("subscriptionStatus").innerText === "Subscribed") {
+  if (
+    document.getElementById("subscriptionStatus").innerText === "Subscribed"
+  ) {
     let subscriptionStatus = document.getElementById("subscriptionStatus");
     subscriptionStatus.onclick = null;
   }
