@@ -61,8 +61,6 @@ if (document.getElementById("userCredentialsForm")) {
         }
       }
     }
-    // localStorage.setItem("userLoginData", JSON.stringify(email));
-    // window.location = "./../html/homepage.html";
   });
 }
 
@@ -71,7 +69,6 @@ let passwordStore = () => {
   console.log(usersData);
   usersData[0].password = userInputPassword.value;
   localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
-  //   passwordUpdate();
   window.location = "./../html/homepage.html";
 };
 

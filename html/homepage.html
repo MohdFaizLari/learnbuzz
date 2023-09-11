@@ -37,14 +37,24 @@
                 class="fw-semi-bold navTextStyling"
                 >Home</a
               >
-              <a class="fw-semi-bold">About</a>
+              <!-- <a class="fw-semi-bold">About</a> -->
 
               <a class="fw-semi-bold" onclick="coursesPageRedirect()"
                 >Courses</a
               >
 
-              <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
+              <a class="fw-semi-bold" onclick="contactPageRedirect()"
+                >Contact</a
+              >
+
+              <a
+                class="fw-semi-bold"
+                id="subscriptionStatus"
+                onclick="subscriptionPageRedirect()"
+                >Subscribe</a
+              >
             </div>
+
             <div
               class="profilePicture mr-r-10"
               onclick="profilePictureButton()"
@@ -137,7 +147,9 @@
               />
               <h4 class="fw-normal">Introduction to HTML & CSS</h4>
               <p class="authorName mr-b-5">Max Paxton</p>
-              <button class="primaryButton" onclick="htmlIntroPageRedirect()">View Details</button>
+              <button class="primaryButton" onclick="htmlIntroPageRedirect()">
+                View Details
+              </button>
             </div>
 
             <div class="pd-15 webDevCard">
@@ -147,7 +159,9 @@
               />
               <h4 class="fw-normal">Javascript Fundamentals</h4>
               <p class="authorName mr-b-5">Jill Parker</p>
-              <button class="primaryButton" onclick="jsIntroPageRedirect()">View Details </button>
+              <button class="primaryButton" onclick="jsIntroPageRedirect()">
+                View Details
+              </button>
             </div>
 
             <div class="pd-15 webDevCard">
@@ -157,7 +171,12 @@
               />
               <h4 class="fw-normal">Full Stack Web Development</h4>
               <p class="authorName mr-b-5">Phillip Mathew</p>
-              <button class="primaryButton" onclick="fullStackIntroPageRedirect()">View Details</button>
+              <button
+                class="primaryButton"
+                onclick="fullStackIntroPageRedirect()"
+              >
+                View Details
+              </button>
             </div>
 
             <div class="pd-15 webDevCard">
@@ -167,7 +186,9 @@
               />
               <h4 class="fw-normal">Responsive Web Design</h4>
               <p class="authorName mr-b-5">Harry Wilson</p>
-              <button class="primaryButton" onclick="resWebIntroPageRedirect()">View Details</button>
+              <button class="primaryButton" onclick="resWebIntroPageRedirect()">
+                View Details
+              </button>
             </div>
           </div>
 
@@ -271,7 +292,6 @@
           </div>
         </div>
       </footer>
-      
     </div>
     <script src="./../javaScript/index.js"></script>
     <script src="./../javaScript/homepage.js"></script>

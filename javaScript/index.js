@@ -33,3 +33,4 @@ let termsPageRedirect = () => {
 let policyPageRedirect = () => {
   window.location = "./../html/terms.html";
 };
+

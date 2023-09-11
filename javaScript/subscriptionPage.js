@@ -1,3 +1,9 @@
+let usersData = [];
+let loginPageLoadSetup = (() => {
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
+  // console.log(usersData);
+})();
+
 let selectedPlan = (e) => {
   let arr = {};
   let userPlan = e.target.innerText.split("\n");
@@ -93,6 +99,24 @@ let debitCardFormLoad = (e) => {
   if (!document.getElementById("debitCardPaymentForm")) {
     paymentFormContainer.appendChild(paymentForm);
   }
+
+  if (document.getElementById("debitCardPaymentForm")) {
+    let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
+    // Attach a submit event listener to the login form
+    debitCardPaymentForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      console.log("Done");
+      let debitCardFormData = document.forms.loginform;
+      // let userValidated = false;
+
+      for (let i = 0; i < usersData.length; i++) {
+        let userCredentials = usersData[i];
+        userCredentials.subscriptionStatus = "Subscribed";
+        console.log(usersData);
+        localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
+      }
+    });
+  }
 };
 
 let creditCardFormLoad = (e) => {
@@ -174,6 +198,25 @@ let creditCardFormLoad = (e) => {
   if (!document.getElementById("creditCardPaymentForm")) {
     paymentFormContainer.appendChild(paymentForm);
   }
+
+  if (document.getElementById("creditCardPaymentForm")) {
+    let creditCardPaymentForm = document.getElementById(
+      "creditCardPaymentForm"
+    );
+    // Attach a submit event listener to the login form
+    creditCardPaymentForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      console.log("Done");
+      let ccPaymentFormData = document.forms.loginform;
+      // let userValidated = false;
+
+      for (let i = 0; i < usersData.length; i++) {
+        let userCredentials = usersData[i];
+        userCredentials.subscriptionStatus = "Subscribed";
+        localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
+      }
+    });
+  }
 };
 
 let upiFormLoad = (e) => {
@@ -221,6 +264,24 @@ let upiFormLoad = (e) => {
   if (!document.getElementById("upiPaymentForm")) {
     paymentFormContainer.appendChild(paymentForm);
   }
+
+  if (document.getElementById("upiPaymentForm")) {
+    let upiPaymentForm = document.getElementById("upiPaymentForm");
+    // Attach a submit event listener to the login form
+    upiPaymentForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      console.log("Done");
+      let upiPaymentData = document.forms.loginform;
+      // let userValidated = false;
+
+      for (let i = 0; i < usersData.length; i++) {
+        let userCredentials = usersData[i];
+        userCredentials.subscriptionStatus = "Subscribed";
+        console.log(usersData);
+        localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
+      }
+    });
+  }
 };
 
 let subscriptionPageLoadSetup = (() => {
@@ -233,3 +294,4 @@ let subscriptionPageLoadSetup = (() => {
 
   document.getElementById("debitCard").click();
 })();
+
