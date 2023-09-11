@@ -1,6 +1,6 @@
 let usersData = [];
 let loginPageLoadSetup = (() => {
-  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
   console.log(usersData);
 })();
 
@@ -147,8 +147,7 @@ let debitCardFormLoad = (e) => {
       // let userValidated = false;
 
       for (let i = 0; i < usersData.length; i++) {
-        let userCredentials = usersData[i];
-        userCredentials.subscriptionStatus = "Subscribed";
+        usersData[0].subscriptionStatus = "Subscribed";
         console.log(usersData);
         localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
       }
@@ -259,8 +258,8 @@ let creditCardFormLoad = (e) => {
       // let userValidated = false;
 
       for (let i = 0; i < usersData.length; i++) {
-        let userCredentials = usersData[i];
-        userCredentials.subscriptionStatus = "Subscribed";
+        usersData[0].subscriptionStatus = "Subscribed";
+        console.log(usersData);
         localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
       }
     });
@@ -275,7 +274,8 @@ let upiFormLoad = (e) => {
   creditCard.style.backgroundColor = "White";
   creditCard.style.color = "Black";
   let debitCard = document.getElementById("debitCard");
-  debitCard.style.backgroundColor = "#White";
+  debitCard.style.backgroundColor = "White";
+  debitCard.style.color = "Black";
 
   let upi = document.getElementById("upi");
   upi.style.backgroundColor = "#1338be";
@@ -334,8 +334,7 @@ let upiFormLoad = (e) => {
       // let userValidated = false;
 
       for (let i = 0; i < usersData.length; i++) {
-        let userCredentials = usersData[i];
-        userCredentials.subscriptionStatus = "Subscribed";
+        usersData[0].subscriptionStatus = "Subscribed";
         console.log(usersData);
         localStorage.setItem("userDataSignUp", JSON.stringify(usersData));
       }
