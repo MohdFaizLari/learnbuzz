@@ -20,41 +20,9 @@
   <body class="clearFix">
     <header class="mainHeader pd-10">
         <div class="websiteLogoDiv">
-          <button class="websiteLogoButton" onclick="homepageRedirect()">
+          <button class="websiteLogoButton">
             <img src="./../Media/LearnBuzz-logo-4.png" class="websiteLogo" />
           </button>
-        </div>
-        <div class="headerMiddleSection">
-          <div class="navStyling pd-r-15">
-            <a href="./../html/homepage.html" class="fw-semi-bold navTextStyling"
-              >Home</a
-            >
-            <!-- <a class="fw-semi-bold">About</a> -->
-  
-            <a class="fw-semi-bold" onclick="coursesPageRedirect()">Courses</a>
-  
-            <a class="fw-semi-bold" onclick="contactPageRedirect()">Contact</a>
-  
-            <a
-              class="fw-semi-bold"
-              id="subscriptionStatus"
-              onclick="subscriptionPageRedirect()"
-              >Subscribe</a
-            >
-          </div>
-  
-          <div class="hdrProfilePicture mr-r-10" onclick="profilePictureButton()">
-            <img
-              src="./../Media/itachiPassportSizeImg1.png"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="hdrBtnContainer">
-            <button class="primaryButton" onclick="loginButtonFunction()">
-              Signout
-            </button>
-          </div>
         </div>
       </header>
        <div class="ContentWrapper">
@@ -101,11 +69,11 @@
               </div>
         </div>
        </div>
-      <footer>
+       <footer>
         <div class="footerStyling pd-5 mr-t-5">
           <div class="aboutUs pd-t-10">
             <div>
-              <p class="mr-b-10 footerHoveringStyle">About Us</p>
+              <p class="mr-b-10 footerHoveringStyle" onclick="aboutPageRedirect()">About Us</p>
               <p class="mr-b-10 footerHoveringStyle">Courses</p>
               <p class="mr-b-10 footerHoveringStyle">Blog</p>
               <p class="mr-b-10 footerHoveringStyle">FAQS</p>
@@ -123,12 +91,10 @@
               >
                 Terms of Use
               </p>
-              <p class="copyRightSection">
-                &#169; 2023 Learnbuzz Technologies Pvt Ltd
-              </p>
+              <p class="copyRightSection">&#169; 2023 Learnbuzz Technologies Pvt Ltd</p>
             </div>
           </div>
-  
+
           <div class="footerIconsWrapper">
             <a href="#" class="icon facebook">
               <div class="tooltip">Facebook</div>
