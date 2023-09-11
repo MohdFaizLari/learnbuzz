@@ -14,7 +14,8 @@ if (document.getElementById("signupForm")) {
     userData.email = email;
     let password = signupForm.pwd.value;
     userData.password = password;
-
+    userData.subscriptionStatus = "Subscribe";
+    
     localStorage.setItem("userDataSignUp", JSON.stringify(userData));
     window.location = "./../html/homepage.html";
   });

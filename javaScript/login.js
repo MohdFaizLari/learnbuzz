@@ -1,6 +1,5 @@
 let usersData = [];
 let loginPageLoadSetup = (() => {
-  // console.log(JSON.parse(localStorage.getItem("userDataSignUp")));
   usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
   console.log(usersData);
 })();
