@@ -33,7 +33,7 @@ Header Section --->
 Footer Section -
 
 - In this section we have mentioned privacy policies, Terms of usage etc.
-
+- Blog's and FaQ's are not working
 
 Homepage Guide --->
 
