@@ -43,6 +43,9 @@ let policyPageRedirect = () => {
 let subscriptionPageRedirect = () => {
   window.location = "./../html/subscriptionPage.html";
 };
+let aboutPageRedirect = () => {
+  window.location = "./../html/about.html";
+};
 
 if (document.getElementById("subscriptionStatus")) {
   let subscriptionStatus = document.getElementById("subscriptionStatus");
