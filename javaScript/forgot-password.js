@@ -32,7 +32,6 @@ if (document.getElementById("userCredentialsForm")) {
         userOtpInput.style.padding = "5px";
         userOtpInput.style.marginBottom = "15px";
         userOtpInput.addEventListener("change", passwordReset);
-        // userOtpInput.setAttribute('type','number');
         form.appendChild(userOtpInput);
 
         let formContainer1 = document.getElementById("userCredentialsForm");
@@ -87,12 +86,9 @@ let passwordReset = () => {
   let submitButton = document.createElement("input");
   submitButton.setAttribute("type", "submit");
   submitButton.classList.add("secondaryButton");
-  //   submitButton.addEventListener("click", homePageRedirecting);
 
   let formContainer1 = document.getElementById("formAlign");
   formContainer1.appendChild(passwordLabel);
   formContainer1.appendChild(passwordInput);
   formContainer1.appendChild(submitButton);
-  //   let userCredentialsForm = document.forms.userCredentialsForm;
-  //   let userLoginEmail = userCredentialsForm.email.value;
 };
