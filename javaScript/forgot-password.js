@@ -1,6 +1,6 @@
 let usersData = [];
 let userCredentialsPageLoadSetup = (() => {
-  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
   console.log(usersData);
 })();
 
@@ -73,7 +73,6 @@ let passwordStore = () => {
 };
 
 let passwordReset = () => {
-
   let passwordLabel = document.createElement("label");
   passwordLabel.setAttribute("for", "userInputPassword");
   passwordLabel.innerText = "Enter Password";

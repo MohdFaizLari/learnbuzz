@@ -252,7 +252,6 @@ let filterBasedOnCategorySelection = (e) => {
       selectedCategoryData = coursesData;
     }
   }
-  console.log(selectedCategoryData);
 
   if (selectedCategoryID === "webDevelopment") {
     let htmlCourse = selectedCategoryData.courses.html;

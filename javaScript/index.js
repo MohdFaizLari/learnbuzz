@@ -1,7 +1,7 @@
-let usersData = [];
-let indexPageLoadSetup = (() => { 
-  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
-  console.log(usersData);
+let usersDataForGlobalFile = [];
+let indexPageLoadSetup = (() => {
+  usersDataForGlobalFile = JSON.parse(localStorage.getItem("userDataSignUp"));
+  console.log(usersDataForGlobalFile);
 })();
 
 let loginButtonFunction = (e) => {
@@ -46,7 +46,7 @@ let subscriptionPageRedirect = () => {
 
 if (document.getElementById("subscriptionStatus")) {
   let subscriptionStatus = document.getElementById("subscriptionStatus");
-  subscriptionStatus.innerText = usersData[0].subscriptionStatus;
+  subscriptionStatus.innerText = usersDataForGlobalFile[0].subscriptionStatus;
   subscriptionStatus.style.color = "#1338BE";
   if (
     document.getElementById("subscriptionStatus").innerText === "Subscribed"
