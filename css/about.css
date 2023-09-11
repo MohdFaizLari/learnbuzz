@@ -1,0 +1,45 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #1338BE;
+    cursor: pointer;
+}
+
+.contentWrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08),
+        0 4px 12px rgba(0, 0, 0, .08);
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.contentHeading{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.mr-t-100 {
+    margin-top: 100px;
+}
