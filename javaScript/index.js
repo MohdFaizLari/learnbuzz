@@ -1,6 +1,7 @@
 let usersData = [];
-let loginPageLoadSetup = (() => {
-  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
+let indexPageLoadSetup = (() => { 
+  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  console.log(usersData);
 })();
 
 let loginButtonFunction = (e) => {
