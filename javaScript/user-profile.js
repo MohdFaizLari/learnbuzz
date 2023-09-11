@@ -1,6 +1,6 @@
 let profilePageLoadSetup = (() => {
   let usersData = [];
-  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
   let userData = usersData[0];
 
   if (userData !== null) {
@@ -28,7 +28,7 @@ let profilePageLoadSetup = (() => {
     let hoursTime = date.getHours();
     let userGreeting = document.getElementById("userGreeting");
     console.log(userGreeting.innerText, date, hoursTime);
-  
+
     if (hoursTime >= 5 && hoursTime < 11.59) {
       userGreeting.innerText =
         "Hey " + userFullNameDiv.innerText + " ," + " Good morning!";
