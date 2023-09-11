@@ -1,7 +1,7 @@
 let usersData = [];
 let loginPageLoadSetup = (() => {
-  usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
-  // console.log(usersData);
+  usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
+  console.log(usersData);
 })();
 
 let selectedPlan = (e) => {
@@ -9,14 +9,51 @@ let selectedPlan = (e) => {
   let userPlan = e.target.innerText.split("\n");
   arr.selectedPlan = userPlan[0];
   arr.planDuration = userPlan[1];
-  e.target.style.border = "1px solid Blue";
-  e.target.style.borderRadius = "10px";
-  console.log(arr);
+  if (arr.selectedPlan === "Rs 149") {
+    let firstPlan = document.getElementById("firstPlan");
+    let secondPlan = document.getElementById("secondPlan");
+    let thirdPlan = document.getElementById("thirdPlan");
+    secondPlan.style.border = "none";
+    thirdPlan.style.border = "none";
+
+    firstPlan.style.border = "1px solid Blue";
+    firstPlan.style.borderRadius = "10px";
+  } else if (arr.selectedPlan === "Rs 250") {
+    let secondPlan = document.getElementById("secondPlan");
+    let firstPlan = document.getElementById("firstPlan");
+    let thirdPlan = document.getElementById("thirdPlan");
+    firstPlan.style.border = "none";
+    thirdPlan.style.border = "none";
+
+    secondPlan.style.border = "1px solid Blue";
+    secondPlan.style.borderRadius = "10px";
+  } else if (arr.selectedPlan === "Rs 400") {
+    let thirdPlan = document.getElementById("thirdPlan");
+    let secondPlan = document.getElementById("secondPlan");
+    let firstPlan = document.getElementById("firstPlan");
+    firstPlan.style.border = "none";
+    secondPlan.style.border = "none";
+
+    thirdPlan.style.border = "1px solid Blue";
+    thirdPlan.style.borderRadius = "10px";
+  }
+
+  console.log(arr.selectedPlan);
 };
 
 let debitCardFormLoad = (e) => {
   let paymentFormContainer = document.getElementById("paymentFormContainer");
   paymentFormContainer.style.marginTop = "40px";
+
+  let creditCard = document.getElementById("creditCard");
+  creditCard.style.backgroundColor = "White";
+  creditCard.style.color = "Black";
+  let upi = document.getElementById("upi");
+  upi.style.backgroundColor = "white";
+  upi.style.color = "Black";
+  let debitCard = document.getElementById("debitCard");
+  debitCard.style.backgroundColor = "#1338be";
+  debitCard.style.color = "aliceblue";
   if (document.getElementById("debitCardPaymentForm")) {
     let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
     debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
@@ -122,6 +159,17 @@ let debitCardFormLoad = (e) => {
 let creditCardFormLoad = (e) => {
   let paymentFormContainer = document.getElementById("paymentFormContainer");
   paymentFormContainer.style.marginTop = "40px";
+
+  let creditCard = document.getElementById("creditCard");
+  creditCard.style.backgroundColor = "#1338be";
+  creditCard.style.color = "aliceblue";
+  let debitCard = document.getElementById("debitCard");
+  debitCard.style.backgroundColor = "white";
+  debitCard.style.color = "Black";
+  let upi = document.getElementById("upi");
+  upi.style.backgroundColor = "white";
+  upi.style.color = "Black";
+
   if (document.getElementById("debitCardPaymentForm")) {
     let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
     debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
@@ -222,6 +270,17 @@ let creditCardFormLoad = (e) => {
 let upiFormLoad = (e) => {
   let paymentFormContainer = document.getElementById("paymentFormContainer");
   paymentFormContainer.style.marginTop = "100px";
+
+  let creditCard = document.getElementById("creditCard");
+  creditCard.style.backgroundColor = "White";
+  creditCard.style.color = "Black";
+  let debitCard = document.getElementById("debitCard");
+  debitCard.style.backgroundColor = "#White";
+
+  let upi = document.getElementById("upi");
+  upi.style.backgroundColor = "#1338be";
+  upi.style.color = "aliceblue";
+
   if (document.getElementById("debitCardPaymentForm")) {
     let debitCardPaymentForm = document.getElementById("debitCardPaymentForm");
     debitCardPaymentForm.parentNode.removeChild(debitCardPaymentForm);
@@ -294,4 +353,3 @@ let subscriptionPageLoadSetup = (() => {
 
   document.getElementById("debitCard").click();
 })();
-
