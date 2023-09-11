@@ -1,8 +1,3 @@
-// let usersData = [];
-// let loginPageLoadSetup = (() => {
-//   usersData = JSON.parse(localStorage.getItem("userDataSignUp"));
-// })();
-
 let htmlIntroPageRedirect = () => {
   window.location = "./../html/contentOnIntroToHtml.html";
 };
@@ -34,15 +29,3 @@ let cMIntroPageRedirect = () => {
 let eMIntroPageRedirect = () => {
   window.location = "./../html/contentOnEmailMarketing.html";
 };
-
-// if (document.getElementById("subscriptionStatus")) {
-//   let subscriptionStatus = document.getElementById("subscriptionStatus");
-//   subscriptionStatus.innerText = usersData[0].subscriptionStatus;
-//   subscriptionStatus.style.color = "#1338BE";
-//   if (
-//     document.getElementById("subscriptionStatus").innerText === "Subscribed"
-//   ) {
-//     let subscriptionStatus = document.getElementById("subscriptionStatus");
-//     subscriptionStatus.onclick = null;
-//   }
-// }

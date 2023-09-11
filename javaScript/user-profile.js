@@ -2,7 +2,6 @@ let profilePageLoadSetup = (() => {
   let usersData = [];
   usersData.push(JSON.parse(localStorage.getItem("userDataSignUp")));
   let userData = usersData[0];
-  // console.log(userData,usersData);
 
   if (userData !== null) {
     let fullName = document.getElementById("fullname");
@@ -74,10 +73,9 @@ let changeImage = () => {
       console.log(preview.src);
     };
     if (file) {
-      reader.readAsDataURL(file); //reads the data as a URL
+      reader.readAsDataURL(file);
       let chooseFileOption = document.getElementById("storedImage");
       chooseFileOption.parentNode.removeChild(chooseFileOption);
-      //   console.log(reader);
     } else {
       preview.src = "";
     }

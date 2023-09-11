@@ -7,7 +7,6 @@
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
-
 }
 
 .mainContent {
@@ -19,7 +18,6 @@
     flex-shrink: 0;
     flex-basis: auto;
     margin-top: 76px;
-
 }
 
 /* FIRST SECTION STYLING  STARTS*/
@@ -41,7 +39,6 @@
 .mySlides {
     display: none;
     width: 100%;
-
 }
 
 .slideshowImages {
@@ -123,8 +120,6 @@
 }
 
 /*Second Section styling ends */
-
-
 
 /* Third Section Styling Starts here */
 
@@ -245,7 +240,6 @@
 .reviewCard {
     border: none;
     width: 30%;
-    /* height: 300px; */
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-color: aliceblue;
