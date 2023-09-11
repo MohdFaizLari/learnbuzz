@@ -1,114 +1,60 @@
-# learbuzz
-
 E-Learning_Website
 
-1 - Naming convention - Camel case/Snake Bar; -----> Decided it will be camel case mostly, In class names & ID we will use snake bar case as well.
+Account Creation Steps ---->
 
-a) Function name - Camel case
-b) Class name - Camel case & Snake bar both.
-c) Id name - Camel case & Snake bar both.
-d) Variable name - Camel case
+- Open the Landing page in your browser.
+- Click on Sign up option. (Signup page will redirect).
+- Now enter the required details to create your account.
+- After creating the account you will be redirected to the home page.
 
-2 - Font size - In Progress
-a) Main headings
-b) Heading
-c) Sub headings
-d) content
-e) Sub content
-f) Notifications (errors,alert etc.)
-g) Font
+Login Page Guide --->
 
-3 - Color Code - Pending
-a) Font Color
-b) Background Color - #f5f5f5 or #fefefe;
-c) Header Color - #f5f5f5 or #fefefe
-d) Footer Color - #1c1d1f;
-e) Sidebar
-rgb(3, 49, 98); 
+After creating the account if you have done signout you can login again with
+the same credentials in login page.
+Password Reset Option In Login Page -
+- If the user forgot his password we have a forget password option as well
+  which will be inserted if the user enters wrong password once.
 
-4 - Font family ---> Done
-a) It should be simple (Not in cursive) - ( font-family: 'Poppins', sans-serif;) -----> Done
-
-5 - Font weight ---> Done
-a) Lightest - 200 (.fw-lightest)
-b) Lighter - 300 (.fw-lighter)
-c) Normal - 400 (.fw-normal)
-d) Semi-Bold - 500 (.fw-semi-bold)
-e) Bold - 600 (.fw-bold)
-f) Bolder - 800/900 (.fw-bolder)
-
-6 - Color classes - Pending
-a)
-
-7 - Margin classes - 5 t0 20 px; ---> Done
-a) All side margin classes (.mr-5 - 20) 
-b) Margin top classes (.mr-t-5 - 20) 
-c) Margin right classes (.mr-r-5 - 20) 
-d) Margin bottom classes (.mr-b-5 - 20) 
-e) Margin left classes (.mr-l-5 - 20)
-
-8 - Padding classes ---> Done
-a) All side padding classes (.pd-5 - 20) 
-b) Padding top classes (.pd-t-5 - 20) 
-c) Padding right classes (.pd-r-5 - 20)
-d) Padding bottom classes (.pd-b-5 - 20) 
-e) Padding left classes (.pd-l-5 - 20)
-
-9 - Button classe ---> Done
-a) Primary button (.primaryButton)
-b) Secondary button (.secondaryButton)
-c) Tertiary button (.tertiaryButton)
-
-Git useful Commands----
-
-git clone repoURL // First time for cloning the repository.
-
-git branch branchname // creating branch
-
-git checkout branchname // for moving into that particular branch on which you have to work
-
-git add -A // files edited will move to staging area
-
-git commit -m "commit mesasage" // this will update in the branch , depends now if you want to push the changes or not , messgae contains information regarding the changes done.
-
-git remote add E-learning remoteURL // for configuring the remote URL with a name(e-learning)
-
-git remote -v // for checking if we have set remote URL.
-
-git remote rm E-learning // for removing remoteURL
-
-git push E-leraning(remoteURL Name) branch_name to be pushed // for pushing the files
-
-git pull E-learning(remoteURL Name) master // for pulling master branch
+Password Reset Page --->
+- In this page user can reset his password by entering his email ID which was given
+ by him while creating the account.
 
 
-landing page header footer
-sign Up
-name
-username
-email
-password
+Header Section --->
 
-landing page header footer
-log in
-username
-pwd
+- Home Page Button - By clicking on this you will redirect to home page.
+- Courses Page Button - By clicking on this you will redirect to courses page.
+- Contact Page Button - By clicking on this you will redirect to contact page.
+- Subscription Button - By clicking on this you will redirect to subscription page.
+ (This option may not be available in landing page)
+- Profile Page Button - By clicking on this you will redirect to profile page.
+- Signout Button - By clicking on this you will be logged out.
 
-landing page content & footer
-home page header ,side nav bar(height vh) - no footer
+Footer Section -
 
-home page layout ------
-header ke neeche ek intro video
-uske neeche cards skilled instructors
-course categories
-webd 
-python
-php
-networking
-c language
-aws 
-cloud computing
-ai
+- In this section we have mentioned privacy policies, Terms of usage etc.
 
-netflix ka trnd of sci-fi wgairah ke 
-expert instructors img hover  intro video of 30 to 45 sec.
+
+Homepage Guide --->
+
+Trending Courses -
+
+- In this section we have mentioned trending courses in our website and added documents
+  related to that course
+
+Coursespage Guide --->
+- In this page we are showing all the courses by clicking on course categories.
+
+Contactpage Guide --->
+- In this page we have a contact form (Not capturing the data Yet).
+
+Subscriptionpage Guide --->
+- In this page we are redirecting user to Subscription page
+ Once the user has subscribed in the home it will be shown in header.
+
+Profilepage Guide --->
+- In this page we have added user photo change option as well but not storing in any backend
+so it will be same as before after refreshing.
+
+- In this page user will be been showned. 
+(Not completed yet like subscription details are not fetching as of now.)
